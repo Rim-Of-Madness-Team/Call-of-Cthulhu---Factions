@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+<!-- =========== BASE GENERATION ========= -->
+
+  <ThingDef>
+    <defName>TemporaryDoorMarker</defName>
+    <category>Ethereal</category>
+    <thingClass>Thing</thingClass>
+    <label>temporary region barrier</label>
+    <holdsRoof>true</holdsRoof>
+    <passability>Impassable</passability>
+    <temporaryRegionBarrier>true</temporaryRegionBarrier>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Never</tradeability>
+  </ThingDef>
+
+  <!-- ============ BASE OBJECTS ========== -->
+
+  <ThingDef ParentName="FactionBuildingBase">
+    <defName>AgencySymbolFloorPainting</defName>
+    <label>agency emblem floor painting</label>
+    <Description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</Description>
+    <graphicData>
+      <texPath>BaseObjects/TheAgency/AgencyFloorLogo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,4)</drawSize>
+    </graphicData>
+    <selectable>false</selectable>	
+    <AltitudeLayer>FloorEmplacement</AltitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <useHitPoints>False</useHitPoints>
+		<scatterableOnMapGen>false</scatterableOnMapGen>
+		<Size>(7,4)</Size>
+    <Passability>Standable</Passability>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <designationHotkey>Misc10</designationHotkey>
+  </ThingDef>
+  
+    <ThingDef ParentName="FactionTableBase">
+    <defName>AgencyReceptionistTable</defName>
+    <label>table (reception)</label>
+    <graphicData>
+      <texPath>BaseObjects/TheAgency/AgencyReceptionDesk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,2.5)</drawSize>
+      <damageData>
+        <rectN>(0,0.27,2,3.73)</rectN>
+        <rectS>(0,0.27,2,3.73)</rectS>
+        <rectE>(0.125,0.27,3.75,1.73)</rectE>
+        <rectW>(0.125,0.27,3.75,1.73)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>12</Beauty>
+    </statBases>
+    <size>(5,2)</size>
+    <costStuffCount>95</costStuffCount>
+  </ThingDef>
+
+<!-- ====================== BASES ==================== -->
+  
+  
+  
+  
+  <!-- Table base -->
+  <ThingDef Abstract="True" ParentName="FactionFurnitureBase" Name="FactionTableBase">
+    <thingClass>Building</thingClass>
+    <altitudeLayer>Building</altitudeLayer>
+    <description>People eat off tables when chairs are placed facing them.</description>
+    <passability>PassThroughOnly</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <pathCost>60</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <surfaceType>Eat</surfaceType>
+    <comps>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+  </ThingDef>
+
+  <!-- Furniture Base -->
+    <ThingDef Name="FactionFurnitureBase" ParentName="FactionBuildingBase" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+    </comps>
+    <minifiedDef>MinifiedFurniture</minifiedDef>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  <!-- Faction Building Base -->
+  <ThingDef Name="FactionBuildingBase" Abstract="True">
+    <category>Building</category>
+    <thingClass>Building</thingClass>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>BuildingRubble</filthLeaving>
+  </ThingDef>
+  
+  
+</ThingDefs>

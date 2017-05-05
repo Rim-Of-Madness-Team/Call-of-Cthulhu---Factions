@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<NameMakerDefs>
+
+  <RulePackDef>
+    <defName>NamerFactionCFV</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->Coastal Townsfolk of [badasscolor] [geography]</li>
+        <li>name->Seaside Townsfolk of [badasscolor] [geography]</li>
+        <li>name->Portside Townsfolk of [badasscolor] [geography]</li>
+        <li>name->Seafaring Townsfolk of [badasscolor] [geography]</li>
+        <li>geography->[terrainfeature]</li>	
+      </rulesStrings>
+	  <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>terrainfeature</keyword>
+          <path>Words/Nouns/TerrainFeatures</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>badasscolor</keyword>
+          <path>Words/Nouns/Colors_Badass</path>
+        </li>		
+		<li Class="Rule_File">
+		<keyword>town</keyword>
+		<path>NameBanks/Names_LovecraftCounty</path>
+		</li>
+	  </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  
+
+  <RulePackDef>
+    <defName>NamerFactionBaseCFV</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[town]</li>
+      </rulesStrings>
+	  <rulesRaw>
+		<li Class="Rule_File">
+		<keyword>town</keyword>
+		<path>NameBanks/Names_LovecraftCounty</path>
+		</li>
+	  </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+    
+  
+  <RulePackDef>
+    <defName>NamerFactionTheAgency</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->The Agency</li>
+      </rulesStrings>
+	  <rulesRaw>
+		<li Class="Rule_File">
+		<keyword>agency</keyword>
+		<path>NameBanks/Names_AgencyDepartments</path>
+		</li>
+	  </rulesRaw>	  
+    </rulePack>
+  </RulePackDef>
+
+
+  <RulePackDef>
+    <defName>NamerFactionBaseTheAgency</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name->[town] Base of Operations</li>
+        <li>name->[town] Headquarters</li>
+        <li>name->Department of [agency]</li>		
+      </rulesStrings>
+	  <rulesRaw>
+		<li Class="Rule_File">
+		<keyword>agency</keyword>
+		<path>NameBanks/Names_AgencyDepartments</path>
+		</li>
+		<li Class="Rule_File">
+		<keyword>town</keyword>
+		<path>NameBanks/Names_NewEngland</path>
+		</li>
+	  </rulesRaw>	  
+    </rulePack>
+  </RulePackDef>
+  
+  
+</NameMakerDefs>
+
+
+
+
+
+
+

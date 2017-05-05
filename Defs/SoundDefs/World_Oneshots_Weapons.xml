@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
+
+  <SoundDef>
+    <defName>ShotRevolver</defName>   
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Revolver1</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.76471</min>        
+          <max>30.76471</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  <SoundDef>
+    <defName>ShotHarpoon</defName>   
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Harpoon1</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.76471</min>        
+          <max>30.76471</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>  
+  
+  <SoundDef>
+    <defName>ShotFlare</defName>   
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Flare1</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>30.76471</min>        
+          <max>30.76471</max>
+        </volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+  
+  <SoundDef>
+    <defName>InteractRevolver</defName>   
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Revolver2</clipPath>
+          </li>
+        </grains> 
+        <volumeRange>
+          <min>30.76471</min>        
+          <max>30.76471</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  
+</DefPackage-SoundDef>
