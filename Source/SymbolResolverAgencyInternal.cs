@@ -25,7 +25,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParams3 = rp;
                 resolveParams3.rect = CellRect.SingleCell(cell);
-                resolveParams3.singleThingDef = ThingDefOf.TemporaryRegionBarrier;
+                resolveParams3.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryRegionBarrier;
                 BaseGen.symbolStack.Push("thing", resolveParams3);
             }
 
@@ -43,14 +43,14 @@ namespace CthulhuFactions
                 if (SymbolResolverAgencyInternal.instanceMap == null) return;
                 foreach (IntVec3 cell in SymbolResolverAgencyInternal.instanceMap.AllCells)
                 {
-                    Thing thing = cell.GetThingList(instanceMap).Find((Thing x) => x.def.temporaryRegionBarrier);
+                    Thing thing = cell.GetThingList(instanceMap).Find((Thing x) => x.def == CthulhuFactionsDefOf.ROM_TemporaryDoorMarker);
                     if (thing == null)
                     {
                         //Log.Warning("Could not destroy temporary region barrier at " + cell + " because it's not here.");
                     }
                     else
                     {
-                        if (thing.def == CthulhuFactionsDefOf.TemporaryDoorMarker)
+                        if (thing.def == CthulhuFactionsDefOf.ROM_TemporaryDoorMarker)
                         {
                             SymbolResolverAgencyInternal.newThing = null;
                             SymbolResolverAgencyInternal.newThing = ThingMaker.MakeThing(ThingDefOf.Door, ThingDefOf.Steel);

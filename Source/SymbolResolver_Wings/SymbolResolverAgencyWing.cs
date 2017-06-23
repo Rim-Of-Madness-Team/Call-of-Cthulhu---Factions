@@ -64,7 +64,7 @@ namespace CthulhuFactions
             //    }
             //    doorToOutsidePresent = true;
             //}
-            GenSpawn.Spawn(ThingDefOf.TemporaryRegionBarrier, intVec, map);
+            GenSpawn.Spawn(CthulhuFactionsDefOf.ROM_TemporaryRegionBarrier, intVec, map);
 
             Thing thing = ThingMaker.MakeThing(ThingDefOf.Door, doorStuff);
             thing.SetFaction(faction, null);

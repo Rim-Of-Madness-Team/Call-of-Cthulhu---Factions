@@ -34,7 +34,7 @@ namespace CthulhuFactions
                 bool flag = false;
                 foreach (IntVec3 current2 in GenAdj.CellsOccupiedBy(loc, rot, thingDef.Size))
                 {
-                    if (BaseGenUtility.AnyDoorAdjacentTo(current2, map))
+                    if (BaseGenUtility.AnyDoorCardinalAdjacentTo(current2, map))
                     {
                         flag = true;
                         break;
@@ -66,7 +66,7 @@ namespace CthulhuFactions
                         ///Adjacent lamps
                         ThingDef singleThingDef3 = (Cthulhu.Utility.IsIndustrialAgeLoaded()) ? lampDef : ThingDefOf.TorchLamp;
                         Thing thing3 = ThingMaker.MakeThing(singleThingDef3, lampStuffDef);
-                        IntVec3 thingLoc = BaseGenUtility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt];
+                        IntVec3 thingLoc = Cthulhu.Utility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt];
                         GenSpawn.Spawn(thing3, thingLoc, map);
 
                         

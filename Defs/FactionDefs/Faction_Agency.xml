@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <FactionDefs>
   <FactionDef>
-		<defName>TheAgency</defName>
+		<defName>ROM_TheAgency</defName>
 		<label>The Agency</label>
     <description>A clandestine organization of agents dedicated to keeping eldrich forces at bay.\n\nFashioned after ancient law enforcement organizations, The Agency can be found setting up outposts near disaster zones influenced by eldritch abominations most foul. Their goal is to research and investigate new strategies and relics to combat the monsters that have arisen from slumbers most ancient. They dress themselves in traditional police and detective attire from the old world they lost to the cosmic horrors, enjoy brandishing six-shooter revolvers, and are fond of trading their less secretive objects.\n\nThe Agency is structured like a military organization, with members ranking from Cadet up to Chief of the Agency. Those afflicted by cosmic machinations will need their help to survive, as the reinforcements they send tend to be well armed, and won't crack under pressure in the face of stygian monstrosities.</description>
     <pawnsPlural>agents</pawnsPlural>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <factionBaseSelectionWeight>0.25</factionBaseSelectionWeight>
+    <baseSelectionWeight>0.25</baseSelectionWeight>
     <canMakeRandomly>true</canMakeRandomly>
-    <raidCommonality>100</raidCommonality>
+    <raidCommonality>20</raidCommonality>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
 	<appreciative>true</appreciative>
@@ -16,13 +16,13 @@
     <expandingIconTexture>World/WorldObjects/Expanding/AgencyBase</expandingIconTexture>
     <colorSpectrum>
       <li>(1.0, 1.0, 1.0)</li>
-    </colorSpectrum>		
+    </colorSpectrum>
     <startingGoodwill>
       <min>-5</min>
       <max>15</max>
     </startingGoodwill>
-		<factionNameMaker>NamerFactionTheAgency</factionNameMaker>
-		<factionBaseNameMaker>NamerFactionBaseTheAgency</factionBaseNameMaker>
+		<factionNameMaker>ROM_NamerFactionTheAgency</factionNameMaker>
+		<baseNameMaker>ROM_NamerFactionBaseTheAgency</baseNameMaker>
 		<techLevel>Spacer</techLevel>
 		<backstoryCategory>Civil</backstoryCategory>
 		<hairTags>
@@ -39,54 +39,54 @@
     <visitorTraderKinds>
       <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
-    <factionBaseTraderKinds>
-      <li>FactionBase_Outlander_Standard</li>
-    </factionBaseTraderKinds>	
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
     <pawnGroupMakers>
 	<li>
 		<kindDef>Normal</kindDef>
         <options>
-		  <DetectiveSenior>8</DetectiveSenior>
-		  <DetectiveJunior>100</DetectiveJunior>
-		  <DetectiveInvestigator>250</DetectiveInvestigator>
+		  <ROM_DetectiveSenior>8</ROM_DetectiveSenior>
+		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>
+		  <ROM_DetectiveInvestigator>250</ROM_DetectiveInvestigator>
         </options>
       </li>
 	  <li>
 		<kindDef>Normal</kindDef>
         <options>
-		  <HeavyMERF>10</HeavyMERF>
-		  <MERF>100</MERF>
+		  <ROM_HeavyMERF>10</ROM_HeavyMERF>
+		  <ROM_MERF>100</ROM_MERF>
         </options>
-      </li>	
+      </li>
 	  <li>
-		<kindDef>AgencyMERF</kindDef>
+		<kindDef>ROM_AgencyMERF</kindDef>
         <options>
-		  <HeavyMERF>10</HeavyMERF>
-		  <MERF>100</MERF>
+		  <ROM_HeavyMERF>10</ROM_HeavyMERF>
+		  <ROM_MERF>100</ROM_MERF>
         </options>
-      </li>	  	  
+      </li>
       <li>
 		<kindDef>Trader</kindDef>
         <traders>
-			<DetectiveTrader>100</DetectiveTrader>
+			<ROM_DetectiveTrader>100</ROM_DetectiveTrader>
         </traders>
         <carriers>
           <Muffalo>1</Muffalo>
         </carriers>
         <guards>
-		  <DetectiveJunior>100</DetectiveJunior>		
-		  <DetectiveInvestigator>250</DetectiveInvestigator>		  
+		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>
+		  <ROM_DetectiveInvestigator>250</ROM_DetectiveInvestigator>
         </guards>
       </li>
 	<li>
 		<kindDef>FactionBase</kindDef>
         <options>
-		  <DetectiveSenior>8</DetectiveSenior>
-		  <DetectiveJunior>100</DetectiveJunior>
-		  <DetectiveInvestigator>250</DetectiveInvestigator>
+		  <ROM_DetectiveSenior>8</ROM_DetectiveSenior>
+		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>
+		  <ROM_DetectiveInvestigator>250</ROM_DetectiveInvestigator>
         </options>
-    </li>	  	       
+    </li>
  </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
   </FactionDef>
-</FactionDefs> 
+</FactionDefs>

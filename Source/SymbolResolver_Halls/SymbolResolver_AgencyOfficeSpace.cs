@@ -51,7 +51,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParams3 = rp;
                 resolveParams3.rect = CellRect.SingleCell(doorLoc);
-                resolveParams3.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+                resolveParams3.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
                 BaseGen.symbolStack.Push("thing", resolveParams3);
             }
             foreach (CellRect current in splitRooms.InRandomOrder<CellRect>())
@@ -90,7 +90,7 @@ namespace CthulhuFactions
             resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.FactionBase;
             float points = 500;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
-            resolveParams.pawnGroupMakerParams.map = map;
+            resolveParams.pawnGroupMakerParams.tile = map.Tile;
             resolveParams.pawnGroupMakerParams.faction = rp.faction;
             resolveParams.pawnGroupMakerParams.points = points;
 

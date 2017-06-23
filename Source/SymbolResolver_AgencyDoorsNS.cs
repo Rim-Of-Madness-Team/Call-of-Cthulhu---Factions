@@ -49,7 +49,7 @@ namespace CthulhuFactions
             //    }
             //    doorToOutsidePresent = true;
             //}
-            Thing thing = ThingMaker.MakeThing(CthulhuFactionsDefOf.TemporaryDoorMarker, null);
+            Thing thing = ThingMaker.MakeThing(CthulhuFactionsDefOf.ROM_TemporaryDoorMarker, null);
             //thing.SetFaction(faction, null);
             GenSpawn.Spawn(thing, intVec, BaseGen.globalSettings.map);
         }

@@ -41,7 +41,7 @@ namespace CthulhuFactions
                     bool flag = false;
                     foreach (IntVec3 current2 in GenAdj.CellsOccupiedBy(current, rot, thingDef.Size))
                     {
-                        if (BaseGenUtility.AnyDoorAdjacentTo(current2, map))
+                        if (BaseGenUtility.AnyDoorCardinalAdjacentTo(current2, map))
                         {
                             flag = true;
                             break;
@@ -82,7 +82,7 @@ namespace CthulhuFactions
             List<int> corners = new List<int>() { 0, 1, 2, 3 };
             foreach (int corner in corners.InRandomOrder<int>())
             {
-                IntVec3 loc = BaseGenUtility.GetCornerPos(rp.rect.ContractedBy(1), corner);
+                IntVec3 loc = Cthulhu.Utility.GetCornerPos(rp.rect.ContractedBy(1), corner);
                 if (!GenSpawn.WouldWipeAnythingWith(loc, Rot4.South, lampDef, map, (Thing x) => x.def.category == ThingCategory.Building))
                 {
                     ThingDef singleThingDef3 = (Cthulhu.Utility.IsIndustrialAgeLoaded()) ? lampDef : ThingDefOf.TorchLamp;

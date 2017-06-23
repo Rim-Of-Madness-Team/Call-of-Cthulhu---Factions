@@ -40,7 +40,7 @@ namespace CthulhuFactions
                                 {
                                     List<Pawn> pawns = map.mapPawns.AllPawnsSpawned.Where((Pawn p) => p.Faction != null).ToList();
                                     pawns.Where((Pawn p) => p.Name != null && p.TryGetComp<PawnComponent_Agency>() == null &&
-                                            p.Faction.def.defName.EqualsIgnoreCase("TheAgency")).ToList().ForEach(
+                                            p.Faction.def.defName.EqualsIgnoreCase("ROM_TheAgency")).ToList().ForEach(
                                         delegate (Pawn p)
                                         {
                                             PawnComponent_Agency pca = new PawnComponent_Agency();

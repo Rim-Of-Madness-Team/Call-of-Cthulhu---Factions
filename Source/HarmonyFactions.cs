@@ -26,7 +26,7 @@ namespace CthulhuFactions
             //    __result = RandomFactionBaseTileFor_TheAgency(faction);
             //    return false;
             //}
-            if (faction.def.defName == "Townsfolk")
+            if (faction?.def?.defName == "ROM_Townsfolk")
             {
                 __result = RandomFactionBaseTileFor_Townsfolk(faction);
                 return false;
@@ -34,33 +34,39 @@ namespace CthulhuFactions
             return true;
         }
 
-        public static int RandomFactionBaseTileFor_Townsfolk(Faction faction)
+
+        public static int RandomFactionBaseTileFor_Townsfolk(Faction faction, bool mustBeAutoChoosable = false)
         {
-            for (int i = 0; i < 150; i++)
+            for (int i = 0; i < 500; i++)
             {
                 int num;
-                if (Find.WorldGrid.TileIndices.TryRandomElementByWeight(delegate (int x)
+                if ((from _ in Enumerable.Range(0, 100)
+                     select Rand.Range(0, Find.WorldGrid.TilesCount)).TryRandomElementByWeight(delegate (int x)
+                     {
+                         Tile tile = Find.WorldGrid[x];
+                         if (!tile.biome.canBuildBase || tile.hilliness == Hilliness.Impassable)
+                         {
+                             return 0f;
+                         }
+                         List<int> neighbors = new List<int>();
+                         Find.WorldGrid.GetTileNeighbors(x, neighbors);
+                         //Log.Message("Neighbors " + neighbors.Count.ToString());
+                         if (neighbors != null && neighbors.Count > 0)
+                         {
+                             foreach (int y in neighbors)
+                             {
+                                 Tile tile2 = Find.WorldGrid[y];
+                                 if (tile2.biome == BiomeDefOf.IceSheet || tile2.biome == BiomeDef.Named("SeaIce"))
+                                     return 0f;
+                                 if (tile2.WaterCovered)
+                                     return 1000f;
+                             }
+                         }
+
+                         return tile.biome.factionBaseSelectionWeight;
+                     }, out num))
                 {
-                    Tile tile = Find.WorldGrid[x];
-                    if (!tile.biome.canBuildBase || tile.hilliness == Hilliness.Impassable)
-                    {
-                        return 0f;
-                    }
-                    List<int> neighbors = new List<int>();
-                    Find.WorldGrid.GetTileNeighbors(x, neighbors);
-                    //Log.Message("Neighbors " + neighbors.Count.ToString());
-                    foreach (int y in neighbors)
-                    {
-                        Tile tile2 = Find.WorldGrid[y];
-                        if (tile2.biome == BiomeDefOf.IceSheet || tile2.biome == BiomeDef.Named("SeaIce"))
-                            return 0f;
-                        if (tile2.WaterCovered)
-                            return 1000f;
-                    }
-                    return tile.biome.factionBaseSelectionWeight;
-                }, out num))
-                {
-                    if (Find.FactionManager.FactionAtTile(num) == null)
+                    if (TileFinder.IsValidTileForNewSettlement(num, null))
                     {
                         return num;
                     }
@@ -69,5 +75,6 @@ namespace CthulhuFactions
             Log.Error("Failed to find faction base tile for " + faction);
             return 0;
         }
+        
     }
 }

@@ -47,7 +47,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParams3 = rp;
                 resolveParams3.rect = CellRect.SingleCell(doorLoc);
-                resolveParams3.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+                resolveParams3.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
                 BaseGen.symbolStack.Push("thing", resolveParams3);
             }
             int num = 0;

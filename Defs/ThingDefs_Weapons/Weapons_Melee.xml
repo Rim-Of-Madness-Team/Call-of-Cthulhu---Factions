@@ -98,7 +98,7 @@
   <!-- ============================================================== -->
 
   <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
-    <defName>MeleeWeapon_CallOfCthulhu_PoleHook</defName>
+    <defName>ROM_PoleHook</defName>
     <label>polehook</label>
     <description>A meat hook fixed to the end of a pole. A terrifying weapon to behold.</description>
     <graphicData>
@@ -134,7 +134,7 @@
 <!-- ============================================================== -->
 
   <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
-    <defName>MeleeWeapon_CallOfCthulhu_WoodAxe</defName>
+    <defName>ROM_WoodAxe</defName>
     <label>wood axe</label>
     <description>An axe used by lumberjacks to quickly turn trees into valuable resources.</description>
     <graphicData>
@@ -173,7 +173,7 @@
   <!-- ============================================================== -->
 
   <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
-    <defName>MeleeWeapon_CallOfCthulhu_Pitchfork</defName>
+    <defName>ROM_Pitchfork</defName>
     <label>pitchfork</label>
     <description>Used by farmers to help manage hay.</description>
     <graphicData>
@@ -212,7 +212,7 @@
 
   
   <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Blunt">
-    <defName>MeleeWeapon_CallOfCthulhu_BrandingIron</defName>
+    <defName>ROM_BrandingIron</defName>
     <label>hot branding iron</label>
     <description>A burning hot tool commonly used to brand livestock with prescribed insignias.</description>
     <graphicData>

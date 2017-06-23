@@ -3,7 +3,7 @@
 
   <PawnKindDef Name="MERFBase" Abstract="True">
     <race>Human</race>
-    <defaultFactionType>TheAgency</defaultFactionType>
+    <defaultFactionType>ROM_TheAgency</defaultFactionType>
     <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
     <backstoryCategory>Civil</backstoryCategory>
     <chemicalAddictionChance>0.1</chemicalAddictionChance>
@@ -14,7 +14,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="MERF" ParentName="MERFBase">
-    <defName>MERF</defName>
+    <defName>ROM_MERF</defName>
     <label>MERF</label>
 	<description>MERF stands for Mobile Eldritch Response Force.</description>
     <race>Human</race>
@@ -30,8 +30,8 @@
       <li>Military</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_MERF_Armor</li>
-		<li>Apparel_MERF_LightHelmet</li>
+		<li>ROM_Apparel_MERF_Armor</li>
+		<li>ROM_Apparel_MERF_LightHelmet</li>
     </apparelRequired>
     <apparelMoney>
       <min>2500</min>
@@ -43,7 +43,7 @@
       <max>2500</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>  
+      <li>Gun</li>
     </weaponTags>
     <techHediffsMoney>
       <min>2500</min>
@@ -78,7 +78,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="MERFBase">
-    <defName>HeavyMERF</defName>
+    <defName>ROM_HeavyMERF</defName>
     <label>MERF Heavy</label>
 	<description>MERF stands for Mobile Eldritch Response Force.</description>
     <race>Human</race>
@@ -94,9 +94,9 @@
       <li>Military</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_MERF_HeavyHelmet</li>
-		<li>Apparel_MERF_Armor</li>
-		<li>Apparel_MERF_Coat</li>
+		<li>ROM_Apparel_MERF_HeavyHelmet</li>
+		<li>ROM_Apparel_MERF_Armor</li>
+		<li>ROM_Apparel_MERF_Coat</li>
     </apparelRequired>
     <apparelMoney>
       <min>2500</min>
@@ -108,7 +108,7 @@
       <max>2500</max>
     </weaponMoney>
     <weaponTags>
-      <li>Gun</li>  
+      <li>Gun</li>
     </weaponTags>
     <techHediffsMoney>
       <min>2500</min>
@@ -140,6 +140,6 @@
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
-  </PawnKindDef>	
-  
+  </PawnKindDef>
+
 </PawnKindDefs>

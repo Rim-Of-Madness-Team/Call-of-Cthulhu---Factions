@@ -2,8 +2,8 @@
 <PawnKindDefs>
 
   <PawnKindDef Name="TownsfolkBase" Abstract="True">
-    <race>Human</race> 
-    <defaultFactionType>Townsfolk</defaultFactionType>
+    <race>Human</race>
+    <defaultFactionType>ROM_Townsfolk</defaultFactionType>
     <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
     <backstoryCategory>Civil</backstoryCategory>
     <chemicalAddictionChance>0.025</chemicalAddictionChance>
@@ -14,7 +14,7 @@
   </PawnKindDef>
 
   <PawnKindDef Name="TownsfolkVillager" ParentName="TownsfolkBase">
-    <defName>TownsfolkVillager</defName>
+    <defName>ROM_TownsfolkVillager</defName>
     <label>villager</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -26,22 +26,22 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_Townsfolk</li>		
+        <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>
       <min>1000</min>
       <max>2000</max>
     </apparelMoney>
 	<apparelRequired>
-		<li>Apparel_CallOfCthulhuBowler</li>
-    </apparelRequired>	
+		<li>ROM_Apparel_CallOfCthulhuBowler</li>
+    </apparelRequired>
     <apparelAllowHeadwearChance>1.0</apparelAllowHeadwearChance>
     <weaponMoney>
       <min>250</min>
       <max>650</max>
     </weaponMoney>
     <weaponTags>
-      <li>CallOfCthulhu_Melee</li>	
+      <li>CallOfCthulhu_Melee</li>
       <li>CallOfCthulhu_CoastalMelee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -77,7 +77,7 @@
   </PawnKindDef>
 
    <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkMayor</defName>
+    <defName>ROM_TownsfolkMayor</defName>
     <label>town mayor</label>
     <factionLeader>true</factionLeader>
     <race>Human</race>
@@ -90,7 +90,7 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_Townsfolk</li>		
+        <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -102,7 +102,7 @@
       <max>650</max>
     </weaponMoney>
     <weaponTags>
-      <li>CallOfCthulhu_Melee</li>	
+      <li>CallOfCthulhu_Melee</li>
       <li>CallOfCthulhu_CoastalMelee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -138,10 +138,10 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TownsfolkVillager">
-    <defName>TownsfolkTrader</defName>
+    <defName>ROM_TownsfolkTrader</defName>
     <label>town trader</label>
-    <trader>true</trader>	
+    <trader>true</trader>
   </PawnKindDef>
 
-  
+
 </PawnKindDefs>

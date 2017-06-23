@@ -10,8 +10,9 @@ namespace CthulhuFactions
     [DefOf]
     public static class CthulhuFactionsDefOf
     {
-        public static PawnGroupKindDef AgencyMERF;
         public static TerrainDef SterileTile;
-        public static ThingDef TemporaryDoorMarker;
+        public static PawnGroupKindDef ROM_AgencyMERF;
+        public static ThingDef ROM_TemporaryRegionBarrier;
+        public static ThingDef ROM_TemporaryDoorMarker;
     }
 }

@@ -57,11 +57,11 @@ namespace CthulhuFactions
             GenSpawn.Spawn(thing, receptionCenter, map, rot);
 
             ///Adjacent lamps
-            IntVec3 loc1 = BaseGenUtility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt] + GenAdj.AdjacentCells[Rot4.West.AsInt];
+            IntVec3 loc1 = Cthulhu.Utility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt] + GenAdj.AdjacentCells[Rot4.West.AsInt];
             Thing thing3 = ThingMaker.MakeThing(lampDef, lampStuffDef);
             GenSpawn.Spawn(thing3, loc1, map);
 
-            IntVec3 loc2 = BaseGenUtility.GetCornerPos(thing.OccupiedRect(), 1) + GenAdj.AdjacentCells[Rot4.East.AsInt] + GenAdj.AdjacentCells[Rot4.East.AsInt];
+            IntVec3 loc2 = Cthulhu.Utility.GetCornerPos(thing.OccupiedRect(), 1) + GenAdj.AdjacentCells[Rot4.East.AsInt] + GenAdj.AdjacentCells[Rot4.East.AsInt];
             Thing thing4 = ThingMaker.MakeThing(lampDef, lampStuffDef);
             GenSpawn.Spawn(thing4, loc2, map);
             
@@ -76,10 +76,10 @@ namespace CthulhuFactions
                     poss.AddRange(rectToEdit.GetEdgeCells(Rot4.South));
                     poss.AddRange(rectToEdit.GetEdgeCells(Rot4.East));
                     poss.AddRange(rectToEdit.GetEdgeCells(Rot4.West));
-                    poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 0));
-                    poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 1));
-                    poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 2));
-                    poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 3));
+                    poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 0));
+                    poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 1));
+                    poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 2));
+                    poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 3));
 
                     foreach (IntVec3 currentPos in poss.InRandomOrder<IntVec3>())
                     {
@@ -101,7 +101,7 @@ namespace CthulhuFactions
             for (int i = 0; i < 1; i++)
             {
                 Thing thing5 = ThingMaker.MakeThing(lampDef, lampStuffDef);
-                IntVec3 loc = BaseGenUtility.GetCornerPos(rp.rect.ContractedBy(1), i);
+                IntVec3 loc = Cthulhu.Utility.GetCornerPos(rp.rect.ContractedBy(1), i);
                 GenSpawn.Spawn(thing5, loc, map);
             }
 
@@ -112,10 +112,10 @@ namespace CthulhuFactions
             resolveParams.rect = rp.rect.ExpandedBy(1);
             resolveParams.faction = rp.faction;
             resolveParams.singlePawnLord = singlePawnLord;
-            resolveParams.pawnGroupKindDef = CthulhuFactionsDefOf.AgencyMERF;
+            resolveParams.pawnGroupKindDef = CthulhuFactionsDefOf.ROM_AgencyMERF;
             float points = 10000;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
-            resolveParams.pawnGroupMakerParams.map = map;
+            resolveParams.pawnGroupMakerParams.tile = map.Tile;
             resolveParams.pawnGroupMakerParams.faction = rp.faction;
             resolveParams.pawnGroupMakerParams.points = points;
 

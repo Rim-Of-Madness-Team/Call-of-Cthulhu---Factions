@@ -10,8 +10,8 @@ namespace CthulhuFactions
     {
         public override void PassingParameters(ResolveParams rp)
         { 
-            string defLogo  = "AgencySymbolFloorPainting";
-            string defTable = "AgencyReceptionistTable";
+            string defLogo  = "ROM_AgencySymbolFloorPainting";
+            string defTable = "ROM_AgencyReceptionistTable";
             string defChair = "DiningChair";
             string defLamp  = "Jecrell_GasLamp";
 
@@ -56,11 +56,11 @@ namespace CthulhuFactions
 
             ///Adjacent lamps
             ThingDef stuffdef = Cthulhu.Utility.IsIndustrialAgeLoaded() ? ThingDefOf.Steel : ThingDefOf.WoodLog;
-            IntVec3 loc1 = BaseGenUtility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt];
+            IntVec3 loc1 = Cthulhu.Utility.GetCornerPos(thing.OccupiedRect(), 0) + GenAdj.AdjacentCells[Rot4.West.AsInt];
             Thing thing3 = ThingMaker.MakeThing(lampDef, lampStuffDef);
             GenSpawn.Spawn(thing3, loc1, map);
             
-            IntVec3 loc2 = BaseGenUtility.GetCornerPos(thing.OccupiedRect(), 1) + GenAdj.AdjacentCells[Rot4.East.AsInt];
+            IntVec3 loc2 = Cthulhu.Utility.GetCornerPos(thing.OccupiedRect(), 1) + GenAdj.AdjacentCells[Rot4.East.AsInt];
             Thing thing4 = ThingMaker.MakeThing(lampDef, lampStuffDef);
             GenSpawn.Spawn(thing4, loc2, map);
 
@@ -81,7 +81,7 @@ namespace CthulhuFactions
             for (int i = 0; i < 4; i++)
             {
                 Thing thing5 = ThingMaker.MakeThing(lampDef, lampStuffDef);
-                IntVec3 loc = BaseGenUtility.GetCornerPos(rp.rect.ContractedBy(1), i);
+                IntVec3 loc = Cthulhu.Utility.GetCornerPos(rp.rect.ContractedBy(1), i);
                 GenSpawn.Spawn(thing5, loc, map);
             }
 
@@ -95,7 +95,7 @@ namespace CthulhuFactions
             resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.FactionBase;
             float points = 500;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
-            resolveParams.pawnGroupMakerParams.map = map;
+            resolveParams.pawnGroupMakerParams.tile = map.Tile;
             resolveParams.pawnGroupMakerParams.faction = rp.faction;
             resolveParams.pawnGroupMakerParams.points = points;
 

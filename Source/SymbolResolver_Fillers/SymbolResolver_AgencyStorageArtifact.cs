@@ -18,7 +18,7 @@ namespace CthulhuFactions
             ResolveParams rp1 = rp;
             rp1.rect = rp.rect.ContractedBy(2);
             IntVec3 doorLoc = CthulhuFactions.Utility.CellRectBottomMiddle(rp1.rect);
-            rp1.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+            rp1.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
             BaseGen.symbolStack.Push("thing", rp1);
 
             SpawnRandomArtifact(rp);

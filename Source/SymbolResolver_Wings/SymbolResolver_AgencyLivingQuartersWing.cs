@@ -34,7 +34,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParamsDoor = rp;
                 resolveParamsDoor.rect = CellRect.SingleCell(doorLoc);
-                resolveParamsDoor.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+                resolveParamsDoor.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
                 BaseGen.symbolStack.Push("thing", resolveParamsDoor);
 
             }

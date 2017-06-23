@@ -4,7 +4,7 @@
 
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_CallOfCthulhuShirtTie</defName>
+		<defName>ROM_Apparel_CallOfCthulhuShirtTie</defName>
 		<description>During the 20th century, this piece of apparal became highly fashionable for conducting business.
 		</description>
 		<label>shirt and tie</label>
@@ -23,7 +23,7 @@
 		</thingCategories>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
 			<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
 			<Insulation_Cold>-4</Insulation_Cold>
@@ -31,6 +31,8 @@
 		<equippedStatOffsets>
 			<SocialImpact>0.15</SocialImpact>
 		</equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -41,18 +43,17 @@
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<commonality>0.1</commonality>
 			<tags>
-				<li>CallOfCthulhu_JuniorDetective</li>	  
+				<li>CallOfCthulhu_JuniorDetective</li>
 				<li>CallOfCthulhu_Detective</li>
 			</tags>
 		</apparel>
-		<colorGenerator Class="ColorGenerator_StandardApparel" />		
-	</ThingDef>	
-	
+		<colorGenerator Class="ColorGenerator_StandardApparel" />
+	</ThingDef>
+
 
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_CallOfCthulhuTopHat</defName>
+    <defName>ROM_Apparel_CallOfCthulhuTopHat</defName>
     <label>top hat</label>
     <description>Dapper 18th century headwear.</description>
     <graphicData>
@@ -66,7 +67,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.022</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
@@ -75,6 +76,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
+
+		<generateCommonality>0.11</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -83,7 +86,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.11</commonality>
       <tags>
 		<li>CallOfCthulhu_Townsfolk</li>
       </tags>
@@ -94,9 +96,9 @@
 
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-	
+
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_CallOfCthulhuNewsboyCap</defName>
+    <defName>ROM_Apparel_CallOfCthulhuNewsboyCap</defName>
     <label>newsboy cap</label>
     <description>Front-facing flat cap that was commonly used by newspaper delivery boys during the industrial age.</description>
     <graphicData>
@@ -110,7 +112,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>4000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.019</ArmorRating_Sharp>
       <Insulation_Heat>4</Insulation_Heat>
@@ -119,6 +121,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
+
+		<generateCommonality>0.111</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -127,7 +131,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.111</commonality>
       <tags>
 		<li>CallOfCthulhu_Thug</li>
       </tags>
@@ -138,12 +141,12 @@
 
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-	
-	
+
+
 
 
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_CallOfCthulhuFedora</defName>
+    <defName>ROM_Apparel_CallOfCthulhuFedora</defName>
     <label>fedora</label>
     <description>Stylish early 20th century headwear.</description>
     <graphicData>
@@ -157,7 +160,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
@@ -165,6 +168,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -173,7 +178,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
 		<li>CallOfCthulhu_JuniorDetective</li>
 		<li>CallOfCthulhu_Detective</li>
@@ -185,10 +189,10 @@
 
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-	
+
 
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_CallOfCthulhuBowler</defName>
+    <defName>ROM_Apparel_CallOfCthulhuBowler</defName>
     <label>bowler hat</label>
     <description>Stylish early 20th century headwear.</description>
     <graphicData>
@@ -202,7 +206,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.04</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.04</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
@@ -210,6 +214,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -218,7 +224,6 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
         <li>CallOfCthulhu_Townsfolk</li>
       </tags>
@@ -230,19 +235,19 @@
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-				 		
+
 			</recipeUsers>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-		</recipeMaker>	
+		</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-  
-  
+
+
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_CallOfCthulhutrench_coat</defName>
+		<defName>ROM_Apparel_CallOfCthulhutrench_coat</defName>
 		<description>Preferred apparel of detectives everywhere.
 		</description>
-		<label>trench coat</label>		
+		<label>trench coat</label>
 		<graphicData>
 			<texPath>Apparel/Display/CallOfCthulhu_TrenchCoat</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -258,16 +263,18 @@
 		<statBases>
 			<MaxHitPoints>160</MaxHitPoints>
 			<WorkToMake>22000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
 			<ArmorRating_Blunt>0.08</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<Insulation_Cold>-20</Insulation_Cold>
 			<Insulation_Heat>-2</Insulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.15</SocialImpact>		
+			<SocialImpact>0.15</SocialImpact>
 			<ResearchSpeed>0.05</ResearchSpeed>
 		</equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -278,27 +285,26 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
-			<commonality>0.1</commonality>
 			<tags>
 				<li>CallOfCthulhu_JuniorDetective</li>
 				<li>CallOfCthulhu_Detective</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>CallOfCthulhu_Detective</li>			
+				<li>CallOfCthulhu_Detective</li>
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
-				 		
+
 			</recipeUsers>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
-	
 
-  
-  
+
+
+
 </ThingDefs>

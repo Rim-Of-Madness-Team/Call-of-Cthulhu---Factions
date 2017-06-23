@@ -2,7 +2,7 @@
 <PawnKindDefs>
 
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkDoctor</defName>
+    <defName>ROM_TownsfolkDoctor</defName>
     <label>doctor</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -17,7 +17,7 @@
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_CallOfCthulhuBowler</li>
+		<li>ROM_Apparel_CallOfCthulhuBowler</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>
@@ -29,7 +29,7 @@
       <max>650</max>
     </weaponMoney>
     <weaponTags>
-      <li>CallOfCthulhu_Melee</li>	
+      <li>CallOfCthulhu_Melee</li>
       <li>CallOfCthulhu_CoastalMelee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -65,7 +65,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkNurse</defName>
+    <defName>ROM_TownsfolkNurse</defName>
     <label>nurse</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -77,11 +77,11 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_TownsfolkNurse</li>		
+        <li>CallOfCthulhu_TownsfolkNurse</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_WW1NurseUniform</li>
-		<li>Apparel_NurseCap</li>		
+		<li>ROM_Apparel_WW1NurseUniform</li>
+		<li>ROM_Apparel_NurseCap</li>
     </apparelRequired>
     <apparelMoney>
       <min>400</min>
@@ -121,7 +121,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkTeacher</defName>
+    <defName>ROM_TownsfolkTeacher</defName>
     <label>villager</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -136,7 +136,7 @@
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_CallOfCthulhuBowler</li>
+		<li>ROM_Apparel_CallOfCthulhuBowler</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>

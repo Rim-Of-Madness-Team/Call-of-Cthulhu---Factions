@@ -53,7 +53,7 @@ namespace CthulhuFactions
                                 if (t is MinifiedThing) t = (t as MinifiedThing).InnerThing;
                                 if (loadedCults)
                                 {
-                                    if (t.def.defName.Contains("Cult")) return true; //covers most things
+                                    if (t.def.defName.Contains("ROM_Cult")) return true; //covers most things
                                             if (t.def.defName.EqualsIgnoreCase("ForbiddenKnowledgeCenter")) return true; //specifically called because Jecrell's name consistency is awful ^^
                                             if (t.def.defName.Contains("Dagon")) return true;
                                     if (t.def.defName.Contains("Nyarlathotep")) return true;
@@ -83,7 +83,7 @@ namespace CthulhuFactions
                                                 parentPawn.gender.GetPossessive(),
                                                 parentPawn.LabelShort,
                                                 thing2.def.label
-                                            }), LetterType.BadUrgent);
+                                            }), LetterDefOf.BadUrgent);
                                         //Messages.Message("Agency discovered: " + thing2.def.label, MessageSound.Negative);
                                     }
                                 }

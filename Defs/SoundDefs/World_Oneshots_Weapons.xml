@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><DefPackage-SoundDef>
 
   <SoundDef>
-    <defName>ShotRevolver</defName>   
+    <defName>ROM_ShotRevolver</defName>   
     <context>MapOnly</context>
     <eventNames />  
     <maxSimultaneous>1</maxSimultaneous>  
@@ -23,7 +23,7 @@
 
   
   <SoundDef>
-    <defName>ShotHarpoon</defName>   
+    <defName>ROM_ShotHarpoon</defName>   
     <context>MapOnly</context>
     <eventNames />  
     <maxSimultaneous>1</maxSimultaneous>  
@@ -44,7 +44,7 @@
   </SoundDef>  
   
   <SoundDef>
-    <defName>ShotFlare</defName>   
+    <defName>ROM_ShotFlare</defName>   
     <context>MapOnly</context>
     <eventNames />  
     <maxSimultaneous>1</maxSimultaneous>  
@@ -67,7 +67,7 @@
   
   
   <SoundDef>
-    <defName>InteractRevolver</defName>   
+    <defName>ROM_InteractRevolver</defName>   
     <context>MapOnly</context>
     <eventNames />  
     <maxSimultaneous>1</maxSimultaneous>  

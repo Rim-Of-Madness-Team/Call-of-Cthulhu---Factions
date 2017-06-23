@@ -2,7 +2,7 @@
 <DefPackage-TraderKindDef>
 
   <TraderKindDef>
-    <defName>Caravan_CFV_CombatSupplier</defName>
+    <defName>ROM_Caravan_CFV_CombatSupplier</defName>
     <label>weapons dealer</label>
     <stockGenerators>
       <li Class="StockGenerator_SingleDef">
@@ -13,42 +13,42 @@
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Gun_Harpoon</thingDef>
+        <thingDef>ROM_Gun_Harpoon</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Gun_Flaregun</thingDef>
+        <thingDef>ROM_Gun_Flaregun</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>Gun_Harpoon</thingDef>
+        <thingDef>ROM_Gun_Harpoon</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MeleeWeapon_CallOfCthulhu_Pitchfork</thingDef>
+        <thingDef>ROM_Pitchfork</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MeleeWeapon_CallOfCthulhu_PoleHook</thingDef>
+        <thingDef>ROM_PoleHook</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MeleeWeapon_CallOfCthulhu_BrandingIron</thingDef>
+        <thingDef>ROM_BrandingIron</thingDef>
         <countRange>
           <min>2</min>
           <max>5</max>
@@ -102,9 +102,9 @@
     </stockGenerators>
   </TraderKindDef>
 
-  
+
   <TraderKindDef>
-    <defName>Caravan_CFV_Smuggler</defName>
+    <defName>ROM_Caravan_CFV_Smuggler</defName>
     <label>smuggler</label>
     <stockGenerators>
       <li Class="StockGenerator_SingleDef">

@@ -33,7 +33,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParamsDoor = rp;
                 resolveParamsDoor.rect = CellRect.SingleCell(doorLoc);
-                resolveParamsDoor.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+                resolveParamsDoor.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
                 BaseGen.symbolStack.Push("thing", resolveParamsDoor);
             }
 
@@ -60,7 +60,7 @@ namespace CthulhuFactions
             resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.FactionBase;
             float points = 500;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
-            resolveParams.pawnGroupMakerParams.map = map;
+            resolveParams.pawnGroupMakerParams.tile = map.Tile;
             resolveParams.pawnGroupMakerParams.faction = rp.faction;
             resolveParams.pawnGroupMakerParams.points = points;
 

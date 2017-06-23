@@ -41,7 +41,7 @@ namespace CthulhuFactions
 
         static SymbolResolver_FactionBase_Agency()
         {
-            addMapResolver(new ResolverStruct((ResolveParams rp) => rp.faction.def.defName == "TheAgency", "agencyFactionBase", SymbolAddMode.Everything, 100f));
+            AddMapResolver(new ResolverStruct(rp => rp.faction.def.defName == "ROM_TheAgency", "agencyFactionBase", 1.0f));
         }
 
         public override void Resolve(ResolveParams rp)

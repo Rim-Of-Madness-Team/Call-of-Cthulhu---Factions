@@ -40,7 +40,7 @@ namespace CthulhuFactions
                     bool flag = false;
                     foreach (IntVec3 current2 in GenAdj.CellsOccupiedBy(current, rot, thingDef.Size))
                     {
-                        if (BaseGenUtility.AnyDoorAdjacentTo(current2, map))
+                        if (BaseGenUtility.AnyDoorCardinalAdjacentTo(current2, map))
                         {
                             flag = true;
                             break;
@@ -72,10 +72,10 @@ namespace CthulhuFactions
                                     possibleCells.AddRange(thingRect.GetEdgeCells(Rot4.South));
                                     possibleCells.AddRange(thingRect.GetEdgeCells(Rot4.East));
                                     possibleCells.AddRange(thingRect.GetEdgeCells(Rot4.West));
-                                    possibleCells.Remove(BaseGenUtility.GetCornerPos(thingRect, 0));
-                                    possibleCells.Remove(BaseGenUtility.GetCornerPos(thingRect, 1));
-                                    possibleCells.Remove(BaseGenUtility.GetCornerPos(thingRect, 2));
-                                    possibleCells.Remove(BaseGenUtility.GetCornerPos(thingRect, 3));
+                                    possibleCells.Remove(Cthulhu.Utility.GetCornerPos(thingRect, 0));
+                                    possibleCells.Remove(Cthulhu.Utility.GetCornerPos(thingRect, 1));
+                                    possibleCells.Remove(Cthulhu.Utility.GetCornerPos(thingRect, 2));
+                                    possibleCells.Remove(Cthulhu.Utility.GetCornerPos(thingRect, 3));
 
                                     IntVec3 spawnPos = IntVec3.Invalid;
                                     spawnPos = possibleCells.InRandomOrder<IntVec3>().FirstOrDefault((IntVec3 x) => x.InBounds(map) && x.Walkable(map));
@@ -117,10 +117,9 @@ namespace CthulhuFactions
                                && IsCosmicHorrorFaction(x) == false
                                && (x.def.pawnGroupMakers.FirstOrDefault((PawnGroupMaker y) => y.kindDef == PawnGroupKindDefOf.Normal) != null)
                                select x).RandomElement<Faction>(),
-                    map = map,
+                    tile = map.Tile,
                     points = 5000,
                     generateFightersOnly = false,
-                    generateMeleeOnly = false
                 };
                 int num = 0;
                 foreach (Pawn current in PawnGroupMakerUtility.GeneratePawns(groupKind, pawnGroupMakerParms, true))
@@ -159,7 +158,7 @@ namespace CthulhuFactions
             //List<int> corners = new List<int>() { 0, 1, 2, 3 };
             //foreach (int corner in corners.InRandomOrder<int>())
             //{
-            //    IntVec3 loc = BaseGenUtility.GetCornerPos(rp.rect.ContractedBy(1), corner);
+            //    IntVec3 loc = Cthulhu.Utility.GetCornerPos(rp.rect.ContractedBy(1), corner);
             //    if (!GenSpawn.WouldWipeAnythingWith(loc, Rot4.South, lampDef, map, (Thing x) => x.def.category == ThingCategory.Building))
             //    {
             //        ThingDef singleThingDef3 = (Cthulhu.Utility.IsIndustrialAgeLoaded()) ? lampDef : ThingDefOf.TorchLamp;

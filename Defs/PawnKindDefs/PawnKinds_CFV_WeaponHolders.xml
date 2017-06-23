@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <PawnKindDefs>
-  
+
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkThug</defName>
+    <defName>ROM_TownsfolkThug</defName>
     <label>thug</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -14,7 +14,7 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_Thug</li>		
+        <li>CallOfCthulhu_Thug</li>
 	</apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -22,14 +22,14 @@
     </apparelMoney>
     <apparelAllowHeadwearChance>1.0</apparelAllowHeadwearChance>
 	<apparelRequired>
-		<li>Apparel_CallOfCthulhuNewsboyCap</li>
+		<li>ROM_Apparel_CallOfCthulhuNewsboyCap</li>
     </apparelRequired>
     <weaponMoney>
       <min>250</min>
       <max>650</max>
     </weaponMoney>
     <weaponTags>
-      <li>CallOfCthulhu_Melee</li>	
+      <li>CallOfCthulhu_Melee</li>
       <li>CallOfCthulhu_CoastalMelee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -63,9 +63,9 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkFarmer</defName>
+    <defName>ROM_TownsfolkFarmer</defName>
     <label>farmer</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -76,10 +76,10 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelRequired>
-		<li>Apparel_NF_FSOveralls</li>
+		<li>ROM_Apparel_NF_FSOveralls</li>
 		<li>Apparel_Pants</li>
 		<li>Apparel_BasicShirt</li>
-		<li>Apparel_ROM_StrawHat</li>
+		<li>ROM_Apparel_ROM_StrawHat</li>
     </apparelRequired>
     <apparelMoney>
       <min>500</min>
@@ -124,9 +124,9 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkRancher</defName>
+    <defName>ROM_TownsfolkRancher</defName>
     <label>rancher</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -137,7 +137,7 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelRequired>
-		<li>Apparel_NF_FSOveralls</li>
+		<li>ROM_Apparel_NF_FSOveralls</li>
 		<li>Apparel_Pants</li>
 		<li>Apparel_BasicShirt</li>
 		<li>Apparel_CowboyHat</li>
@@ -183,10 +183,10 @@
         </li>
       </subOptionsChooseOne>
     </inventoryOptions>
-  </PawnKindDef> 
-  
+  </PawnKindDef>
+
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkLumberjack</defName>
+    <defName>ROM_TownsfolkLumberjack</defName>
     <label>lumberjack</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -198,7 +198,7 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_Townsfolk</li>		
+        <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>
       <min>1000</min>
@@ -245,7 +245,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkButcher</defName>
+    <defName>ROM_TownsfolkButcher</defName>
     <label>butcher</label>
     <race>Human</race>
     <combatPower>48</combatPower>
@@ -258,7 +258,7 @@
 	<!-- TO DO -->
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_Townsfolk</li>		
+        <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
 	<apparelRequired>
     </apparelRequired>
@@ -272,7 +272,7 @@
       <max>650</max>
     </weaponMoney>
     <weaponTags>
-      <li>CallOfCthulhu_Melee</li>	
+      <li>CallOfCthulhu_Melee</li>
       <li>CallOfCthulhu_CoastalMelee</li>
     </weaponTags>
     <techHediffsMoney>
@@ -308,7 +308,7 @@
   </PawnKindDef>
 
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkPolice</defName>
+    <defName>ROM_TownsfolkPolice</defName>
     <label>patrol officer</label>
     <race>Human</race>
     <combatPower>70</combatPower>
@@ -319,12 +319,12 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>Outlander</li>
-        <li>CallOfCthulhu_TownsfolkPolice</li>		
+        <li>CallOfCthulhu_TownsfolkPolice</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_NewCallOfCthulhu_1920sPoliceOutfit</li>	
-		<li>Apparel_NewCallOfCthulhu_1920sPoliceHat</li>
-    </apparelRequired>	
+		<li>ROM_Apparel1920sPoliceOutfit</li>
+		<li>ROM_Apparel1920sPoliceHat</li>
+    </apparelRequired>
     <apparelMoney>
       <min>1000</min>
       <max>2000</max>
@@ -353,11 +353,11 @@
         <min>30</min>
         <max>100</max>
       </countRange>
-    </inventoryOptions>	
+    </inventoryOptions>
   </PawnKindDef>
-  
+
   <PawnKindDef ParentName="TownsfolkBase">
-    <defName>TownsfolkAngler</defName>
+    <defName>ROM_TownsfolkAngler</defName>
     <label>angler</label>
     <race>Human</race>
     <combatPower>35</combatPower>
@@ -368,12 +368,12 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>		
+		<li>Outlander</li>
 	</apparelTags>
 	<apparelRequired>
-		<li>Apparel_ROM_Raincoat</li>
-		<li>Apparel_ROM_SlickerHat</li>
-    </apparelRequired>	
+		<li>ROM_ApparelRaincoat</li>
+		<li>ROM_Apparel_ROM_SlickerHat</li>
+    </apparelRequired>
     <apparelMoney>
       <min>1000</min>
       <max>2000</max>
@@ -383,8 +383,8 @@
       <min>250</min>
       <max>650</max>
     </weaponMoney>
-    <weaponTags>	
-      <li>CallOfCthulhu_Angler</li>				  
+    <weaponTags>
+      <li>CallOfCthulhu_Angler</li>
     </weaponTags>
     <techHediffsMoney>
       <min>200</min>
@@ -417,5 +417,5 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-  
+
 </PawnKindDefs>

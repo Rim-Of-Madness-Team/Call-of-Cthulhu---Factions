@@ -4,7 +4,7 @@
 <!-- Angler -->
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_ROM_Raincoat</defName>
+		<defName>ROM_ApparelRaincoat</defName>
 		<description>Water resistant coat often used by fishermen.
 		</description>
 		<label>rain coat</label>
@@ -33,6 +33,8 @@
 			<MoveSpeed>0.005</MoveSpeed>
 			<WorkSpeedGlobal>0.005</WorkSpeedGlobal>
 		</equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -44,26 +46,25 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
-			<commonality>0.1</commonality>
 			<tags>
 				<li>ROM_RainCoat</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>ROM_RainCoat</li>
 			</defaultOutfitTags>
-		</apparel>	
+		</apparel>
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>OccupationClothing</researchPrerequisite>
+			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-	
-	
+
+
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_ROM_SlickerHat</defName>
+    <defName>ROM_Apparel_ROM_SlickerHat</defName>
     <label>slicker hat</label>
     <description>A yellow hat designed to repel water, a favorite of anglers and retired accountants who enjoy fishing.</description>
     <graphicData>
@@ -78,12 +79,14 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
       <Insulation_Cold>8</Insulation_Cold>
     </statBases>
+
+		<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -92,9 +95,8 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
-		<li>CallOfCthulhu_TownsfolkAngler</li>	
+		<li>CallOfCthulhu_TownsfolkAngler</li>
       </tags>
       <defaultOutfitTags>
 		<li>CallOfCthulhu_TownsfolkAngler</li>
@@ -105,20 +107,20 @@
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>OccupationClothing</researchPrerequisite>
-	</recipeMaker>	
-  </ThingDef>  
-  
+		<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+	</recipeMaker>
+  </ThingDef>
+
 <!-- Farmer -->
-	
+
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_ROM_StrawHat</defName>
+    <defName>ROM_Apparel_ROM_StrawHat</defName>
     <label>straw hat</label>
     <description>A hat fashioned from straw to shield the user from the sun.</description>
     <graphicData>
       <texPath>Apparel/Display/ROMStrawHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
@@ -127,14 +129,16 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
     </statBases>
 	<equippedStatOffsets>
 		<MoveSpeed>0.005</MoveSpeed>
-	</equippedStatOffsets>	
+	</equippedStatOffsets>
+
+	<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -143,12 +147,11 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
-		<li>CallOfCthulhu_Farmer</li>	
+		<li>CallOfCthulhu_Farmer</li>
       </tags>
       <defaultOutfitTags>
-		<li>CallOfCthulhu_Farmer</li>		
+		<li>CallOfCthulhu_Farmer</li>
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
@@ -156,21 +159,21 @@
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>OccupationClothing</researchPrerequisite>
-	</recipeMaker>	
-  </ThingDef>  
-	
+		<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+	</recipeMaker>
+  </ThingDef>
+
 <!-- Police -->
-	
+
 
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_NewCallOfCthulhu_1920sPoliceHat</defName>
+    <defName>ROM_Apparel1920sPoliceHat</defName>
     <label>police hat</label>
     <description>Designates someone as an authority figure. The accuracy of this designation is left to the eye of the beholder.</description>
     <graphicData>
       <texPath>Apparel/Display/CallOfCthulhu_1920sPoliceHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
@@ -179,7 +182,7 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
@@ -187,6 +190,8 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -195,12 +200,11 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
-		<li>CallOfCthulhu_TownsfolkPolice</li>	
+		<li>CallOfCthulhu_TownsfolkPolice</li>
       </tags>
       <defaultOutfitTags>
-		<li>CallOfCthulhu_TownsfolkPolice</li>		
+		<li>CallOfCthulhu_TownsfolkPolice</li>
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
@@ -208,20 +212,20 @@
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>OccupationClothing</researchPrerequisite>
-	</recipeMaker>	
+		<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+	</recipeMaker>
   </ThingDef>
-	  
-	  
+
+
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_NewCallOfCthulhu_1920sPoliceOutfit</defName>
+		<defName>ROM_Apparel1920sPoliceOutfit</defName>
 		<description>Early 20th century attire suited for local enforcers to use when keeping the peace.
 		</description>
 		<label>police uniform</label>
 		<graphicData>
 			<texPath>Apparel/Display/CallOfCthulhu_1920sPoliceOutfit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>150</costStuffCount>
     <stuffCategories>
@@ -234,7 +238,7 @@
 		<statBases>
 			<MaxHitPoints>160</MaxHitPoints>
 			<WorkToMake>22000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
 			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
 			<Insulation_Cold>-47</Insulation_Cold>
@@ -242,8 +246,10 @@
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>		
+			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -255,12 +261,11 @@
 			<layers>
 				<li>Shell</li>
 			</layers>
-			<commonality>0.1</commonality>
 			<tags>
 				<li>CallOfCthulhu_TownsfolkPolice</li>
 			</tags>
 			<defaultOutfitTags>
-				<li>CallOfCthulhu_TownsfolkPolice</li>				
+				<li>CallOfCthulhu_TownsfolkPolice</li>
 			</defaultOutfitTags>
 		</apparel>
 		<recipeMaker>
@@ -268,23 +273,23 @@
 				<li>ElectricTailoringBench</li>
 				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>OccupationClothing</researchPrerequisite>
+			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
 		</recipeMaker>
 	</ThingDef>
-	
 
 
-  
+
+
   <!-- Nurse -->
 
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
-    <defName>Apparel_NurseCap</defName>
+    <defName>ROM_Apparel_NurseCap</defName>
     <label>nurse cap</label>
     <description>An ancient nurse cap from the first Great War. While typically worn by female nurses historically, residents of the rim both male and female have found it most fashionable.</description>
     <graphicData>
       <texPath>Apparel/Display/NurseCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
@@ -293,17 +298,19 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
       <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
       <Insulation_Heat>8</Insulation_Heat>
     </statBases>
 	<equippedStatOffsets>
-		<SurgerySuccessChance>0.05</SurgerySuccessChance>
-		<HealingQuality>0.05</HealingQuality>
-		<HealingSpeed>0.05</HealingSpeed>
+		<MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
+		<MedicalTendQuality>0.05</MedicalTendQuality>
+		<MedicalTendSpeed>0.05</MedicalTendSpeed>
 		<MedicalOperationSpeed>0.05</MedicalOperationSpeed>
-	</equippedStatOffsets>	
+	</equippedStatOffsets>
+
+	<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -312,12 +319,11 @@
       <layers>
         <li>Overhead</li>
       </layers>
-      <commonality>0.1</commonality>
       <tags>
-		<li>CallOfCthulhu_TownsfolkNurse</li>	
+		<li>CallOfCthulhu_TownsfolkNurse</li>
       </tags>
       <defaultOutfitTags>
-		<li>CallOfCthulhu_TownsfolkNurse</li>		
+		<li>CallOfCthulhu_TownsfolkNurse</li>
       </defaultOutfitTags>
     </apparel>
 	<recipeMaker>
@@ -325,21 +331,21 @@
 			<li>ElectricTailoringBench</li>
 			<li>HandTailoringBench</li>
 		</recipeUsers>
-		<researchPrerequisite>OccupationClothing</researchPrerequisite>
-	</recipeMaker>	
+		<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+	</recipeMaker>
   </ThingDef>
-  
-  
+
+
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_WW1NurseUniform</defName>
+		<defName>ROM_Apparel_WW1NurseUniform</defName>
 		<description>An ancient nurse cap from the first Great War. While typically worn by female nurses historically, residents of the rim both male and female have found it most fashionable.
 		</description>
 		<label>nurse uniform</label>
 		<graphicData>
 			<texPath>Apparel/Display/WW1Nurse</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>	  
+      <shaderType>CutoutComplex</shaderType>
     </graphicData>
     <costStuffCount>150</costStuffCount>
     <stuffCategories>
@@ -354,17 +360,19 @@
 		</thingCategories>
 		<statBases>
 			<WorkToMake>15000</WorkToMake>
-      <Mass>0.25</Mass>	  
+      <Mass>0.25</Mass>
 			<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
 			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
 			<Insulation_Cold>-4</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
-			<SurgerySuccessChance>0.10</SurgerySuccessChance>
-			<HealingQuality>0.10</HealingQuality>
-			<HealingSpeed>0.1</HealingSpeed>
+			<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>
+			<MedicalTendQuality>0.10</MedicalTendQuality>
+			<MedicalTendSpeed>0.1</MedicalTendSpeed>
 			<MedicalOperationSpeed>0.1</MedicalOperationSpeed>
 		</equippedStatOffsets>
+
+		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -374,7 +382,6 @@
 			<layers>
 				<li>OnSkin</li>
 			</layers>
-			<commonality>0.1</commonality>
 			<tags>
 				<li>CallOfCthulhu_TownsfolkNurse</li>
 			</tags>
@@ -385,11 +392,11 @@
 		<recipeMaker>
 			<recipeUsers>
 				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>	
+				<li>HandTailoringBench</li>
 			</recipeUsers>
-			<researchPrerequisite>OccupationClothing</researchPrerequisite>
-		</recipeMaker>			
+			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+		</recipeMaker>
 	</ThingDef>
-	
-	
+
+
 </ThingDefs>

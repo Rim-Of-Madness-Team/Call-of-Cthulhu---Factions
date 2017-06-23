@@ -44,7 +44,7 @@ namespace CthulhuFactions
                     bool flag = false;
                     foreach (IntVec3 current2 in GenAdj.CellsOccupiedBy(current, rot, thingDef.Size))
                     {
-                        if (BaseGenUtility.AnyDoorAdjacentTo(current2, map))
+                        if (BaseGenUtility.AnyDoorCardinalAdjacentTo(current2, map))
                         {
                             flag = true;
                             break;
@@ -73,10 +73,10 @@ namespace CthulhuFactions
                                 poss.AddRange(rectToEdit.GetEdgeCells(Rot4.South));
                                 poss.AddRange(rectToEdit.GetEdgeCells(Rot4.East));
                                 poss.AddRange(rectToEdit.GetEdgeCells(Rot4.West));
-                                poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 0));
-                                poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 1));
-                                poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 2));
-                                poss.Remove(BaseGenUtility.GetCornerPos(rectToEdit, 3));
+                                poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 0));
+                                poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 1));
+                                poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 2));
+                                poss.Remove(Cthulhu.Utility.GetCornerPos(rectToEdit, 3));
 
                                 for (int i = 0; i < 4; i++)
                                 {
@@ -105,7 +105,7 @@ namespace CthulhuFactions
             foreach (int corner in corners.InRandomOrder<int>())
             {
                 if (count == 1) break;
-                IntVec3 loc = BaseGenUtility.GetCornerPos(paramsIn.rect.ContractedBy(1), corner);
+                IntVec3 loc = Cthulhu.Utility.GetCornerPos(paramsIn.rect.ContractedBy(1), corner);
                 if (!GenSpawn.WouldWipeAnythingWith(loc, Rot4.South, lampDef, map, (Thing x) => x.def.category == ThingCategory.Building))
                 {
                     ThingDef singleThingDef3 = (Cthulhu.Utility.IsIndustrialAgeLoaded()) ? lampDef : ThingDefOf.TorchLamp;

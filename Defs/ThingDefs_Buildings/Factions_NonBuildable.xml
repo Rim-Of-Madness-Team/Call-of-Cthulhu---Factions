@@ -3,14 +3,25 @@
 
 <!-- =========== BASE GENERATION ========= -->
 
+
   <ThingDef>
-    <defName>TemporaryDoorMarker</defName>
+    <defName>ROM_TemporaryRegionBarrier</defName>
     <category>Ethereal</category>
     <thingClass>Thing</thingClass>
     <label>temporary region barrier</label>
     <holdsRoof>true</holdsRoof>
     <passability>Impassable</passability>
-    <temporaryRegionBarrier>true</temporaryRegionBarrier>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>Never</tradeability>
+  </ThingDef>
+
+  <ThingDef>
+    <defName>ROM_TemporaryDoorMarker</defName>
+    <category>Ethereal</category>
+    <thingClass>Thing</thingClass>
+    <label>temporary region barrier</label>
+    <holdsRoof>true</holdsRoof>
+    <passability>Impassable</passability>
     <useHitPoints>false</useHitPoints>
     <tradeability>Never</tradeability>
   </ThingDef>
@@ -18,7 +29,7 @@
   <!-- ============ BASE OBJECTS ========== -->
 
   <ThingDef ParentName="FactionBuildingBase">
-    <defName>AgencySymbolFloorPainting</defName>
+    <defName>ROM_AgencySymbolFloorPainting</defName>
     <label>agency emblem floor painting</label>
     <Description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</Description>
     <graphicData>
@@ -26,7 +37,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,4)</drawSize>
     </graphicData>
-    <selectable>false</selectable>	
+    <selectable>false</selectable>
     <AltitudeLayer>FloorEmplacement</AltitudeLayer>
     <statBases>
       <WorkToBuild>0</WorkToBuild>
@@ -41,9 +52,9 @@
     </building>
     <designationHotkey>Misc10</designationHotkey>
   </ThingDef>
-  
+
     <ThingDef ParentName="FactionTableBase">
-    <defName>AgencyReceptionistTable</defName>
+    <defName>ROM_AgencyReceptionistTable</defName>
     <label>table (reception)</label>
     <graphicData>
       <texPath>BaseObjects/TheAgency/AgencyReceptionDesk</texPath>
@@ -73,10 +84,10 @@
   </ThingDef>
 
 <!-- ====================== BASES ==================== -->
-  
-  
-  
-  
+
+
+
+
   <!-- Table base -->
   <ThingDef Abstract="True" ParentName="FactionFurnitureBase" Name="FactionTableBase">
     <thingClass>Building</thingClass>
@@ -117,8 +128,8 @@
       <li>Furniture</li>
     </tradeTags>
   </ThingDef>
-  
-  
+
+
   <!-- Faction Building Base -->
   <ThingDef Name="FactionBuildingBase" Abstract="True">
     <category>Building</category>
@@ -131,6 +142,6 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>BuildingRubble</filthLeaving>
   </ThingDef>
-  
-  
+
+
 </ThingDefs>

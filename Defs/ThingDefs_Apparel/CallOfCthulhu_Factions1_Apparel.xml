@@ -47,7 +47,7 @@
     </recipeMaker>
   </ThingDef>
 
- 
+
 
 	<ThingDef Name="CallOfCthulhuArmorMakeableBase" ParentName="CallOfCthulhuApparelBase" Abstract="True">
 		<recipeMaker>
@@ -62,7 +62,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-	
+
 	<ThingDef Name="CallOfCthulhuHatBase" ParentName="CallOfCthulhuApparelBase" Abstract="True">
 		<thingCategories>
 			<li>Headgear</li>
@@ -94,7 +94,7 @@
 
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
-		<defName>Apparel_NF_FSOveralls</defName>
+		<defName>ROM_Apparel_NF_FSOveralls</defName>
 		<label>overalls</label>
 		<description>
 		</description>
@@ -121,6 +121,7 @@
 			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
 			<MoveSpeed>0.25</MoveSpeed>
 		</equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Legs</li>
@@ -130,10 +131,9 @@
 			<layers>
 				<li>Middle</li>
 			</layers>
-			<commonality>0.1</commonality>
 		</apparel>
 		<recipeMaker>
-			<researchPrerequisite>OccupationClothing</researchPrerequisite>
+			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
 		</recipeMaker>
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>

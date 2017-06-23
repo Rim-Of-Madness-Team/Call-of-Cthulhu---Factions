@@ -2,7 +2,7 @@
 <NameMakerDefs>
 
   <RulePackDef>
-    <defName>NamerFactionCFV</defName>
+    <defName>ROM_NamerFactionCFV</defName>
     <rulePack>
       <rulesStrings>
         <li>name->Coastal Townsfolk of [badasscolor] [geography]</li>
@@ -30,7 +30,7 @@
   
 
   <RulePackDef>
-    <defName>NamerFactionBaseCFV</defName>
+    <defName>ROM_NamerFactionBaseCFV</defName>
     <rulePack>
       <rulesStrings>
         <li>name->[town]</li>
@@ -46,7 +46,7 @@
     
   
   <RulePackDef>
-    <defName>NamerFactionTheAgency</defName>
+    <defName>ROM_NamerFactionTheAgency</defName>
     <rulePack>
       <rulesStrings>
         <li>name->The Agency</li>
@@ -62,7 +62,7 @@
 
 
   <RulePackDef>
-    <defName>NamerFactionBaseTheAgency</defName>
+    <defName>ROM_NamerFactionBaseTheAgency</defName>
     <rulePack>
       <rulesStrings>
         <li>name->[town] Base of Operations</li>

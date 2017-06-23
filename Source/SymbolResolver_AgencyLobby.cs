@@ -40,7 +40,7 @@ namespace CthulhuFactions
             eastParams.rect = CthulhuFactions.Utility.AdjacentRectMaker(rp.rect, Rot4.East, out doorLoc, (int)RectSizeValues.HALLWAYLENGTH, (int)RectSizeValues.HALLWAYSIZE);
             ResolveParams resolveParamsDoor1 = rp;
             resolveParamsDoor1.rect = CellRect.SingleCell(doorLoc);
-            resolveParamsDoor1.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+            resolveParamsDoor1.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
             BaseGen.symbolStack.Push("thing", resolveParamsDoor1);
             BaseGen.symbolStack.Push("agencyContainmentWing", eastParams);
             
@@ -50,7 +50,7 @@ namespace CthulhuFactions
             westParams.rect = CthulhuFactions.Utility.AdjacentRectMaker(rp.rect, Rot4.West, out doorLoc2, (int)RectSizeValues.HALLWAYLENGTH, (int)RectSizeValues.HALLWAYSIZE);
             ResolveParams resolveParamsDoor2 = rp;
             resolveParamsDoor2.rect = CellRect.SingleCell(doorLoc2);
-            resolveParamsDoor2.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+            resolveParamsDoor2.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
             BaseGen.symbolStack.Push("thing", resolveParamsDoor2);
             BaseGen.symbolStack.Push("agencyInvestigationWing", westParams);
 
@@ -59,10 +59,10 @@ namespace CthulhuFactions
             ResolveParams northParams = rp;
             IntVec3 doorLoc3 = IntVec3.Invalid;
             northParams.rect = CthulhuFactions.Utility.AdjacentRectMaker(rp.rect, Rot4.North, out doorLoc3, (int)RectSizeValues.HALLWAYSIZE, (int)RectSizeValues.HALLWAYLENGTH);
-            Thing thing3 = ThingMaker.MakeThing(CthulhuFactionsDefOf.TemporaryDoorMarker, null);
+            Thing thing3 = ThingMaker.MakeThing(CthulhuFactionsDefOf.ROM_TemporaryDoorMarker, null);
             ResolveParams resolveParamsDoor3 = rp;
             resolveParamsDoor3.rect = CellRect.SingleCell(doorLoc3);
-            resolveParamsDoor3.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+            resolveParamsDoor3.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
             BaseGen.symbolStack.Push("thing", resolveParamsDoor3);
 
             ///More
@@ -71,7 +71,7 @@ namespace CthulhuFactions
             northParams2.rect = CthulhuFactions.Utility.AdjacentRectMaker(northParams.rect, Rot4.North, out doorLoc4, (int)RectSizeValues.HALLWAYSIZE, (int)RectSizeValues.HALLWAYLENGTH);
             ResolveParams resolveParamsDoor4 = rp;
             resolveParamsDoor4.rect = CellRect.SingleCell(doorLoc4);
-            resolveParamsDoor4.singleThingDef = CthulhuFactionsDefOf.TemporaryDoorMarker;
+            resolveParamsDoor4.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryDoorMarker;
             BaseGen.symbolStack.Push("thing", resolveParamsDoor4);
 
 

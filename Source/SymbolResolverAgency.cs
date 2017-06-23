@@ -44,7 +44,7 @@ namespace CthulhuFactions
                     Building edifice = iterator.Current.GetEdifice(BaseGen.globalSettings.map);
                     if (edifice != null && edifice.def.destroyable)
                     {
-                        if (edifice.def != CthulhuFactionsDefOf.TemporaryDoorMarker)
+                        if (edifice.def != CthulhuFactionsDefOf.ROM_TemporaryDoorMarker)
                         edifice.Destroy(DestroyMode.Vanish);
                     }
                 }
@@ -56,7 +56,7 @@ namespace CthulhuFactions
                     {
                         if (SymbolResolverAgency.tmpThingsToDestroy[i].def.destroyable)
                         {
-                            if (SymbolResolverAgency.tmpThingsToDestroy[i].def != CthulhuFactionsDefOf.TemporaryDoorMarker)
+                            if (SymbolResolverAgency.tmpThingsToDestroy[i].def != CthulhuFactionsDefOf.ROM_TemporaryDoorMarker)
                                 SymbolResolverAgency.tmpThingsToDestroy[i].Destroy(DestroyMode.Vanish);
                         }
                     }
@@ -68,7 +68,7 @@ namespace CthulhuFactions
             {
                 ResolveParams resolveParams3 = rp;
                 resolveParams3.rect = CellRect.SingleCell(cell);
-                resolveParams3.singleThingDef = ThingDefOf.TemporaryRegionBarrier;
+                resolveParams3.singleThingDef = CthulhuFactionsDefOf.ROM_TemporaryRegionBarrier;
                 BaseGen.symbolStack.Push("thing", resolveParams3);
             }
 
@@ -86,14 +86,14 @@ namespace CthulhuFactions
                 if (SymbolResolverAgency.instanceMap == null) return;
                 foreach (IntVec3 cell in SymbolResolverAgency.instanceMap.AllCells)
                 {
-                    Thing thing = cell.GetThingList(instanceMap).Find((Thing x) => x.def.temporaryRegionBarrier);
+                    Thing thing = cell.GetThingList(instanceMap).Find((Thing x) => x.def == CthulhuFactionsDefOf.ROM_TemporaryDoorMarker);
                     if (thing == null)
                     {
                         //Log.Warning("Could not destroy temporary region barrier at " + cell + " because it's not here.");
                     }
                     else
                     {
-                        if (thing.def == CthulhuFactionsDefOf.TemporaryDoorMarker)
+                        if (thing.def == CthulhuFactionsDefOf.ROM_TemporaryDoorMarker)
                         {
                             SymbolResolverAgency.newThing = null;
                             SymbolResolverAgency.newThing = ThingMaker.MakeThing(ThingDefOf.Door, ThingDefOf.Steel);
