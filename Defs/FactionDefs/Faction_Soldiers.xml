@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FactionDefs>
+  <FactionDef>
+	<defName>ROM_LostPlatoon</defName>
+	<label>Lost Platoon</label>
+    <description>This military unit has somehow appeared on the landscape due to mysterious circumstances. They have dug up new trenches in desperation, and through their fear, they only trade bullets instead of words. For whatever it is they have seen or where they have come from, it is clear that they do not belong here.</description>
+    <pawnsPlural>lost soldiers</pawnsPlural>
+    <baseSelectionWeight>0.0001</baseSelectionWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonality>5</raidCommonality>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>captain</leaderTitle>
+    <expandingIconTexture>World/WorldObjects/Expanding/ROM_LostSoldiers</expandingIconTexture>
+    <colorSpectrum>
+      <li>(0.5, 0.5, 0.5)</li>
+      <li>(0.7, 0.7, 0.7)</li>
+      <li>(0.8, 0.8, 0.8)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-90</min>
+      <max>-100</max>
+    </startingGoodwill>
+	<appreciative>true</appreciative>
+	<factionNameMaker>ROM_NamerFactionLP</factionNameMaker>
+	<baseNameMaker>ROM_NamerFactionBaseLP</baseNameMaker>
+	<techLevel>Industrial</techLevel>
+	<backstoryCategory>Civil</backstoryCategory>
+	<hairTags>
+		<li>Rural</li>
+	</hairTags>
+    <naturalColonyGoodwill>
+      <min>-90</min>
+      <max>-100</max>
+    </naturalColonyGoodwill>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <pawnGroupMakers>
+	<li>
+    <kindDef>Normal</kindDef>
+	  <options>
+      <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+	  </options>
+  </li>
+	<li>
+    <kindDef>FactionBase</kindDef>
+		<options>
+		  <ROM_LostPlatoon_Captain>1</ROM_LostPlatoon_Captain>
+		  <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+		  </options>
+      </li>
+    </pawnGroupMakers>
+    <homeIconPath>World/WorldObjects/LostPlatoonBase</homeIconPath>
+  </FactionDef>
+</FactionDefs>

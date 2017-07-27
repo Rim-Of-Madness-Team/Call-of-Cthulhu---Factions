@@ -240,6 +240,63 @@
     </weaponTags>
   </ThingDef>
 
+
+  	<!-- ============================================== -->
+
+  	<ThingDef ParentName="BaseBullet">
+  		<defName>ROM_Bullet_TommyGun</defName>
+  		<label>tommy gun bullet</label>
+  		<graphicData>
+  			<texPath>Things/Projectile/Bullet_Small</texPath>
+  			<graphicClass>Graphic_Single</graphicClass>
+  		</graphicData>
+  		<projectile>
+  			<damageDef>Bullet</damageDef>
+  			<damageAmountBase>8</damageAmountBase>
+  			<speed>55</speed>
+  		</projectile>
+  	</ThingDef>
+  	<ThingDef ParentName="BaseHumanMakeableGun">
+  		<defName>ROM_Gun_TommyGun</defName>
+  		<label>tommy gun</label>
+  		<description>A classic submachine gun also known as the Chicago Typewriter. Medium range, decent power, high rate of fire. Very quick to aim and fire.</description>
+  		<graphicData>
+  			<texPath>Guns/CallOfCthulhu_tommygun</texPath>
+  			<graphicClass>Graphic_Single</graphicClass>
+  		</graphicData>
+  		<soundInteract>InteractSMG</soundInteract>
+      <statBases>
+  			<WorkToMake>28000</WorkToMake>
+  			<Mass>3.2</Mass>
+  			<AccuracyTouch>0.89</AccuracyTouch>
+  			<AccuracyShort>0.64</AccuracyShort>
+  			<AccuracyMedium>0.37</AccuracyMedium>
+  			<AccuracyLong>0.22</AccuracyLong>
+  			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+  		</statBases>
+  		<costList>
+  			<Steel>45</Steel>
+  			<Component>3</Component>
+  		</costList>
+  		<verbs>
+  			<li>
+  				<verbClass>Verb_Shoot</verbClass>
+  				<hasStandardCommand>true</hasStandardCommand>
+  				<projectileDef>ROM_Bullet_TommyGun</projectileDef>
+  				<warmupTime>0.5</warmupTime>
+  				<range>28</range>
+  				<burstShotCount>3</burstShotCount>
+  				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+  				<soundCast>ShotHeavySMG</soundCast>
+  				<soundCastTail>GunTail_Light</soundCastTail>
+  				<muzzleFlashScale>9</muzzleFlashScale>
+  			</li>
+  		</verbs>
+      <weaponTags>
+        <li>CallOfCthulhu_Guns</li>
+      </weaponTags>
+  	</ThingDef>
+
 <!-- Cloned for Tags -->
 
    <ThingDef ParentName="BaseHumanGun">
@@ -279,42 +336,83 @@
   </ThingDef>
 
 
-   <ThingDef ParentName="BaseHumanGun">
-   <defName>ROM_Gun_SurvivalRifle_COC</defName>
-   <label>hunting rifle</label>
-   <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
-   <graphicData>
-     <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
-     <graphicClass>Graphic_Single</graphicClass>
-   </graphicData>
-   <soundInteract>InteractRifle</soundInteract>
-   <generateCommonality>1.5</generateCommonality>
-   <statBases>
-     <WorkToMake>25000</WorkToMake>
-     <Mass>3.5</Mass>
-     <AccuracyTouch>0.75</AccuracyTouch>
-     <AccuracyShort>0.96</AccuracyShort>
-     <AccuracyMedium>0.96</AccuracyMedium>
-     <AccuracyLong>0.90</AccuracyLong>
-     <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-   </statBases>
-   <costList>
-     <Steel>60</Steel>
-     <Component>3</Component>
-   </costList>
-   <verbs>
-     <li>
-       <verbClass>Verb_Shoot</verbClass>
-       <hasStandardCommand>true</hasStandardCommand>
-       <projectileDef>Bullet_BoltActionRifle</projectileDef>
-       <warmupTime>1.9</warmupTime>
-       <range>37</range>
-       <soundCast>ShotBoltActionRifle</soundCast>
-       <soundCastTail>GunTail_Heavy</soundCastTail>
-       <muzzleFlashScale>9</muzzleFlashScale>
-     </li>
-   </verbs>
- </ThingDef>
+     <ThingDef ParentName="BaseHumanGun">
+     <defName>ROM_Gun_SurvivalRifle_COC</defName>
+     <label>hunting rifle</label>
+     <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
+     <graphicData>
+       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+       <graphicClass>Graphic_Single</graphicClass>
+     </graphicData>
+     <soundInteract>InteractRifle</soundInteract>
+     <generateCommonality>1.5</generateCommonality>
+     <statBases>
+       <WorkToMake>25000</WorkToMake>
+       <Mass>3.5</Mass>
+       <AccuracyTouch>0.75</AccuracyTouch>
+       <AccuracyShort>0.96</AccuracyShort>
+       <AccuracyMedium>0.96</AccuracyMedium>
+       <AccuracyLong>0.90</AccuracyLong>
+       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+     </statBases>
+     <costList>
+       <Steel>60</Steel>
+       <Component>3</Component>
+     </costList>
+     <verbs>
+       <li>
+         <verbClass>Verb_Shoot</verbClass>
+         <hasStandardCommand>true</hasStandardCommand>
+         <projectileDef>Bullet_BoltActionRifle</projectileDef>
+         <warmupTime>1.9</warmupTime>
+         <range>37</range>
+         <soundCast>ShotBoltActionRifle</soundCast>
+         <soundCastTail>GunTail_Heavy</soundCastTail>
+         <muzzleFlashScale>9</muzzleFlashScale>
+       </li>
+     </verbs>
+   </ThingDef>
+
+
+      <ThingDef ParentName="BaseHumanGun">
+      <defName>ROM_Gun_LPRifle_COC</defName>
+      <label>old-fashioned rifle</label>
+      <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
+      <graphicData>
+        <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+      </graphicData>
+      <soundInteract>InteractRifle</soundInteract>
+      <generateCommonality>1.5</generateCommonality>
+      <statBases>
+        <WorkToMake>25000</WorkToMake>
+        <Mass>3.5</Mass>
+        <AccuracyTouch>0.75</AccuracyTouch>
+        <AccuracyShort>0.96</AccuracyShort>
+        <AccuracyMedium>0.96</AccuracyMedium>
+        <AccuracyLong>0.90</AccuracyLong>
+        <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      </statBases>
+      <costList>
+        <Steel>60</Steel>
+        <Component>3</Component>
+      </costList>
+      <verbs>
+        <li>
+          <verbClass>Verb_Shoot</verbClass>
+          <hasStandardCommand>true</hasStandardCommand>
+          <projectileDef>Bullet_BoltActionRifle</projectileDef>
+          <warmupTime>1.9</warmupTime>
+          <range>37</range>
+          <soundCast>ShotBoltActionRifle</soundCast>
+          <soundCastTail>GunTail_Heavy</soundCastTail>
+          <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
+      </verbs>
+      <weaponTags>
+        <li>CallOfCthulhu_InfantryGun</li>
+      </weaponTags>
+    </ThingDef>
 
 
 </ThingDefs>

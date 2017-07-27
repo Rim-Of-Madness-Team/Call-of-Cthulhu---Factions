@@ -37,7 +37,6 @@ namespace CthulhuFactions
             base.CompTickRare();
             if (parent.Faction != Faction.OfPlayer)
             {
-
                 if (!parent.Faction.HostileTo(Faction.OfPlayer))
                 {
                     Pawn parentPawn = this.parent as Pawn;
@@ -53,11 +52,13 @@ namespace CthulhuFactions
                                 if (t is MinifiedThing) t = (t as MinifiedThing).InnerThing;
                                 if (loadedCults)
                                 {
-                                    if (t.def.defName.Contains("ROM_Cult")) return true; //covers most things
-                                            if (t.def.defName.EqualsIgnoreCase("ForbiddenKnowledgeCenter")) return true; //specifically called because Jecrell's name consistency is awful ^^
-                                            if (t.def.defName.Contains("Dagon")) return true;
-                                    if (t.def.defName.Contains("Nyarlathotep")) return true;
-                                    if (t.def.defName.Contains("Shub")) return true;
+                                    if (Cthulhu.Utility.CultlikeStructures().Contains(t.def.defName))
+                                        return true;
+                                    //if (t.def.defName.Contains("ROM_Cult")) return true; //covers most things
+                                    //        if (t.def.defName.EqualsIgnoreCase("ForbiddenKnowledgeCenter")) return true; //specifically called because Jecrell's name consistency is awful ^^
+                                    //        if (t.def.defName.Contains("Dagon")) return true;
+                                    //if (t.def.defName.Contains("Nyarlathotep")) return true;
+                                    //if (t.def.defName.Contains("Shub")) return true;
                                 }
                                 return false;
                             };

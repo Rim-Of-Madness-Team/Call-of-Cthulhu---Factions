@@ -3,6 +3,7 @@
 // ----------------------------------------------------------------------
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -13,6 +14,9 @@ using UnityEngine;         // Always needed
 //using VerseBase;         // Material/Graphics handling functions are found here
 using Verse;               // RimWorld universal objects are here (like 'Building')
 using Verse.AI;          // Needed when you do something with the AI
+using Verse.AI.Group;
+using Verse.Sound;       // Needed when you do something with Sound
+using Verse.Noise;       // Needed when you do something with Noises
 using RimWorld;            // RimWorld specific functions are found here (like 'Building_Battery')
 using RimWorld.Planet;   // RimWorld specific functions for world creation
 using System.Reflection;
@@ -20,7 +24,7 @@ using System.Reflection;
 
 /// <summary>
 /// Utility File for use between Cthulhu mods.
-/// Last Update: 6/6/2017
+/// Last Update: 7/15/2017 NEWEST
 /// </summary>
 namespace Cthulhu
 {
@@ -28,7 +32,7 @@ namespace Cthulhu
     {
         public const string main = "Cthulhu";
         public const string mod = "Factions";
-        public const string version = "1.17.1";
+        public const string version = "1.17.9";
     }
 
     public static class SanityLossSeverity
@@ -52,6 +56,46 @@ namespace Cthulhu
         public static bool loadedCults = false;
         public static bool loadedFactions = false;
 
+
+        public static bool IsMorning(Map map) =>
+            GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; public static bool IsEvening(Map map) => GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; public static bool IsNight(Map map) => GenLocalDate.HourInteger(map) > 22;
+        public static T GetMod<T>(string s) where T : Mod
+        {
+            //Call of Cthulhu - Cosmic Horrors
+            T result = default(T);
+            foreach (Mod ResolvedMod in LoadedModManager.ModHandles)
+            {
+                if (ResolvedMod.Content.Name == s) result = ResolvedMod as T;
+            }
+            return result;
+        }
+
+
+        public static List<string> CultlikeStructures()
+        {
+            return new List<string>
+            {
+                "Cults_ForbiddenKnowledgeCenter",
+                "Cult_SacrificialAltar",
+                "Cult_AnimalSacrificeAltar",
+                "Cult_HumanSacrificeAltar",
+                "YigSculptureLarge",
+                "SculptureCthulhu",
+                "SculptureDagon",
+                "SculptureNyarlathotep",
+                "SculptureShub",
+                "Cults_ObeliskConstructed_Red",
+                "Cults_ObeliskConstructed_Red",
+                "Cults_ObeliskConstructed_Green",
+                "Cults_ObeliskConstructed_Blue",
+                "Cults_ObeliskConstructed_Yellow",
+                "Uvhash_SkullThrone",
+                "Uvhash_BloodFactory_IronMaiden",
+                "Uvhash_BloodCollector",
+                "Uvhash_BloodNexus"
+            };
+        }
+
         // RimWorld.BaseGen.BaseGenUtility
         public static IntVec3 GetCornerPos(CellRect rect, int corner)
         {
@@ -70,18 +114,13 @@ namespace Cthulhu
             }
         }
 
-
-        public static bool IsMorning(Map map) =>
-            GenLocalDate.HourInteger(map) > 6 && GenLocalDate.HourInteger(map) < 10; public static bool IsEvening(Map map) => GenLocalDate.HourInteger(map) > 18 && GenLocalDate.HourInteger(map) < 22; public static bool IsNight(Map map) => GenLocalDate.HourInteger(map) > 22;
-        public static T GetMod<T>(string s) where T : Mod
+        public static List<IncidentDef> CosmicHorrorIncidents()
         {
-            //Call of Cthulhu - Cosmic Horrors
-            T result = default(T);
-            foreach (Mod ResolvedMod in LoadedModManager.ModHandles)
-            {
-                if (ResolvedMod.Content.Name == s) result = ResolvedMod as T;
-            }
-            return result;
+            return new List<IncidentDef> {
+                IncidentDef.Named("ROM_RaidCosmicHorrors"),
+                IncidentDef.Named("ROM_StarVampireAttack"),
+                IncidentDef.Named("ROM_ChthonianPit")
+            };
         }
 
         public static bool IsCosmicHorror(Pawn thing)
@@ -98,6 +137,8 @@ namespace Cthulhu
             }
             return false;
         }
+
+
 
         //public static float GetSanityLossRate(PawnKindDef kindDef)
         //{
@@ -374,7 +415,51 @@ namespace Cthulhu
                 return true;
             }, out pos);
 
-        public static BodyPartRecord GetHeart(HediffSet set)
+        public static BodyPartRecord GetMouth(HediffSet set)
+        {
+            foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
+            {
+                for (int i = 0; i < current.def.tags.Count; i++)
+                {
+                    if (current.def.defName == "TalkingSource")
+                    {
+                        return current;
+                    }
+                }
+            }
+            return null;
+        }
+        public static BodyPartRecord GetEar(HediffSet set)
+        {
+            foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
+            {
+                for (int i = 0; i < current.def.tags.Count; i++)
+                {
+                    if (current.def.defName == "HearingSource")
+                    {
+                        return current;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public static BodyPartRecord GetNose(HediffSet set)
+        {
+            foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
+            {
+                for (int i = 0; i < current.def.tags.Count; i++)
+                {
+                    if (current.def.defName == "Nose")
+                    {
+                        return current;
+                    }
+                }
+            }
+            return null;
+        }
+
+        public static BodyPartRecord GetEye(HediffSet set)
         {
             foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
             {
@@ -389,8 +474,20 @@ namespace Cthulhu
             return null;
         }
 
-
-
+        public static BodyPartRecord GetHeart(HediffSet set)
+        {
+            foreach (BodyPartRecord current in set.GetNotMissingParts(BodyPartHeight.Undefined, BodyPartDepth.Undefined))
+            {
+                for (int i = 0; i < current.def.tags.Count; i++)
+                {
+                    if (current.def.tags[i] == "BloodPumpingSource")
+                    {
+                        return current;
+                    }
+                }
+            }
+            return null;
+        }
 
 
         public static void SpawnThingDefOfCountAt(ThingDef of, int count, TargetInfo target)
@@ -526,31 +623,68 @@ namespace Cthulhu
                 });
             }
         }
-        public static void ApplySanityLoss(Pawn pawn, float sanityLoss = 0.3f, float sanityLossMax = 1.0f)
+
+
+        public static bool HasSanityLoss(Pawn pawn)
         {
-            if (pawn == null) return;
-            string sanityLossDef;
-            sanityLossDef = SanityLossDef;
-            if (!IsCosmicHorrorsLoaded()) sanityLossDef = AltSanityLossDef;
-            Hediff pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamed(sanityLossDef));
-            float trueMax = sanityLossMax;
-            if (pawnSanityHediff != null)
-            {
-                if (pawnSanityHediff.Severity > trueMax) trueMax = pawnSanityHediff.Severity;
-                float result = pawnSanityHediff.Severity;
-                result += sanityLoss;
-                result = Mathf.Clamp(result, 0.0f, trueMax);
-                pawnSanityHediff.Severity = result;
-            }
-            else
-            {
-                Hediff sanityLossHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamed(sanityLossDef), pawn, null);
+            string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
+            var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamed(sanityLossDef));
 
-                sanityLossHediff.Severity = sanityLoss;
-                pawn.health.AddHediff(sanityLossHediff, null, null);
-
-            }
+            return pawnSanityHediff != null;
         }
+
+        /// <summary>
+        /// This method handles the application of Sanity Loss in multiple mods.
+        /// It returns true and false depending on if it applies successfully.
+        /// </summary>
+        /// <param name="pawn"></param>
+        /// <param name="sanityLoss"></param>
+        /// <param name="sanityLossMax"></param>
+        public static bool ApplySanityLoss(Pawn pawn, float sanityLoss = 0.3f, float sanityLossMax = 1.0f)
+        {
+            //Log.Message("1");
+            bool appliedSuccessfully = false;
+            if (pawn != null)
+            {
+                //Log.Message("2");
+
+                string sanityLossDef = (!IsCosmicHorrorsLoaded()) ? AltSanityLossDef : SanityLossDef;
+                //Log.Message(sanityLossDef);
+
+                var pawnSanityHediff = pawn.health.hediffSet.GetFirstHediffOfDef(DefDatabase<HediffDef>.GetNamedSilentFail(sanityLossDef));
+                if (pawnSanityHediff != null)
+                {
+                    //Log.Message("3a");
+
+                    if (pawnSanityHediff.Severity > sanityLossMax) sanityLossMax = pawnSanityHediff.Severity;
+                    float result = pawnSanityHediff.Severity;
+                    result += sanityLoss;
+                    result = Mathf.Clamp(result, 0.0f, sanityLossMax);
+                    pawnSanityHediff.Severity = result;
+                    pawn.health.Notify_HediffChanged(pawnSanityHediff);
+                    appliedSuccessfully = true;
+                    Cthulhu.Utility.DebugReport("Applied Sanity loss to: " + pawn.LabelShort);
+                }
+                else if (sanityLoss > 0)
+                {
+                    //Log.Message("3b");
+
+                    var sanityLossHediff = HediffMaker.MakeHediff(DefDatabase<HediffDef>.GetNamedSilentFail(sanityLossDef), pawn, null);
+                    if (sanityLossHediff != null)
+                    {
+                        sanityLossHediff.Severity = sanityLoss;
+                        pawn.health.AddHediff(sanityLossHediff, null, null);
+                        pawn.health.Notify_HediffChanged(pawnSanityHediff);
+                        appliedSuccessfully = true;
+                        Cthulhu.Utility.DebugReport("Made and applied Sanity loss to: " + pawn.LabelShort);
+                        //Log.Message("4");
+
+                    }
+                }
+            }
+            return appliedSuccessfully;
+        }
+
 
         public static int GetSocialSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Social).Level;
 

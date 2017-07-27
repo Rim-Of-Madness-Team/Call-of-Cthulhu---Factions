@@ -33,6 +33,7 @@ namespace CthulhuFactions
             }
             return true;
         }
+        
 
 
         public static int RandomFactionBaseTileFor_Townsfolk(Faction faction, bool mustBeAutoChoosable = false)

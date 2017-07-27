@@ -46,9 +46,10 @@
 	<li>
 		<kindDef>Normal</kindDef>
         <options>
-		  <ROM_DetectiveSenior>8</ROM_DetectiveSenior>
-		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>
-		  <ROM_DetectiveInvestigator>250</ROM_DetectiveInvestigator>
+		  <ROM_DetectiveSenior>5</ROM_DetectiveSenior>
+      <ROM_DetectiveStandard>200</ROM_DetectiveStandard>
+      <ROM_DetectiveJunior>15</ROM_DetectiveJunior>
+		  <ROM_DetectiveInvestigator>10</ROM_DetectiveInvestigator>
         </options>
       </li>
 	  <li>
@@ -74,8 +75,7 @@
           <Muffalo>1</Muffalo>
         </carriers>
         <guards>
-		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>
-		  <ROM_DetectiveInvestigator>250</ROM_DetectiveInvestigator>
+		  <ROM_DetectiveStandard>100</ROM_DetectiveStandard>
         </guards>
       </li>
 	<li>

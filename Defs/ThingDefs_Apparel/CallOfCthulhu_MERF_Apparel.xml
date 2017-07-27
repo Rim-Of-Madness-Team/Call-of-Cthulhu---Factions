@@ -7,7 +7,7 @@
 
 	<ThingDef ParentName="CallOfCthulhuHatMakeableBase">
 		<defName>ROM_Apparel_MERF_LightHelmet</defName>
-		<description>A lightweight combat helmet designed for MERF special forces. MERF stands for Mobile Eldritch Response Force.
+		<description>A lightweight combat helmet designed for the M.E.R.F. special forces branch of The Agency. MERF stands for Mobile Eldritch Response Force.
 		</description>
 		<label>MERF Light Helmet</label>
 		<graphicData>
@@ -38,9 +38,9 @@
 		</statBases>
 		<generateCommonality>0.1</generateCommonality>
 		<apparel>
-		  <bodyPartGroups>
-			<li>UpperHead</li>
-		  </bodyPartGroups>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
 		  <worngraphicPath>Apparel/Hats/LightHelmet/ROMLightHelmet</worngraphicPath>
 		  <layers>
 			<li>Overhead</li>
@@ -63,7 +63,7 @@
 
 	<ThingDef ParentName="CallOfCthulhuHatMakeableBase">
 		<defName>ROM_Apparel_MERF_HeavyHelmet</defName>
-		<description>A heavy combat helmet designed for MERF special forces. MERF stands for Mobile Eldritch Response Force.
+		<description>A heavy combat helmet designed for the M.E.R.F. special forces branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.
 		</description>
 		<label>MERF heavy helmet</label>
 		<graphicData>
@@ -95,10 +95,9 @@
 
 		<generateCommonality>0.1</generateCommonality>
 		<apparel>
-		  <bodyPartGroups>
-			<li>UpperHead</li>
-		  </bodyPartGroups>
-		  <worngraphicPath>Apparel/Hats/HeavyHelmet/ROMHeavyHelmet</worngraphicPath>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>		  <worngraphicPath>Apparel/Hats/HeavyHelmet/ROMHeavyHelmet</worngraphicPath>
 		  <layers>
 			<li>Overhead</li>
 		  </layers>
@@ -121,7 +120,7 @@
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
 		<defName>ROM_Apparel_MERF_Armor</defName>
-		<description>Early 20th century attire suited for local enforcers to use when keeping the peace.
+		<description>Specialized body armor to protect members of the M.E.R.F. branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.
 		</description>
 		<label>MERF body armor</label>
 		<graphicData>
@@ -142,24 +141,24 @@
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
-		<WorkToMake>170000</WorkToMake>
+		  <WorkToMake>180000</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
 			<Mass>11</Mass>
-	  <MaxHitPoints>200</MaxHitPoints>
-      <MarketValue>2900</MarketValue>
-      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-      <ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<MarketValue>2900</MarketValue>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Heat>0.10</ArmorRating_Heat>
       <Insulation_Cold>-35</Insulation_Cold>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.05</MoveSpeed>
 			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
-
 		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
 				<li>Torso</li>
+        <li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
 				<li>Legs</li>
@@ -186,7 +185,7 @@
 
 	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
 		<defName>ROM_Apparel_MERF_Coat</defName>
-		<description>Early 20th century attire suited for local enforcers to use when keeping the peace.
+		<description>Extra padding for supporting M.E.R.F. members during their service.
 		</description>
 		<label>MERF coat</label>
 		<graphicData>

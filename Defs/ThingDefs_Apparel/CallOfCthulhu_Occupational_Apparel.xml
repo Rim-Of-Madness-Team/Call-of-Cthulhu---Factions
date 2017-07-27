@@ -165,7 +165,6 @@
 
 <!-- Police -->
 
-
   <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
     <defName>ROM_Apparel1920sPoliceHat</defName>
     <label>police hat</label>
@@ -277,6 +276,117 @@
 		</recipeMaker>
 	</ThingDef>
 
+
+	<!-- Soldier -->
+
+	  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+	    <defName>ROM_ApparelWWIHelmet</defName>
+	    <label>infantry helmet (World War I)</label>
+	    <description>To avoid coming home from the front lines in seperate bags, be sure to wear this simplistic protective headwear.</description>
+	    <graphicData>
+	      <texPath>Apparel/Display/ROMWWIUKHelmet</texPath>
+	      <graphicClass>Graphic_Single</graphicClass>
+	      <shaderType>CutoutComplex</shaderType>
+	    </graphicData>
+			<stuffCategories>
+	      <li>Metallic</li>
+	    </stuffCategories>
+			<costStuffCount>70</costStuffCount>
+			<statBases>
+				<WorkToMake>6100</WorkToMake>
+				<MaxHitPoints>100</MaxHitPoints>
+				<Mass>1.9</Mass>
+				<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.31</ArmorRating_Sharp>
+			</statBases>
+			<equippedStatOffsets>
+				<MoveSpeed>-0.0375</MoveSpeed>
+				<PsychicSensitivity>-0.12</PsychicSensitivity>
+			</equippedStatOffsets>
+			<generateCommonality>0.1</generateCommonality>
+	    <apparel>
+	      <bodyPartGroups>
+	        <li>UpperHead</li>
+	      </bodyPartGroups>
+	      <worngraphicPath>Apparel/Hats/WWIUKHat/WWIUKHelmet</worngraphicPath>
+	      <layers>
+	        <li>Overhead</li>
+	      </layers>
+	      <tags>
+			<li>CallOfCthulhu_Infantry</li>
+	      </tags>
+	      <defaultOutfitTags>
+			<li>CallOfCthulhu_Infantry</li>
+	      </defaultOutfitTags>
+	    </apparel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+		</recipeMaker>
+	  </ThingDef>
+
+		<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+			<defName>ROM_ApparelWWIUniform</defName>
+			<description>This apparel made it easier to distinguish friendlies on the battlefield. However, it provided little in the way of actual body armor.
+			</description>
+			<label>infantry uniform (World War I)</label>
+			<graphicData>
+				<texPath>Apparel/Display/ROMWWIUKCoat</texPath>
+	      <graphicClass>Graphic_Single</graphicClass>
+	      <shaderType>CutoutComplex</shaderType>
+	    </graphicData>
+	    <costStuffCount>150</costStuffCount>
+	    <stuffCategories>
+	      <li>Fabric</li>
+	      <li>Leathery</li>
+	    </stuffCategories>
+			<thingCategories>
+				<li>Apparel</li>
+			</thingCategories>
+			<statBases>
+				<MaxHitPoints>165</MaxHitPoints>
+				<WorkToMake>22200</WorkToMake>
+	      <Mass>0.35</Mass>
+				<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+				<ArmorRating_Sharp>0.09</ArmorRating_Sharp>
+				<Insulation_Cold>-47</Insulation_Cold>
+				<Insulation_Heat>-4</Insulation_Heat>
+			</statBases>
+			<equippedStatOffsets>
+				<MoveSpeed>-0.048</MoveSpeed>
+				<WorkSpeedGlobal>-0.048</WorkSpeedGlobal>
+			</equippedStatOffsets>
+
+			<generateCommonality>0.1</generateCommonality>
+			<apparel>
+				<bodyPartGroups>
+					<li>Torso</li>
+					<li>Shoulders</li>
+					<li>Arms</li>
+					<li>Legs</li>
+				</bodyPartGroups>
+				<worngraphicPath>Apparel/Bodywear_Clothing/WWIInfantryUniform/WWIUKCoat</worngraphicPath>
+				<layers>
+					<li>Shell</li>
+				</layers>
+				<tags>
+					<li>CallOfCthulhu_Infantry</li>
+				</tags>
+				<defaultOutfitTags>
+					<li>CallOfCthulhu_Infantry</li>
+				</defaultOutfitTags>
+			</apparel>
+			<recipeMaker>
+				<recipeUsers>
+					<li>ElectricTailoringBench</li>
+					<li>HandTailoringBench</li>
+				</recipeUsers>
+				<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+			</recipeMaker>
+		</ThingDef>
 
 
 

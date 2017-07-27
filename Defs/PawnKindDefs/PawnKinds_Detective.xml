@@ -17,7 +17,7 @@
     <defName>ROM_DetectiveInvestigator</defName>
     <label>Investigator</label>
     <race>Human</race>
-    <combatPower>25</combatPower>
+    <combatPower>60</combatPower>
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>
@@ -80,7 +80,7 @@
     <label>senior detective</label>
     <factionLeader>true</factionLeader>
     <race>Human</race>
-    <combatPower>25</combatPower>
+    <combatPower>190</combatPower>
     <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
     <gearHealthRange>
@@ -150,7 +150,7 @@
     <defName>ROM_DetectiveJunior</defName>
     <label>junior agent</label>
     <race>Human</race>
-    <combatPower>70</combatPower>
+    <combatPower>50</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
@@ -198,7 +198,7 @@
     <defName>ROM_DetectiveStandard</defName>
     <label>agent</label>
     <race>Human</race>
-    <combatPower>90</combatPower>
+    <combatPower>150</combatPower>
     <maxGenerationAge>65</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
