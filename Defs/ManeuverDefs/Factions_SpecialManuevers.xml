@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ToolCapacityDef>
+    <defName>COC_BrandingStabT</defName>
+    <label>burning</label>
+  </ToolCapacityDef>
+
+  <ManeuverDef>
+    <defName>COC_BrandingStabM</defName>
+    <requiredCapacity>COC_BrandingStabT</requiredCapacity>
+    <verb>
+      <verbClass>Verb_MeleeAttack</verbClass>
+      <meleeDamageDef>ROM_MeleeBurn</meleeDamageDef>
+    </verb>
+    <combatLogRules>Maneuver_Stab</combatLogRules>
+  </ManeuverDef>
+
+</Defs>

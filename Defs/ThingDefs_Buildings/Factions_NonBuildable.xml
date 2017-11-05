@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 <!-- =========== BASE GENERATION ========= -->
 
@@ -31,26 +31,26 @@
   <ThingDef ParentName="FactionBuildingBase">
     <defName>ROM_AgencySymbolFloorPainting</defName>
     <label>agency emblem floor painting</label>
-    <Description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</Description>
+    <description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</description>
     <graphicData>
       <texPath>BaseObjects/TheAgency/AgencyFloorLogo</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(7,4)</drawSize>
     </graphicData>
     <selectable>false</selectable>
-    <AltitudeLayer>FloorEmplacement</AltitudeLayer>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
     <statBases>
       <WorkToBuild>0</WorkToBuild>
     </statBases>
     <useHitPoints>False</useHitPoints>
 		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<Size>(7,4)</Size>
-    <Passability>Standable</Passability>
+		<size>(7,4)</size>
+    <passability>Standable</passability>
     <building>
       <sowTag>SupportPlantsOnly</sowTag>
       <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
     </building>
-    <designationHotkey>Misc10</designationHotkey>
+    <designationHotKey>Misc10</designationHotKey>
   </ThingDef>
 
     <ThingDef ParentName="FactionTableBase">
@@ -144,4 +144,4 @@
   </ThingDef>
 
 
-</ThingDefs>
+</Defs>

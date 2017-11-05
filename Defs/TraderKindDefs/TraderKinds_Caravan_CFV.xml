@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<DefPackage-TraderKindDef>
+<Defs>
 
   <TraderKindDef>
     <defName>ROM_Caravan_CFV_CombatSupplier</defName>
@@ -86,7 +86,7 @@
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MortarShell</thingDef>
+        <thingDef>Shell_HighExplosive</thingDef>
         <countRange>
           <min>-4</min>
           <max>7</max>
@@ -205,7 +205,7 @@
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MortarShell</thingDef>
+        <thingDef>Shell_HighExplosive</thingDef>
         <countRange>
           <min>-4</min>
           <max>7</max>
@@ -236,4 +236,4 @@
   </TraderKindDef>
 
 
-</DefPackage-TraderKindDef>
+</Defs>

@@ -5,8 +5,8 @@ using Verse.AI;
 using Verse.AI.Group;
 using RimWorld;
 using RimWorld.BaseGen;
-using CustomFactionBase;
-using static CustomFactionBase.CustomBaseUtility;
+//using CustomFactionBase;
+//using static CustomFactionBase.CustomBaseUtility;
 
 namespace CthulhuFactions
 {
@@ -41,7 +41,7 @@ namespace CthulhuFactions
 
         static SymbolResolver_FactionBase_Agency()
         {
-            AddMapResolver(new ResolverStruct(rp => rp.faction.def.defName == "ROM_TheAgency", "agencyFactionBase", 1.0f));
+            //AddMapResolver(new ResolverStruct(rp => rp.faction.def.defName == "ROM_TheAgency", "agencyFactionBase", 1.0f));
         }
 
         public override void Resolve(ResolveParams rp)

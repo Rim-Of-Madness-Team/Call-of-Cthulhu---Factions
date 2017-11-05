@@ -87,7 +87,7 @@ namespace CthulhuFactions
 
              
                         float angle = (currentPos - thing.Position).ToVector3().AngleFlat();
-                        Rot4 newRot = PawnRotator.RotFromAngleBiased(angle).Opposite;
+                        Rot4 newRot = Pawn_RotationTracker.RotFromAngleBiased(angle).Opposite;
 
                         Building bld = thing as Building; //We need an interaction cell
                         Thing thing2 = ThingMaker.MakeThing(chairDef, stuff);

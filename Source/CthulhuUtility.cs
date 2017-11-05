@@ -558,19 +558,19 @@ namespace Cthulhu
             IntVec3 CellEast = pew.Position + GenAdj.CardinalDirections[Rot4.East.AsInt];
             IntVec3 CellWest = pew.Position + GenAdj.CardinalDirections[Rot4.West.AsInt];
 
-            if (!map.reservationManager.IsReserved(pew.Position, Faction.OfPlayer)) { loc = pew.Position; return true; }
+            if (!map.reservationManager.IsReservedByAnyoneOf(pew.Position, Faction.OfPlayer)) { loc = pew.Position; return true; }
 
             if (currentDirection == Rot4.North ||
                 currentDirection == Rot4.South)
             {
-                if (!map.reservationManager.IsReserved(CellWest, Faction.OfPlayer)) { loc = CellWest; return true; }
-                if (!map.reservationManager.IsReserved(CellEast, Faction.OfPlayer)) { loc = CellEast; return true; }
+                if (!map.reservationManager.IsReservedByAnyoneOf(CellWest, Faction.OfPlayer)) { loc = CellWest; return true; }
+                if (!map.reservationManager.IsReservedByAnyoneOf(CellEast, Faction.OfPlayer)) { loc = CellEast; return true; }
             }
             if (currentDirection == Rot4.East ||
                 currentDirection == Rot4.West)
             {
-                if (!map.reservationManager.IsReserved(CellNorth, Faction.OfPlayer)) { loc = CellNorth; return true; }
-                if (!map.reservationManager.IsReserved(CellSouth, Faction.OfPlayer)) { loc = CellSouth; return true; }
+                if (!map.reservationManager.IsReservedByAnyoneOf(CellNorth, Faction.OfPlayer)) { loc = CellNorth; return true; }
+                if (!map.reservationManager.IsReservedByAnyoneOf(CellSouth, Faction.OfPlayer)) { loc = CellSouth; return true; }
             }
             //map.reservationManager.Reserve(claimer, pew);
             return false;

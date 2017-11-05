@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
+
 
   <ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
 		<techLevel>Industrial</techLevel>
@@ -32,16 +33,16 @@
         <li>TableMachining</li>
       </recipeUsers>
       <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+      <researchPrerequisite>Gunsmithing</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
-
 
   <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
     <weaponTags>
       <li>Gun</li>
     </weaponTags>
   </ThingDef>
-
+  
   <ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
     <weaponTags>
       <li>Gun</li>
@@ -61,24 +62,8 @@
     </graphicData>
   </ThingDef>
 
-
   <!-- ============================================================== -->
-
-
-  <ThingDef ParentName="BaseBullet">
-    <defName>ROM_Bullet_Revolver</defName>
-    <label>revolver bullet</label>
-    <graphicData>
-      <texPath>Things/Projectile/Bullet_Small</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <projectile>
-      <flyOverhead>false</flyOverhead>
-      <damageDef>Bullet</damageDef>
-      <DamageAmountBase>11</DamageAmountBase>
-      <Speed>55</Speed>
-    </projectile>
-  </ThingDef>
+  
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>ROM_Gun_Revolver</defName>
     <label>webley revolver</label>
@@ -91,12 +76,12 @@
     <statBases>
       <WorkToMake>17000</WorkToMake>
 	  <Mass>1.4</Mass>
-      <MarketValue>215</MarketValue>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.71</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
+	  <Weapon_Bulk>0.5</Weapon_Bulk>
     </statBases>
     <costList>
       <Steel>40</Steel>
@@ -106,21 +91,37 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>ROM_Bullet_Revolver</projectileDef>
-        <warmupTime>0.5</warmupTime>
-        <range>24</range>
-        <soundCast>ROM_ShotRevolver</soundCast>
+        <defaultProjectile>Bullet_Revolver</defaultProjectile>
+        <warmupTime>0.3</warmupTime>
+        <range>26</range>
+        <soundCast>ShotRevolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
-        <muzzleFlashScale>15</muzzleFlashScale>
+        <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+    </tools>
     <weaponTags>
       <li>CallOfCthulhu_Guns</li>
     </weaponTags>
   </ThingDef>
-
-  <!-- ============================================================== -->
-
 
   <!-- ============================================================== -->
 
@@ -135,8 +136,8 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>Bullet</damageDef>
-      <DamageAmountBase>30</DamageAmountBase>
-      <Speed>40</Speed>
+      <damageAmountBase>30</damageAmountBase>
+      <speed>40</speed>
     </projectile>
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -157,6 +158,7 @@
       <AccuracyMedium>0.70</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
+	  <Weapon_Bulk>1.0</Weapon_Bulk>
     </statBases>
 		<costStuffCount>90</costStuffCount>
     <stuffCategories>
@@ -168,17 +170,44 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>ROM_Bullet_Harpoon</projectileDef>
+        <defaultProjectile>ROM_Bullet_Harpoon</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>24</range>
         <soundCast>ROM_ShotHarpoon</soundCast>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
+	    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+	  <li>
+        <label>head</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+    </tools>
     <comps>
       <li>
-		    <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-		  </li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
     </comps>
     <weaponTags>
       <li>CallOfCthulhu_CoastalGuns</li>
@@ -197,8 +226,8 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>Flame</damageDef>
-      <DamageAmountBase>10</DamageAmountBase>
-      <Speed>40</Speed>
+      <damageAmountBase>10</damageAmountBase>
+      <speed>40</speed>
     </projectile>
   </ThingDef>
   <ThingDef ParentName="BaseHumanMakeableGun">
@@ -210,7 +239,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <WorkToMake>100000</WorkToMake>
+      <WorkToMake>14000</WorkToMake>
 	  <Mass>1.5</Mass>
       <MarketValue>700</MarketValue>
       <AccuracyTouch>0.31</AccuracyTouch>
@@ -218,22 +247,42 @@
       <AccuracyMedium>0.31</AccuracyMedium>
       <AccuracyLong>0.31</AccuracyLong>
       <RangedWeapon_Cooldown>8.33</RangedWeapon_Cooldown>
+	  <Weapon_Bulk>0.5</Weapon_Bulk>
     </statBases>
     <costList>
-      <Steel>90</Steel>
+      <Steel>60</Steel>
       <Component>4</Component>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>ROM_Bullet_Flare</projectileDef>
+        <defaultProjectile>ROM_Bullet_Flare</defaultProjectile>
         <warmupTime>0.6</warmupTime>
         <range>24</range>
         <soundCast>ROM_ShotFlare</soundCast>
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
+    <tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+    </tools>
     <weaponTags>
       <li>CallOfCthulhu_CoastalGuns</li>
       <li>CallOfCthulhu_Angler</li>
@@ -273,6 +322,7 @@
   			<AccuracyMedium>0.37</AccuracyMedium>
   			<AccuracyLong>0.22</AccuracyLong>
   			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+		    <Weapon_Bulk>1.0</Weapon_Bulk>
   		</statBases>
   		<costList>
   			<Steel>45</Steel>
@@ -282,7 +332,7 @@
   			<li>
   				<verbClass>Verb_Shoot</verbClass>
   				<hasStandardCommand>true</hasStandardCommand>
-  				<projectileDef>ROM_Bullet_TommyGun</projectileDef>
+  				<defaultProjectile>ROM_Bullet_TommyGun</defaultProjectile>
   				<warmupTime>0.5</warmupTime>
   				<range>28</range>
   				<burstShotCount>3</burstShotCount>
@@ -292,6 +342,25 @@
   				<muzzleFlashScale>9</muzzleFlashScale>
   			</li>
   		</verbs>
+		<tools>
+      <li>
+        <label>grip</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1.55</cooldownTime>
+      </li>
+    </tools>
       <weaponTags>
         <li>CallOfCthulhu_Guns</li>
       </weaponTags>
@@ -316,6 +385,7 @@
       <AccuracyMedium>0.77</AccuracyMedium>
       <AccuracyLong>0.64</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -325,7 +395,7 @@
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <projectileDef>Bullet_PumpShotgun</projectileDef>
+        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>16</range>
         <soundCast>ShotShotgun</soundCast>
@@ -333,6 +403,25 @@
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
     </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
   </ThingDef>
 
 
@@ -340,79 +429,119 @@
      <defName>ROM_Gun_SurvivalRifle_COC</defName>
      <label>hunting rifle</label>
      <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
-     <graphicData>
-       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
-       <graphicClass>Graphic_Single</graphicClass>
-     </graphicData>
-     <soundInteract>InteractRifle</soundInteract>
-     <generateCommonality>1.5</generateCommonality>
-     <statBases>
-       <WorkToMake>25000</WorkToMake>
-       <Mass>3.5</Mass>
-       <AccuracyTouch>0.75</AccuracyTouch>
-       <AccuracyShort>0.96</AccuracyShort>
-       <AccuracyMedium>0.96</AccuracyMedium>
-       <AccuracyLong>0.90</AccuracyLong>
-       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-     </statBases>
-     <costList>
-       <Steel>60</Steel>
-       <Component>3</Component>
-     </costList>
-     <verbs>
-       <li>
-         <verbClass>Verb_Shoot</verbClass>
-         <hasStandardCommand>true</hasStandardCommand>
-         <projectileDef>Bullet_BoltActionRifle</projectileDef>
-         <warmupTime>1.9</warmupTime>
-         <range>37</range>
-         <soundCast>ShotBoltActionRifle</soundCast>
-         <soundCastTail>GunTail_Heavy</soundCastTail>
-         <muzzleFlashScale>9</muzzleFlashScale>
-       </li>
-     </verbs>
-   </ThingDef>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+		<generateCommonality>1.5</generateCommonality>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>37</range>
+        <soundCast>ShotBoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
 
 
       <ThingDef ParentName="BaseHumanGun">
       <defName>ROM_Gun_LPRifle_COC</defName>
       <label>old-fashioned rifle</label>
       <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
-      <graphicData>
-        <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-      </graphicData>
-      <soundInteract>InteractRifle</soundInteract>
-      <generateCommonality>1.5</generateCommonality>
-      <statBases>
-        <WorkToMake>25000</WorkToMake>
-        <Mass>3.5</Mass>
-        <AccuracyTouch>0.75</AccuracyTouch>
-        <AccuracyShort>0.96</AccuracyShort>
-        <AccuracyMedium>0.96</AccuracyMedium>
-        <AccuracyLong>0.90</AccuracyLong>
-        <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      </statBases>
-      <costList>
-        <Steel>60</Steel>
-        <Component>3</Component>
-      </costList>
-      <verbs>
-        <li>
-          <verbClass>Verb_Shoot</verbClass>
-          <hasStandardCommand>true</hasStandardCommand>
-          <projectileDef>Bullet_BoltActionRifle</projectileDef>
-          <warmupTime>1.9</warmupTime>
-          <range>37</range>
-          <soundCast>ShotBoltActionRifle</soundCast>
-          <soundCastTail>GunTail_Heavy</soundCastTail>
-          <muzzleFlashScale>9</muzzleFlashScale>
-        </li>
-      </verbs>
-      <weaponTags>
+	      <graphicData>
+      <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>InteractRifle</soundInteract>
+		<generateCommonality>1.5</generateCommonality>
+    <statBases>
+      <WorkToMake>25000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.75</AccuracyTouch>
+      <AccuracyShort>0.96</AccuracyShort>
+      <AccuracyMedium>0.96</AccuracyMedium>
+      <AccuracyLong>0.90</AccuracyLong>
+      <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <Component>3</Component>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
+        <warmupTime>1.9</warmupTime>
+        <range>37</range>
+        <soundCast>ShotBoltActionRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.8</cooldownTime>
+      </li>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>1.9</cooldownTime>
+      </li>
+    </tools>
+	      <weaponTags>
         <li>CallOfCthulhu_InfantryGun</li>
       </weaponTags>
-    </ThingDef>
+  </ThingDef>
 
 
-</ThingDefs>
+</Defs>

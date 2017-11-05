@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 <!-- Vanilla base -->
 
@@ -127,7 +127,7 @@
 				<li>Legs</li>
 				<li>Torso</li>
 			</bodyPartGroups>
-			<worngraphicPath>Apparel/Bodywear_Clothing/Overalls/NF_FSOveralls</worngraphicPath>
+			<wornGraphicPath>Apparel/Bodywear_Clothing/Overalls/NF_FSOveralls</wornGraphicPath>
 			<layers>
 				<li>Middle</li>
 			</layers>
@@ -138,4 +138,4 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel" />
 	</ThingDef>
 
-</ThingDefs>
+</Defs>

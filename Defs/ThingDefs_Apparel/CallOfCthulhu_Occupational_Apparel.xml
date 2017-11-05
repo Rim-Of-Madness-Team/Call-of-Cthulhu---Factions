@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
 <!-- Angler -->
 
@@ -42,7 +42,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<worngraphicPath>Apparel/Bodywear_Clothing/Raincoat/ROMRainCoat</worngraphicPath>
+			<wornGraphicPath>Apparel/Bodywear_Clothing/Raincoat/ROMRainCoat</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -91,7 +91,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <worngraphicPath>Apparel/Hats/SlickerHat/ROMSlickerHat</worngraphicPath>
+      <wornGraphicPath>Apparel/Hats/SlickerHat/ROMSlickerHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -143,7 +143,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <worngraphicPath>Apparel/Hats/StrawHat/ROMStrawHat</worngraphicPath>
+      <wornGraphicPath>Apparel/Hats/StrawHat/ROMStrawHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -195,7 +195,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <worngraphicPath>Apparel/Hats/1920sPoliceHat/CallOfCthulhu_1920sPoliceHat</worngraphicPath>
+      <wornGraphicPath>Apparel/Hats/1920sPoliceHat/CallOfCthulhu_1920sPoliceHat</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -256,7 +256,7 @@
 				<li>Arms</li>
 				<li>Legs</li>
 			</bodyPartGroups>
-			<worngraphicPath>Apparel/Bodywear_Clothing/1920sPoliceOutfit/CallOfCthulhu_1920sPoliceOutfit</worngraphicPath>
+			<wornGraphicPath>Apparel/Bodywear_Clothing/1920sPoliceOutfit/CallOfCthulhu_1920sPoliceOutfit</wornGraphicPath>
 			<layers>
 				<li>Shell</li>
 			</layers>
@@ -308,7 +308,7 @@
 	      <bodyPartGroups>
 	        <li>UpperHead</li>
 	      </bodyPartGroups>
-	      <worngraphicPath>Apparel/Hats/WWIUKHat/WWIUKHelmet</worngraphicPath>
+	      <wornGraphicPath>Apparel/Hats/WWIUKHat/WWIUKHelmet</wornGraphicPath>
 	      <layers>
 	        <li>Overhead</li>
 	      </layers>
@@ -368,7 +368,7 @@
 					<li>Arms</li>
 					<li>Legs</li>
 				</bodyPartGroups>
-				<worngraphicPath>Apparel/Bodywear_Clothing/WWIInfantryUniform/WWIUKCoat</worngraphicPath>
+				<wornGraphicPath>Apparel/Bodywear_Clothing/WWIInfantryUniform/WWIUKCoat</wornGraphicPath>
 				<layers>
 					<li>Shell</li>
 				</layers>
@@ -425,7 +425,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <worngraphicPath>Apparel/Hats/NurseCap/NurseCap</worngraphicPath>
+      <wornGraphicPath>Apparel/Hats/NurseCap/NurseCap</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -488,7 +488,7 @@
 				<li>Torso</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<worngraphicPath>Apparel/Bodywear_Clothing/WW1NurseUniform/WW1Nurse</worngraphicPath>
+			<wornGraphicPath>Apparel/Bodywear_Clothing/WW1NurseUniform/WW1Nurse</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
@@ -509,4 +509,4 @@
 	</ThingDef>
 
 
-</ThingDefs>
+</Defs>

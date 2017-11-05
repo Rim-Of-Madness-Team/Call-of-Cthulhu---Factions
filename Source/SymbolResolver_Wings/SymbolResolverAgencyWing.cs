@@ -5,7 +5,7 @@ using RimWorld;
 using Verse.AI.Group;
 using System.Collections.Generic;
 using UnityEngine;
-using CustomFactionBase;
+//using CustomFactionBase;
 
 namespace CthulhuFactions
 {

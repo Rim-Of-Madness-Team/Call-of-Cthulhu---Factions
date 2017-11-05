@@ -34,7 +34,7 @@ namespace CthulhuFactions
                 bool flag = false;
                 foreach (IntVec3 current2 in GenAdj.CellsOccupiedBy(loc, rot, thingDef.Size))
                 {
-                    if (BaseGenUtility.AnyDoorCardinalAdjacentTo(current2, map))
+                    if (BaseGenUtility.AnyDoorAdjacentCardinalTo(current2, map))
                     {
                         flag = true;
                         break;

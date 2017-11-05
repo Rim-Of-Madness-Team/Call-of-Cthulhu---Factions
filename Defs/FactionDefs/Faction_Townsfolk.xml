@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<FactionDefs>
+<Defs>
   <FactionDef>
 	<defName>ROM_Townsfolk</defName>
 	<label>Coastal Fishing Town</label>
@@ -8,7 +8,12 @@
     <baseSelectionWeight>0.7</baseSelectionWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
-    <raidCommonality>37</raidCommonality>
+	<raidCommonalityFromPointsCurve>
+		<points>
+			<li>(40, 3)</li>
+			<li>(400, 1)</li>
+		</points>
+	</raidCommonalityFromPointsCurve>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>mayor</leaderTitle>
@@ -111,4 +116,4 @@
     </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/DefaultFactionBase</homeIconPath>
   </FactionDef>
-</FactionDefs>
+</Defs>

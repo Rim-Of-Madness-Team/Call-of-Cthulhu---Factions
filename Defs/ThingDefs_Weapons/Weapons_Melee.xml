@@ -1,48 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
-<ThingDefs>
-
-  <ThingDef Name="CallOfCthulhu_BaseMeleeWeapon" Abstract="True">
-    <category>Item</category>
-    <thingClass>ThingWithComps</thingClass>
-    <equipmentType>Primary</equipmentType>
-    <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <selectable>True</selectable>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-      <SellPriceFactor>0.5</SellPriceFactor>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
+<Defs>
+  <ThingDef Name="BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
     <techLevel>Industrial</techLevel>
-    <weaponTags>
-      <li>Melee</li>
-    </weaponTags>
+		<smeltable>true</smeltable>
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>ArtName_WeaponMelee</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
-    </comps>
+
     <recipeMaker>
       <workSpeedStat>SmithingSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
@@ -59,9 +24,7 @@
     </inspectorTabs>
   </ThingDef>
 
-
-
-  <ThingDef Name="CallOfCthulhu_BaseMeleeWeapon_Sharp" ParentName="CallOfCthulhu_BaseMeleeWeapon" Abstract="True">
+		<ThingDef Name="BaseMeleeWeapon_Sharp" ParentName="BaseMeleeWeapon" Abstract="True">
     <recipeMaker>
     <defaultIngredientFilter>
       <categories>
@@ -76,7 +39,7 @@
     </recipeMaker>
   </ThingDef>
 
-  <ThingDef Name="CallOfCthulhu_BaseMeleeWeapon_Blunt" ParentName="CallOfCthulhu_BaseMeleeWeapon" Abstract="True">
+  <ThingDef Name="BaseMeleeWeapon_Blunt" ParentName="BaseMeleeWeapon" Abstract="True">
     <recipeMaker>
       <defaultIngredientFilter>
         <categories>
@@ -89,15 +52,37 @@
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
-  
-  
-  
-  
-  
-  
-  <!-- ============================================================== -->
 
-  <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
+	<ThingDef Name="BaseMeleeWeapon_Sharp_Quality" Abstract="True" ParentName="BaseMeleeWeapon_Sharp">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_WeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef Name="BaseMeleeWeapon_Blunt_Quality" Abstract="True" ParentName="BaseMeleeWeapon_Sharp">
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>ArtName_WeaponMelee</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!-- ============================================================== -->
+
+
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_PoleHook</defName>
     <label>polehook</label>
     <description>A meat hook fixed to the end of a pole. A terrifying weapon to behold.</description>
@@ -105,26 +90,37 @@
       <texPath>WeaponMelee/CallOfCthulhu_PoleHook</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
-    <costStuffCount>50</costStuffCount>
-    <statBases>
-      <WorkToMake>7000</WorkToMake>
-	  <Mass>1.2</Mass>
-      <MeleeWeapon_DamageAmount>9</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>1.66</MeleeWeapon_Cooldown>
-    </statBases>
-    <equippedAngleOffset>-65</equippedAngleOffset>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-    </stuffCategories>
-    <verbs>
+    <costStuffCount>70</costStuffCount>
+	<statBases>
+		<WorkToMake>17000</WorkToMake>
+		<Mass>2</Mass>
+		<Weapon_Bulk>1.0</Weapon_Bulk>
+	</statBases>
+	<stuffCategories>
+		<li>Metallic</li>
+		<li>Woody</li>
+	</stuffCategories>
+    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Stab</meleeDamageDef>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.3</cooldownTime>
       </li>
-    </verbs>
+      <li>
+        <label>hook</label>
+        <capacities>
+          <li>Stab</li>
+		  <li>Cut</li>
+        </capacities>
+        <power>20.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>
 	<weaponTags>
       <li>CallOfCthulhu_Melee</li>	
       <li>CallOfCthulhu_CoastalMelee</li>
@@ -133,7 +129,7 @@
   </ThingDef>
 <!-- ============================================================== -->
 
-  <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_WoodAxe</defName>
     <label>wood axe</label>
     <description>An axe used by lumberjacks to quickly turn trees into valuable resources.</description>
@@ -141,30 +137,39 @@
       <texPath>WeaponMelee/CallOfCthulhu_WoodAxe</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
     <costStuffCount>50</costStuffCount>
     <statBases>
-      <WorkToMake>8000</WorkToMake>
+      <WorkToMake>12000</WorkToMake>
 	  <Mass>1.5</Mass>
-      <MeleeWeapon_DamageAmount>10</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>1.66</MeleeWeapon_Cooldown>
-    </statBases>
+      <Weapon_Bulk>1.0</Weapon_Bulk> 
+	 </statBases>
 	<!-- TODO PlantCutting Speed Bonus -->
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
-    <verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Cut</meleeDamageDef>
-      </li>
-    </verbs>
 	<weaponTags>
       <li>CallOfCthulhu_Lumberjack</li>  
-	</weaponTags>	
+	</weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>axe head</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>	
   </ThingDef>
 
   <!-- ============================================================== -->
@@ -172,7 +177,7 @@
     
   <!-- ============================================================== -->
 
-  <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Sharp">
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_Pitchfork</defName>
     <label>pitchfork</label>
     <description>Used by farmers to help manage hay.</description>
@@ -180,13 +185,11 @@
       <texPath>WeaponMelee/CallOfCthulhu_Pitchfork</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
     <costStuffCount>50</costStuffCount>
     <statBases>
       <WorkToMake>8000</WorkToMake>
 	  <Mass>1.8</Mass>
-      <MeleeWeapon_DamageAmount>10</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>1.66</MeleeWeapon_Cooldown>
+      <Weapon_Bulk>1.0</Weapon_Bulk> 
     </statBases>
 	<equippedStatOffsets>
 		<PlantWorkSpeed>0.15</PlantWorkSpeed>
@@ -196,13 +199,24 @@
       <li>Metallic</li>
       <li>Woody</li>
     </stuffCategories>
-    <verbs>
+	<tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Stab</meleeDamageDef>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
-    </verbs>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
 	<weaponTags>
       <li>CallOfCthulhu_Farmer</li>	  
 	</weaponTags>	
@@ -211,7 +225,30 @@
   <!-- ============================================================== -->
 
   
-  <ThingDef ParentName="CallOfCthulhu_BaseMeleeWeapon_Blunt">
+  <DamageDef Name="LocalInjuryBase" Abstract="True">
+    <workerClass>DamageWorker_AddInjury</workerClass>
+  </DamageDef>
+
+  <DamageDef ParentName="Bite">
+    <defName>ROM_MeleeBurn</defName>
+    <label>burn</label>
+	<workerClass>DamageWorker_Bite</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>ROM_Heat</armorCategory>
+    <biteDamageMultiplier>1.25</biteDamageMultiplier>
+  </DamageDef>
+  
+  <DamageArmorCategoryDef>
+    <defName>ROM_Heat</defName>
+    <multStat>BluntDamageMultiplier</multStat>
+    <deflectionStat>ArmorRating_Heat</deflectionStat>
+  </DamageArmorCategoryDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_BrandingIron</defName>
     <label>hot branding iron</label>
     <description>A burning hot tool commonly used to brand livestock with prescribed insignias.</description>
@@ -219,29 +256,38 @@
       <texPath>WeaponMelee/CallOfCthulhu_BrandingIron</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractPistol</soundInteract>
     <costStuffCount>50</costStuffCount>
     <statBases>
       <WorkToMake>50000</WorkToMake>
 	  <Mass>1.2</Mass>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>1.66</MeleeWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <verbs>
+	    <tools>
       <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Burn</meleeDamageDef>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
       </li>
-    </verbs>
+      <li>
+        <label>tip</label>
+        <capacities>
+		  <li>COC_BrandingStabT</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+
 	<weaponTags>
       <li>CallOfCthulhu_Melee</li>	
       <li>CallOfCthulhu_Rancher</li>	
 	</weaponTags>
   </ThingDef>
 
-</ThingDefs>
+</Defs>

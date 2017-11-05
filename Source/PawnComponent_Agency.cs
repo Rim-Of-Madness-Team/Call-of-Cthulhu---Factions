@@ -84,7 +84,7 @@ namespace CthulhuFactions
                                                 parentPawn.gender.GetPossessive(),
                                                 parentPawn.LabelShort,
                                                 thing2.def.label
-                                            }), LetterDefOf.BadUrgent);
+                                            }), LetterDefOf.NeutralEvent);
                                         //Messages.Message("Agency discovered: " + thing2.def.label, MessageSound.Negative);
                                     }
                                 }
