@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+<AgencyDiscoveredCult>Культ обнаружен</AgencyDiscoveredCult>
+<AgencyDiscoveredCultDesc>Во время {0} посещения {1} обнаружил {2} и предупредил агентство о наличии культа. Агентство теперь враждебно относится к вам.</AgencyDiscoveredCultDesc>
+
+</LanguageData>
