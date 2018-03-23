@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_OccupationClothing.label>профессиональная одежда</ROM_OccupationClothing.label>
+<ROM_OccupationClothing.description>Сшейте более сложные предметы одежды для таких профессий, как детективы, полиция, медсестры и рыбаки. [Из мода Call of Cthulhu - Neutral Factions]</ROM_OccupationClothing.description>
+
+<ROM_MERFOutfits.label>боевое снаряжение СОБР</ROM_MERFOutfits.label>
+<ROM_MERFOutfits.description>Позволяет создавать боевую экипировку для СОБР против повышенной угрозы. [Из мода Call of Cthulhu - Neutral Factions]</ROM_MERFOutfits.description>
+
+</LanguageData>
