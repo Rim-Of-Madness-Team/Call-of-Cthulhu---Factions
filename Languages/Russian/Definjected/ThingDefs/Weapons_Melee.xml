@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_PoleHook.label>Багор</ROM_PoleHook.label>
+<ROM_PoleHook.description>Крючок крепится к концу шеста. Ужасающее с виду оружие.</ROM_PoleHook.description>
+
+<ROM_WoodAxe.label>Топор лесоруба</ROM_WoodAxe.label>
+<ROM_WoodAxe.description>Топор, используемый лесорубами для быстрого превращения деревьев в ценные ресурсы.</ROM_WoodAxe.description>
+
+<ROM_Pitchfork.label>Вилы</ROM_Pitchfork.label>
+<ROM_Pitchfork.description>Используется селянами для укладки сена.</ROM_Pitchfork.description>
+
+<ROM_MeleeBurn.label>огонь</ROM_MeleeBurn.label>
+<ROM_MeleeBurn.description></ROM_MeleeBurn.description>
+
+<ROM_BrandingIron.label>Клеймо</ROM_BrandingIron.label>
+<ROM_BrandingIron.description>Раскалённый горячий инструмент, обычно используемый для маркировки домашнего скота условными знаками.</ROM_BrandingIron.description>
+
+</LanguageData>

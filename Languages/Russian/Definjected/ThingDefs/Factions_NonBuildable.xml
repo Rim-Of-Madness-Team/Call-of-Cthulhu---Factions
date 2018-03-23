@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_TemporaryRegionBarrier.label>временный барьер области</ROM_TemporaryRegionBarrier.label>
+<ROM_TemporaryRegionBarrier.description></ROM_TemporaryRegionBarrier.description>
+
+<ROM_TemporaryDoorMarker.label>временный барьер области (двери)</ROM_TemporaryDoorMarker.label>
+<ROM_TemporaryDoorMarker.description></ROM_TemporaryDoorMarker.description>
+
+<ROM_AgencySymbolFloorPainting.label>Настил с эмблемой агентства</ROM_AgencySymbolFloorPainting.label>
+<ROM_AgencySymbolFloorPainting.description>Сияющий символ агентства, которое пытается расследовать и сдерживать угрозу сверхразумных сущностей.</ROM_AgencySymbolFloorPainting.description>
+
+<ROM_AgencyReceptionistTable.label>Стол приёма посетителей</ROM_AgencyReceptionistTable.label>
+<ROM_AgencyReceptionistTable.description></ROM_AgencyReceptionistTable.description>
+
+</LanguageData>

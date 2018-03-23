@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_DetectiveInvestigator.label>Следователь</ROM_DetectiveInvestigator.label>
+
+<ROM_DetectiveSenior.label>старший детектив</ROM_DetectiveSenior.label>
+
+<ROM_DetectiveTrader.label>торговый детектив</ROM_DetectiveTrader.label>
+
+<ROM_DetectiveJunior.label>младший агент</ROM_DetectiveJunior.label>
+
+<ROM_DetectiveStandard.label>агент</ROM_DetectiveStandard.label>
+
+</LanguageData>

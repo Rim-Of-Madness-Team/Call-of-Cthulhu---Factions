@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_Gun_Revolver.label>Револьвер «Webley»</ROM_Gun_Revolver.label>
+<ROM_Gun_Revolver.description>Военная и полицейская модель барабанного пистолета с шестью патронами калибра 0,38. Делает шесть выстрелов перед перезарядкой.</ROM_Gun_Revolver.description>
+
+<ROM_Bullet_Harpoon.label>крюк гарпуна</ROM_Bullet_Harpoon.label>
+<ROM_Bullet_Harpoon.description></ROM_Bullet_Harpoon.description>
+
+<ROM_Gun_Harpoon.label>Ручное гарпунное ружьё</ROM_Gun_Harpoon.label>
+<ROM_Gun_Harpoon.description>Специальное оружие, разработанное прибрежными рыбацкими деревнями на рубеже 20-го века. Серия выстрелов бывает смертельна.</ROM_Gun_Harpoon.description>
+
+<ROM_Bullet_Flare.label>Заряд ракетницы</ROM_Bullet_Flare.label>
+<ROM_Bullet_Flare.description></ROM_Bullet_Flare.description>
+
+<ROM_Gun_Flaregun.label>Береговая Ракетница</ROM_Gun_Flaregun.label>
+<ROM_Gun_Flaregun.description>Светошумовой пистолет-ракетница обычно используется для подачи сигнала бедствия для моряков в море. В крайней и непредвиденной боевой обстановке может быть использован в качестве смертоносного боевого оружия.</ROM_Gun_Flaregun.description>
+
+<ROM_Bullet_TommyGun.label>Патрон для Пистолет-пулемёта Томпсона</ROM_Bullet_TommyGun.label>
+<ROM_Bullet_TommyGun.description></ROM_Bullet_TommyGun.description>
+
+<ROM_Gun_TommyGun.label>Пистолет-пулемёт Томпсона</ROM_Gun_TommyGun.label>
+<ROM_Gun_TommyGun.description>Классический пистолет-пулемет, также известный как Чикагская пишущая машинка. Средняя дальность, приличная убойная сила, высокая скорость стрельбы. Очень быстро прицелиться и стрелять.</ROM_Gun_TommyGun.description>
+
+<ROM_Gun_PumpShotgun_COC.label>Дробовик</ROM_Gun_PumpShotgun_COC.label>
+<ROM_Gun_PumpShotgun_COC.description>Красивый антикварный дизайн. Смертельный, но с малой дальностью стрельбы.</ROM_Gun_PumpShotgun_COC.description>
+
+<ROM_Gun_SurvivalRifle_COC.label>Охотничье ружьё</ROM_Gun_SurvivalRifle_COC.label>
+<ROM_Gun_SurvivalRifle_COC.description>Винтовка с деревянным прикладом. Хорошая дальность, хорошая убойная сила, низкая скорострельность.</ROM_Gun_SurvivalRifle_COC.description>
+
+<ROM_Gun_LPRifle_COC.label>Старомодная винтовка</ROM_Gun_LPRifle_COC.label>
+<ROM_Gun_LPRifle_COC.description>Винтовка с деревянным прикладом. Хорошая дальность, хорошая убойная сила, низкая скорострельность.</ROM_Gun_LPRifle_COC.description>
+
+</LanguageData>

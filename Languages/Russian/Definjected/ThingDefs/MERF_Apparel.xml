@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_Apparel_MERF_LightHelmet.label>Лёгкий шлем СОБР</ROM_Apparel_MERF_LightHelmet.label>
+<ROM_Apparel_MERF_LightHelmet.description>Легкий боевой шлем, разработанный для СОБР. СОБР - сборный отряд быстрого реагирования для борьбы с элдричами.</ROM_Apparel_MERF_LightHelmet.description>
+
+<ROM_Apparel_MERF_HeavyHelmet.label>Тяжёлый шлем СОБР</ROM_Apparel_MERF_HeavyHelmet.label>
+<ROM_Apparel_MERF_HeavyHelmet.description>Тяжёлый боевой шлем, разработанный для СОБР. СОБР - сборный отряд быстрого реагирования для борьбы с элдричами.</ROM_Apparel_MERF_HeavyHelmet.description>
+
+<ROM_Apparel_MERF_Armor.label>Броня СОБР</ROM_Apparel_MERF_Armor.label>
+<ROM_Apparel_MERF_Armor.description>Специализированная броня для защиты членов СОБР. СОБР - сборный отряд быстрого реагирования для борьбы с элдричами.</ROM_Apparel_MERF_Armor.description>
+
+<ROM_Apparel_MERF_Coat.label>Мундир СОБР</ROM_Apparel_MERF_Coat.label>
+<ROM_Apparel_MERF_Coat.description>Утеплённая одежда для защиты членов СОБР. СОБР - сборный отряд быстрого реагирования для борьбы с элдричами.</ROM_Apparel_MERF_Coat.description>
+
+</LanguageData>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<ROM_ApparelRaincoat.label>плащ дождевик</ROM_ApparelRaincoat.label>
+<ROM_ApparelRaincoat.description>Водонепроницаемая накидка, часто используемая рыбаками.</ROM_ApparelRaincoat.description>
+
+<ROM_Apparel_ROM_SlickerHat.label>шляпа дождевик</ROM_Apparel_ROM_SlickerHat.label>
+<ROM_Apparel_ROM_SlickerHat.description>Жёлтая водоотталквающая шляпа, предназначена для отражения воды, популярна у рыболовов и отставных бухгалтеров, которые любят рыбалку.</ROM_Apparel_ROM_SlickerHat.description>
+
+<ROM_Apparel_ROM_StrawHat.label>соломенная шляпа</ROM_Apparel_ROM_StrawHat.label>
+<ROM_Apparel_ROM_StrawHat.description>Шляпа, изготовленная из соломы, чтобы защитить пользователя от солнца.</ROM_Apparel_ROM_StrawHat.description>
+
+<ROM_Apparel1920sPoliceHat.label>полицейская шляпа</ROM_Apparel1920sPoliceHat.label>
+<ROM_Apparel1920sPoliceHat.description>Обозначает кого-то как авторитетную фигуру, представителя Закона. Точность этого обозначения остаётся на совести наблюдателя.</ROM_Apparel1920sPoliceHat.description>
+
+<ROM_Apparel1920sPoliceOutfit.label>полицейская униформа</ROM_Apparel1920sPoliceOutfit.label>
+<ROM_Apparel1920sPoliceOutfit.description>Одежда начала 20-го века, подходящая для местных силовых структур, используемых при защите порядка.</ROM_Apparel1920sPoliceOutfit.description>
+
+<ROM_ApparelWWIHelmet.label>пехотный шлем (Первая мировая война)</ROM_ApparelWWIHelmet.label>
+<ROM_ApparelWWIHelmet.description>Чтобы не возвращаться домой с передней линии в качестве "груза 200" в отдельных мешках, обязательно наденьте этот упрощённый защитный головной убор.</ROM_ApparelWWIHelmet.description>
+
+<ROM_ApparelWWIUniform.label>пехотная униформа (Первая мировая война)</ROM_ApparelWWIUniform.label>
+<ROM_ApparelWWIUniform.description>Эта одежда упростила различие между товарищами и врагами на поле битвы. Тем не менее, она мало пригодна в качестве брони.</ROM_ApparelWWIUniform.description>
+
+<ROM_Apparel_NurseCap.label>косынка медсестры</ROM_Apparel_NurseCap.label>
+<ROM_Apparel_NurseCap.description>Старомодная косынка медсестры с первой мировой войны. В то время это была обычная и модная одежда медсестёр.</ROM_Apparel_NurseCap.description>
+
+<ROM_Apparel_WW1NurseUniform.label>униформа медсестры</ROM_Apparel_WW1NurseUniform.label>
+<ROM_Apparel_WW1NurseUniform.description>Старомодная униформа медсестры с первой мировой войны. В то время это была обычная и модная одежда медсестёр.</ROM_Apparel_WW1NurseUniform.description>
+
+</LanguageData>
