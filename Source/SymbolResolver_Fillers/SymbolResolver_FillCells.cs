@@ -107,7 +107,7 @@ namespace CthulhuFactions
 
             //if (!Cthulhu.Utility.IsCosmicHorrorsLoaded())
             //{
-                PawnGroupKindDef groupKind = rp.pawnGroupKindDef ?? PawnGroupKindDefOf.Normal;
+                PawnGroupKindDef groupKind = rp.pawnGroupKindDef ?? PawnGroupKindDefOf.Combat;
                 PawnGroupMakerParms pawnGroupMakerParms = new PawnGroupMakerParms()
                 {
                     faction = (from x in Find.FactionManager.AllFactions
@@ -115,14 +115,14 @@ namespace CthulhuFactions
                                && x.def.pawnGroupMakers.Count > 0
                                && x.def.humanlikeFaction
                                && IsCosmicHorrorFaction(x) == false
-                               && (x.def.pawnGroupMakers.FirstOrDefault((PawnGroupMaker y) => y.kindDef == PawnGroupKindDefOf.Normal) != null)
+                               && (x.def.pawnGroupMakers.FirstOrDefault((PawnGroupMaker y) => y.kindDef == PawnGroupKindDefOf.Combat) != null)
                                select x).RandomElement<Faction>(),
                     tile = map.Tile,
                     points = 5000,
                     generateFightersOnly = false,
                 };
                 int num = 0;
-                foreach (Pawn current in PawnGroupMakerUtility.GeneratePawns(groupKind, pawnGroupMakerParms, true))
+                foreach (Pawn current in PawnGroupMakerUtility.GeneratePawns(pawnGroupMakerParms, true))
                 {
                     num++;
                     ResolveParams resolveParams = rp;
@@ -134,7 +134,7 @@ namespace CthulhuFactions
             //else
             //{
             //    Faction tempFaction = Find.FactionManager.AllFactions.InRandomOrder<Faction>().FirstOrDefault((Faction z) => IsCosmicHorrorFaction(z));
-            //    PawnGroupKindDef groupKind = rp.pawnGroupKindDef ?? PawnGroupKindDefOf.Normal;
+            //    PawnGroupKindDef groupKind = rp.pawnGroupKindDef ?? PawnGroupKindDefOf.Combat;
             //    PawnGroupMakerParms pawnGroupMakerParms = new PawnGroupMakerParms()
             //    {
             //        faction = tempFaction,

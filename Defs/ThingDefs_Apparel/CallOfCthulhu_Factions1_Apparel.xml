@@ -3,101 +3,10 @@
 
 <!-- Vanilla base -->
 
-  <ThingDef Name="CallOfCthulhuApparelBase" Abstract="True">
-    <thingClass>Apparel</thingClass>
-    <category>Item</category>
-    <selectable>True</selectable>
-    <pathCost>10</pathCost>
-    <useHitPoints>True</useHitPoints>
-    <graphicData>
-      <onGroundRandomRotateAngle>35</onGroundRandomRotateAngle>
-    </graphicData>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>2</DeteriorationRate>
-	  <Beauty>-6</Beauty>
-    </statBases>
-    <altitudeLayer>Item</altitudeLayer>
-    <alwaysHaulable>True</alwaysHaulable>
-    <tickerType>Never</tickerType>
-    <comps>
-      <li Class="CompProperties_Forbiddable"/>
-      <li>
-        <compClass>CompColorable</compClass>
-      </li>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef Name="CallOfCthulhuApparelMakeableBase" ParentName="CallOfCthulhuApparelBase" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>TailoringSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Tailor</effectWorking>
-      <soundWorking>Recipe_Tailor</soundWorking>
-      <recipeUsers>
-        <li>ElectricTailoringBench</li>
-        <li>HandTailoringBench</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
-
-
-
-	<ThingDef Name="CallOfCthulhuArmorMakeableBase" ParentName="CallOfCthulhuApparelBase" Abstract="True">
-		<recipeMaker>
-			<workSpeedStat>SmithingSpeed</workSpeedStat>
-			<workSkill>Crafting</workSkill>
-			<effectWorking>Smith</effectWorking>
-			<soundWorking>Recipe_Machining</soundWorking>
-			<recipeUsers>
-				<li>TableMachining</li>
-			</recipeUsers>
-			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-		</recipeMaker>
-	</ThingDef>
-
-
-	<ThingDef Name="CallOfCthulhuHatBase" ParentName="CallOfCthulhuApparelBase" Abstract="True">
-		<thingCategories>
-			<li>Headgear</li>
-		</thingCategories>
-	</ThingDef>
-
-
-
-	<ThingDef Name="CallOfCthulhuHatMakeableBase" ParentName="CallOfCthulhuApparelMakeableBase" Abstract="True">
-		<thingCategories>
-			<li>Headgear</li>
-		</thingCategories>
-	</ThingDef>
-
-
-
-	<ThingDef Name="CallOfCthulhuArmorHelmetMakeableBase" ParentName="CallOfCthulhuArmorMakeableBase" Abstract="True">
-		<thingCategories>
-			<li>Headgear</li>
-		</thingCategories>
-	</ThingDef>
-
-
-
-	<!-- =====Shirts===== -->
-
-
-	<!-- =====Middle===== -->
-
-
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_NF_FSOveralls</defName>
 		<label>overalls</label>
-		<description>
-		</description>
+		<description>Who needs a belt when you can just wear pants so tall they go up to your shoulders? Not you! You've got overalls!</description>
 		<graphicData>
 			<texPath>Apparel/Display/NF_FSOveralls</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -111,11 +20,13 @@
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
-			<WorkToMake>14000</WorkToMake>
 			<Mass>0.25</Mass>
-			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-			<Insulation_Cold>-4</Insulation_Cold>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>16000</WorkToMake>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.16</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.15</WorkSpeedGlobal>

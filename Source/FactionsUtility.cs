@@ -32,7 +32,7 @@ namespace Cthulhu
     {
         public const string main = "Cthulhu";
         public const string mod = "Factions";
-        public const string version = "1.17.9";
+        public const string version = "1.0.0";
     }
 
     public static class SanityLossSeverity
@@ -300,7 +300,7 @@ namespace Cthulhu
             {
                 if (pawn.RaceProps.ageGenerationCurve != null)
                 {
-                    num2 = Mathf.RoundToInt(Rand.ByCurve(pawn.RaceProps.ageGenerationCurve, 200));
+                    num2 = Mathf.RoundToInt(Rand.ByCurve(pawn.RaceProps.ageGenerationCurve));
                 }
                 else if (pawn.RaceProps.IsMechanoid)
                 {
@@ -465,7 +465,7 @@ namespace Cthulhu
             {
                 for (int i = 0; i < current.def.tags.Count; i++)
                 {
-                    if (current.def.tags[i] == "BloodPumpingSource")
+                    if (current.def.tags[i].defName == "BloodPumpingSource")
                     {
                         return current;
                     }
@@ -480,7 +480,7 @@ namespace Cthulhu
             {
                 for (int i = 0; i < current.def.tags.Count; i++)
                 {
-                    if (current.def.tags[i] == "BloodPumpingSource")
+                    if (current.def.tags[i].defName == "BloodPumpingSource")
                     {
                         return current;
                     }
@@ -686,10 +686,6 @@ namespace Cthulhu
         }
 
 
-        public static int GetSocialSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Social).Level;
-
-        public static int GetResearchSkill(Pawn p) => p.skills.GetSkill(SkillDefOf.Intellectual).Level;
-
         public static bool IsCosmicHorrorsLoaded()
         {
 
@@ -732,26 +728,6 @@ namespace Cthulhu
             }
             resultCell = IntVec3.Invalid;
             return false;
-        }
-
-        public static void TemporaryGoodwill(Faction faction, bool reset = false)
-        {
-            Faction playerFaction = Faction.OfPlayer;
-            if (!reset)
-            {
-                if (faction.GoodwillWith(playerFaction) == 0f)
-                {
-                    faction.RelationWith(playerFaction, false).goodwill = faction.PlayerGoodwill;
-                }
-
-                faction.RelationWith(playerFaction, false).goodwill = 100f;
-                faction.RelationWith(playerFaction, false).hostile = false;
-            }
-            else
-            {
-                faction.RelationWith(playerFaction, false).goodwill = 0f;
-                faction.RelationWith(playerFaction, false).hostile = true;
-            }
         }
 
 
@@ -797,7 +773,7 @@ namespace Cthulhu
             }
         }
 
-        public static void ErrorReport(string x) => Log.Error(Prefix + x);
+        //public static void ErrorReport(string x) => Log.Error(Prefix + x);
 
 
     }

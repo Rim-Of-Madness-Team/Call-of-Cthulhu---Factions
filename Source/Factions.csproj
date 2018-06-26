@@ -41,6 +41,10 @@
       <HintPath>..\..\..\RimWorldWin_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="CombatExtended, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\..\Mods\CombatExtended\Assemblies\CombatExtended.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -55,8 +59,9 @@
   <ItemGroup>
     <Compile Include="CellRectRot.cs" />
     <Compile Include="CthulhuFactionsDefOf.cs" />
-    <Compile Include="CthulhuUtility.cs" />
+    <Compile Include="FactionsUtility.cs" />
     <Compile Include="HarmonyFactions.cs" />
+    <Compile Include="ModBase.cs" />
     <Compile Include="SymbolResolver_Fillers\SymbolResolver_FillCells.cs" />
     <Compile Include="SymbolResolver_Halls\SymbolResolver_AgencyBedrooms.cs" />
     <Compile Include="SymbolResolver_Halls\SymbolResolver_AgencyBedroomsH.cs" />

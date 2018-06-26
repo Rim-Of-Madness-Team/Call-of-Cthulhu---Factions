@@ -5,5 +5,4 @@
     <defName>ROM_AgencyMERF</defName>
     <workerClass>PawnGroupKindWorker_Normal</workerClass>
   </PawnGroupKindDef>
-  
 </Defs>

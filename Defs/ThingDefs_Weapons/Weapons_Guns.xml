@@ -16,7 +16,7 @@
         <compClass>CompQuality</compClass>
       </li>
       <li Class="CompProperties_Art">
-        <nameMaker>ArtName_WeaponGun</nameMaker>
+        <nameMaker>NamerArtWeaponGun</nameMaker>
         <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
@@ -85,7 +85,7 @@
     </statBases>
     <costList>
       <Steel>40</Steel>
-      <Component>2</Component>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
@@ -94,7 +94,7 @@
         <defaultProjectile>Bullet_Revolver</defaultProjectile>
         <warmupTime>0.3</warmupTime>
         <range>26</range>
-        <soundCast>ShotRevolver</soundCast>
+        <soundCast>Shot_Revolver</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -132,6 +132,7 @@
     <graphicData>
       <texPath>Projectile/CallOfCthulhu_HarpoonBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>1.4</drawSize>
     </graphicData>
     <projectile>
       <flyOverhead>false</flyOverhead>
@@ -205,8 +206,7 @@
       </li>
     </tools>
     <comps>
-      <li>
-		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
 	  </li>
     </comps>
     <weaponTags>
@@ -251,7 +251,7 @@
     </statBases>
     <costList>
       <Steel>60</Steel>
-      <Component>4</Component>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
@@ -313,7 +313,7 @@
   			<texPath>Guns/CallOfCthulhu_tommygun</texPath>
   			<graphicClass>Graphic_Single</graphicClass>
   		</graphicData>
-  		<soundInteract>InteractSMG</soundInteract>
+  		<soundInteract>Interact_SMG</soundInteract>
       <statBases>
   			<WorkToMake>28000</WorkToMake>
   			<Mass>3.2</Mass>
@@ -326,7 +326,7 @@
   		</statBases>
   		<costList>
   			<Steel>45</Steel>
-  			<Component>3</Component>
+  			<ComponentIndustrial>3</ComponentIndustrial>
   		</costList>
   		<verbs>
   			<li>
@@ -337,7 +337,7 @@
   				<range>28</range>
   				<burstShotCount>3</burstShotCount>
   				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-  				<soundCast>ShotHeavySMG</soundCast>
+  				<soundCast>Shot_HeavySMG</soundCast>
   				<soundCastTail>GunTail_Light</soundCastTail>
   				<muzzleFlashScale>9</muzzleFlashScale>
   			</li>
@@ -376,7 +376,7 @@
       <texPath>Things/Item/Equipment/WeaponRanged/Shotgun</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractShotgun</soundInteract>
+    <soundInteract>Interact_Shotgun</soundInteract>
     <statBases>
       <WorkToMake>30000</WorkToMake>
       <Mass>3.4</Mass>
@@ -389,16 +389,16 @@
     </statBases>
     <costList>
       <Steel>60</Steel>
-      <Component>3</Component>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <defaultProjectile>Bullet_PumpShotgun</defaultProjectile>
+        <defaultProjectile>Bullet_Shotgun</defaultProjectile>
         <warmupTime>0.9</warmupTime>
         <range>16</range>
-        <soundCast>ShotShotgun</soundCast>
+        <soundCast>Shot_Shotgun</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -433,7 +433,7 @@
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>1.5</generateCommonality>
     <statBases>
       <WorkToMake>25000</WorkToMake>
@@ -447,7 +447,7 @@
     </statBases>
     <costList>
       <Steel>60</Steel>
-      <Component>3</Component>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
@@ -456,7 +456,7 @@
         <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <range>37</range>
-        <soundCast>ShotBoltActionRifle</soundCast>
+        <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>
@@ -491,7 +491,7 @@
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <soundInteract>InteractRifle</soundInteract>
+    <soundInteract>Interact_Rifle</soundInteract>
 		<generateCommonality>1.5</generateCommonality>
     <statBases>
       <WorkToMake>25000</WorkToMake>
@@ -505,7 +505,7 @@
     </statBases>
     <costList>
       <Steel>60</Steel>
-      <Component>3</Component>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <verbs>
       <li>
@@ -514,7 +514,7 @@
         <defaultProjectile>Bullet_BoltActionRifle</defaultProjectile>
         <warmupTime>1.9</warmupTime>
         <range>37</range>
-        <soundCast>ShotBoltActionRifle</soundCast>
+        <soundCast>Shot_BoltActionRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

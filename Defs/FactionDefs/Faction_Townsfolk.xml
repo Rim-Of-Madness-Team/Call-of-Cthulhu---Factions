@@ -5,7 +5,7 @@
 	<label>Coastal Fishing Town</label>
     <description>A coastal community of fishermen and tanners, with designated law enforcers.\n\nThese fishing villages seemingly come into existence overnight. A wild untamed forest can turn into a creaking assortment of docks and buildings. If one didn't know how they had mysteriously arrived, one would assume they had been there for decades. The weathered locals curiously ignore any questions as to how they arrived, or how they constructed a village so quickly and quietly.\n\nThe gruff citizens of these damp townships are slow to trust, but earning it can be worthwhile. The residents of these communities can be found wielding large hooks, branding irons, and the powerful harpoon gun. They are usually only willing to trade among their own people, but on the Rimworlds, these callused strangers will settle for anyone sane enough to barter.</description>
     <pawnsPlural>townsfolk</pawnsPlural>
-    <baseSelectionWeight>0.7</baseSelectionWeight>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
     <canMakeRandomly>true</canMakeRandomly>
 	<raidCommonalityFromPointsCurve>
@@ -28,9 +28,9 @@
       <min>-5</min>
       <max>15</max>
     </startingGoodwill>
-	<appreciative>true</appreciative>
+	 
 	<factionNameMaker>ROM_NamerFactionCFV</factionNameMaker>
-	<baseNameMaker>ROM_NamerFactionBaseCFV</baseNameMaker>
+	<settlementNameMaker>ROM_NamerFactionBaseCFV</settlementNameMaker>
 	<techLevel>Industrial</techLevel>
 	<backstoryCategory>Civil</backstoryCategory>
 	<hairTags>
@@ -52,16 +52,25 @@
     <baseTraderKinds>
       <li>Base_Outlander_Standard</li>
     </baseTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
 	<li>
-       <kindDef>Normal</kindDef>
+       <kindDef>Combat</kindDef>
 		<options>
 		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
 		  <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
 		  </options>
     </li>
 	<li>
-       <kindDef>Normal</kindDef>
+       <kindDef>Combat</kindDef>
 		<options>
 		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
 		  <ROM_TownsfolkDoctor>100</ROM_TownsfolkDoctor>
@@ -70,7 +79,7 @@
 		  </options>
     </li>
 	<li>
-       <kindDef>Normal</kindDef>
+       <kindDef>Combat</kindDef>
 		<options>
 		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
 		  <ROM_TownsfolkFarmer>100</ROM_TownsfolkFarmer>
@@ -79,7 +88,7 @@
 		  </options>
     </li>
 	<li>
-       <kindDef>Normal</kindDef>
+       <kindDef>Combat</kindDef>
 		<options>
 		  <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>
 		  </options>

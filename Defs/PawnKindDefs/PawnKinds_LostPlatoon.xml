@@ -38,7 +38,7 @@
       <min>1200</min>
       <max>1200</max>
     </apparelMoney>
-    <apparelAllowHeadwearChance>1.0</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
       <min>1000</min>
       <max>1000</max>
@@ -76,7 +76,7 @@
 	  <description>They do not belong here.</description>
     <combatPower>120</combatPower>
     <itemQuality>Good</itemQuality>
-    <apparelAllowHeadwearChance>0</apparelAllowHeadwearChance>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <factionLeader>true</factionLeader>
   </PawnKindDef>
 

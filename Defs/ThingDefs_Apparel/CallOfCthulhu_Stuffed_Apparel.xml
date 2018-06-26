@@ -3,10 +3,9 @@
 
 
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_CallOfCthulhuShirtTie</defName>
-		<description>During the 20th century, this piece of apparal became highly fashionable for conducting business.
-		</description>
+		<description>During the 20th century, this piece of apparel became highly fashionable for conducting business.</description>
 		<label>shirt and tie</label>
 		<recipeMaker>
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
@@ -52,10 +51,10 @@
 	</ThingDef>
 
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuTopHat</defName>
     <label>top hat</label>
-    <description>Dapper 18th century headwear.</description>
+    <description>An elegant hat which gives the wearer a sophisticated look of importance. Improves social impact.</description>
     <graphicData>
       <texPath>Apparel/Display/ROMTopHat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -97,10 +96,10 @@
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuNewsboyCap</defName>
     <label>newsboy cap</label>
-    <description>Front-facing flat cap that was commonly used by newspaper delivery boys during the industrial age.</description>
+    <description>A plain cap which gives off an urban look. Improves social impact.</description>
     <graphicData>
       <texPath>Apparel/Display/ROMNewsboyCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -145,7 +144,7 @@
 
 
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuFedora</defName>
     <label>fedora</label>
     <description>Stylish early 20th century headwear.</description>
@@ -191,10 +190,10 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuBowler</defName>
     <label>bowler hat</label>
-    <description>Stylish early 20th century headwear.</description>
+    <description>A stylish hat which gives off a slightly formal, business style. Improves social impact.</description>
     <graphicData>
       <texPath>Apparel/Display/CallOfCthulhu_Bowler</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -243,10 +242,9 @@
   </ThingDef>
 
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_CallOfCthulhutrench_coat</defName>
-		<description>Preferred apparel of detectives everywhere.
-		</description>
+		<description>Preferred apparel of detectives everywhere.</description>
 		<label>trench coat</label>
 		<graphicData>
 			<texPath>Apparel/Display/CallOfCthulhu_TrenchCoat</texPath>

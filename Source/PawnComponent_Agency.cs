@@ -77,7 +77,8 @@ namespace CthulhuFactions
                                 {
                                     if (GenSight.LineOfSight(parent.PositionHeld, thing2.PositionHeld, parent.MapHeld))
                                     {
-                                        parent.Faction.SetHostileTo(Faction.OfPlayer, true);
+                                        parent.Faction.TrySetRelationKind(Faction.OfPlayer, FactionRelationKind.Hostile,
+                                            true);
                                         Log.Message("Agency discovered: " + thing2.def.label);
                                         Find.LetterStack.ReceiveLetter("AgencyDiscoveredCult".Translate(), "AgencyDiscoveredCultDesc".Translate(new object[]
                                             {

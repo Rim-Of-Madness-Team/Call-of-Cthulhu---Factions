@@ -2,7 +2,7 @@
 <Defs>
 
   <SoundDef>
-    <defName>ROM_ShotRevolver</defName>   
+    <defName>ROM_Shot_Revolver</defName>   
     <context>MapOnly</context>
     <eventNames />  
     <maxSimultaneous>1</maxSimultaneous>  

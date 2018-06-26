@@ -21,6 +21,7 @@ namespace CthulhuFactions
         public const float SITTINGAREA = 4;
     }
 
+    
     public static class Utility
     {
         public static ThingDef factionWallStuff = ThingDefOf.Steel;

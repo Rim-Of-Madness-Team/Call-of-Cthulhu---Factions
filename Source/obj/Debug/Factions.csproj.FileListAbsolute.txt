@@ -16,3 +16,9 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Call of Cthulhu - Fa
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Factions\Source\obj\Debug\Factions.csprojResolveAssemblyReference.cache
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Factions\Source\obj\Debug\CthulhuFactions.dll
 D:\SteamLibrary\steamapps\common\RimWorld\Mods\Call-of-Cthulhu---Factions\Assemblies\CthulhuFactions.dll
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Assemblies\CthulhuFactions.dll
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Source\obj\Debug\Factions.csprojResolveAssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Source\obj\Debug\CthulhuFactions.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Assemblies\CthulhuFactions.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Source\obj\Debug\Factions.csprojResolveAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\ModsWorkspace\Call-of-Cthulhu---Factions\Source\obj\Debug\CthulhuFactions.dll

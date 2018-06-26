@@ -3,10 +3,9 @@
 
 <!-- Angler -->
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_ApparelRaincoat</defName>
-		<description>Water resistant coat often used by fishermen.
-		</description>
+		<description>Water resistant coat often used by fishermen.</description>
 		<label>rain coat</label>
 		<graphicData>
 			<texPath>Apparel/Display/ROMRainCoat</texPath>
@@ -22,18 +21,14 @@
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
-			<MaxHitPoints>100</MaxHitPoints>
+		    <Mass>2.2</Mass>
+			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>20000</WorkToMake>
-			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<Insulation_Cold>-10</Insulation_Cold>
-			<Insulation_Heat>-2</Insulation_Heat>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>0.005</MoveSpeed>
-			<WorkSpeedGlobal>0.005</WorkSpeedGlobal>
-		</equippedStatOffsets>
-
 		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
@@ -62,8 +57,7 @@
 		</recipeMaker>
 	</ThingDef>
 
-
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_ROM_SlickerHat</defName>
     <label>slicker hat</label>
     <description>A yellow hat designed to repel water, a favorite of anglers and retired accountants who enjoy fishing.</description>
@@ -79,14 +73,13 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>5000</WorkToMake>
-      <Mass>0.25</Mass>
-      <ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-      <Insulation_Heat>8</Insulation_Heat>
-      <Insulation_Cold>8</Insulation_Cold>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.17</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
     </statBases>
-
-		<generateCommonality>0.1</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -113,7 +106,7 @@
 
 <!-- Farmer -->
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_ROM_StrawHat</defName>
     <label>straw hat</label>
     <description>A hat fashioned from straw to shield the user from the sun.</description>
@@ -128,16 +121,13 @@
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
-      <WorkToMake>5000</WorkToMake>
+      <WorkToMake>2000</WorkToMake>
       <Mass>0.25</Mass>
-      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
-      <Insulation_Heat>8</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.6</EquipDelay>
     </statBases>
-	<equippedStatOffsets>
-		<MoveSpeed>0.005</MoveSpeed>
-	</equippedStatOffsets>
-
 	<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
@@ -165,7 +155,7 @@
 
 <!-- Police -->
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel1920sPoliceHat</defName>
     <label>police hat</label>
     <description>Designates someone as an authority figure. The accuracy of this designation is left to the eye of the beholder.</description>
@@ -180,16 +170,16 @@
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
-      <WorkToMake>5000</WorkToMake>
+      <WorkToMake>2500</WorkToMake>
       <Mass>0.25</Mass>
-      <ArmorRating_Blunt>0.02</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.02</ArmorRating_Sharp>
-      <Insulation_Heat>8</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.225</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-
 		<generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
@@ -216,10 +206,9 @@
   </ThingDef>
 
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel1920sPoliceOutfit</defName>
-		<description>Early 20th century attire suited for local enforcers to use when keeping the peace.
-		</description>
+		<description>Early 20th century attire suited for local enforcers to use when keeping the peace.</description>
 		<label>police uniform</label>
 		<graphicData>
 			<texPath>Apparel/Display/CallOfCthulhu_1920sPoliceOutfit</texPath>
@@ -236,18 +225,13 @@
 		</thingCategories>
 		<statBases>
 			<MaxHitPoints>160</MaxHitPoints>
-			<WorkToMake>22000</WorkToMake>
-      <Mass>0.25</Mass>
-			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.08</ArmorRating_Sharp>
-			<Insulation_Cold>-47</Insulation_Cold>
-			<Insulation_Heat>-4</Insulation_Heat>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>2.6</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.6</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-			<MoveSpeed>-0.05</MoveSpeed>
-			<WorkSpeedGlobal>-0.05</WorkSpeedGlobal>
-		</equippedStatOffsets>
-
 		<generateCommonality>0.1</generateCommonality>
 		<apparel>
 			<bodyPartGroups>
@@ -279,7 +263,7 @@
 
 	<!-- Soldier -->
 
-	  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+	  <ThingDef ParentName="HatMakeableBase">
 	    <defName>ROM_ApparelWWIHelmet</defName>
 	    <label>infantry helmet (World War I)</label>
 	    <description>To avoid coming home from the front lines in seperate bags, be sure to wear this simplistic protective headwear.</description>
@@ -293,11 +277,13 @@
 	    </stuffCategories>
 			<costStuffCount>70</costStuffCount>
 			<statBases>
-				<WorkToMake>6100</WorkToMake>
+				<WorkToMake>3100</WorkToMake>
 				<MaxHitPoints>100</MaxHitPoints>
-				<Mass>1.9</Mass>
-				<ArmorRating_Blunt>0.11</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.31</ArmorRating_Sharp>
+				<Mass>2</Mass>
+			    <StuffEffectMultiplierArmor>0.475</StuffEffectMultiplierArmor>
+			    <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+			    <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			    <EquipDelay>2.5</EquipDelay>
 			</statBases>
 			<equippedStatOffsets>
 				<MoveSpeed>-0.0375</MoveSpeed>
@@ -328,10 +314,9 @@
 		</recipeMaker>
 	  </ThingDef>
 
-		<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+		<ThingDef ParentName="ApparelMakeableBase">
 			<defName>ROM_ApparelWWIUniform</defName>
-			<description>This apparel made it easier to distinguish friendlies on the battlefield. However, it provided little in the way of actual body armor.
-			</description>
+			<description>This apparel made it easier to distinguish friendlies on the battlefield. However, it provided little in the way of actual body armor.</description>
 			<label>infantry uniform (World War I)</label>
 			<graphicData>
 				<texPath>Apparel/Display/ROMWWIUKCoat</texPath>
@@ -347,13 +332,13 @@
 				<li>Apparel</li>
 			</thingCategories>
 			<statBases>
-				<MaxHitPoints>165</MaxHitPoints>
-				<WorkToMake>22200</WorkToMake>
-	      <Mass>0.35</Mass>
-				<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
-				<ArmorRating_Sharp>0.09</ArmorRating_Sharp>
-				<Insulation_Cold>-47</Insulation_Cold>
-				<Insulation_Heat>-4</Insulation_Heat>
+				<MaxHitPoints>160</MaxHitPoints>
+				<WorkToMake>12500</WorkToMake>
+				<Mass>2.75</Mass>
+				<StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+				<StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+				<EquipDelay>1.0</EquipDelay>
 			</statBases>
 			<equippedStatOffsets>
 				<MoveSpeed>-0.048</MoveSpeed>
@@ -392,7 +377,7 @@
 
   <!-- Nurse -->
 
-  <ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+  <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_NurseCap</defName>
     <label>nurse cap</label>
     <description>An ancient nurse cap from the first Great War. While typically worn by female nurses historically, residents of the rim both male and female have found it most fashionable.</description>
@@ -409,9 +394,10 @@
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <Mass>0.25</Mass>
-      <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-      <Insulation_Heat>8</Insulation_Heat>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.6</EquipDelay>
     </statBases>
 	<equippedStatOffsets>
 		<MedicalSurgerySuccessChance>0.05</MedicalSurgerySuccessChance>
@@ -447,10 +433,9 @@
 
 
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_WW1NurseUniform</defName>
-		<description>An ancient nurse cap from the first Great War. While typically worn by female nurses historically, residents of the rim both male and female have found it most fashionable.
-		</description>
+		<description>An ancient nurse uniform from the first Great War. While typically worn by female nurses historically, residents of the rim both male and female have found it most fashionable.</description>
 		<label>nurse uniform</label>
 		<graphicData>
 			<texPath>Apparel/Display/WW1Nurse</texPath>
@@ -463,17 +448,19 @@
       <li>Leathery</li>
     </stuffCategories>
 		<costList>
-			<Medicine>2</Medicine>
+			<MedicineIndustrial>2</MedicineIndustrial>
 		</costList>
 		<thingCategories>
 			<li>Apparel</li>
 		</thingCategories>
 		<statBases>
+		    <Mass>2.2</Mass>
+			<MaxHitPoints>120</MaxHitPoints>
 			<WorkToMake>15000</WorkToMake>
-      <Mass>0.25</Mass>
-			<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
-			<ArmorRating_Sharp>0.03</ArmorRating_Sharp>
-			<Insulation_Cold>-4</Insulation_Cold>
+            <StuffEffectMultiplierArmor>0.03</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MedicalSurgerySuccessChance>0.10</MedicalSurgerySuccessChance>

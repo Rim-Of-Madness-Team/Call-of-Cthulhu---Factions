@@ -12,7 +12,7 @@
     <holdsRoof>true</holdsRoof>
     <passability>Impassable</passability>
     <useHitPoints>false</useHitPoints>
-    <tradeability>Never</tradeability>
+    <tradeability>None</tradeability>
   </ThingDef>
 
   <ThingDef>
@@ -23,12 +23,12 @@
     <holdsRoof>true</holdsRoof>
     <passability>Impassable</passability>
     <useHitPoints>false</useHitPoints>
-    <tradeability>Never</tradeability>
+    <tradeability>None</tradeability>
   </ThingDef>
 
   <!-- ============ BASE OBJECTS ========== -->
 
-  <ThingDef ParentName="FactionBuildingBase">
+  <ThingDef ParentName="BuildingBase">
     <defName>ROM_AgencySymbolFloorPainting</defName>
     <label>agency emblem floor painting</label>
     <description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</description>
@@ -53,7 +53,7 @@
     <designationHotKey>Misc10</designationHotKey>
   </ThingDef>
 
-    <ThingDef ParentName="FactionTableBase">
+    <ThingDef ParentName="TableBase">
     <defName>ROM_AgencyReceptionistTable</defName>
     <label>table (reception)</label>
     <graphicData>
@@ -82,66 +82,5 @@
     <size>(5,2)</size>
     <costStuffCount>95</costStuffCount>
   </ThingDef>
-
-<!-- ====================== BASES ==================== -->
-
-
-
-
-  <!-- Table base -->
-  <ThingDef Abstract="True" ParentName="FactionFurnitureBase" Name="FactionTableBase">
-    <thingClass>Building</thingClass>
-    <altitudeLayer>Building</altitudeLayer>
-    <description>People eat off tables when chairs are placed facing them.</description>
-    <passability>PassThroughOnly</passability>
-    <castEdgeShadows>true</castEdgeShadows>
-    <pathCost>60</pathCost>
-    <fillPercent>0.4</fillPercent>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <staticSunShadowHeight>0.20</staticSunShadowHeight>
-    <surfaceType>Eat</surfaceType>
-    <comps>
-      <li>
-        <compClass>CompGatherSpot</compClass>
-      </li>
-			<li Class="CompProperties_RoomIdentifier">
-				<roomStat>Impressiveness</roomStat>
-			</li>
-    </comps>
-  </ThingDef>
-
-  <!-- Furniture Base -->
-    <ThingDef Name="FactionFurnitureBase" ParentName="FactionBuildingBase" Abstract="True">
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-    </comps>
-    <minifiedDef>MinifiedFurniture</minifiedDef>
-    <tradeTags>
-      <li>Furniture</li>
-    </tradeTags>
-  </ThingDef>
-
-
-  <!-- Faction Building Base -->
-  <ThingDef Name="FactionBuildingBase" Abstract="True">
-    <category>Building</category>
-    <thingClass>Building</thingClass>
-    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
-    <selectable>true</selectable>
-    <drawerType>MapMeshAndRealTime</drawerType>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <repairEffect>Repair</repairEffect>
-    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
-    <filthLeaving>BuildingRubble</filthLeaving>
-  </ThingDef>
-
 
 </Defs>

@@ -5,10 +5,9 @@
 
 	<!-- MERF -->
 
-	<ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>ROM_Apparel_MERF_LightHelmet</defName>
-		<description>A lightweight combat helmet designed for the M.E.R.F. special forces branch of The Agency. MERF stands for Mobile Eldritch Response Force.
-		</description>
+		<description>A lightweight combat helmet designed for the M.E.R.F. special forces branch of The Agency. MERF stands for Mobile Eldritch Response Force.</description>
 		<label>MERF Light Helmet</label>
 		<graphicData>
 			<texPath>Apparel/Display/ROMLightHelmet</texPath>
@@ -21,7 +20,7 @@
       <li>Leathery</li>
     </stuffCategories>
 	<costList>
-      <Component>4</Component>
+      <ComponentIndustrial>4</ComponentIndustrial>
       <Steel>25</Steel>
 	</costList>
 		<statBases>
@@ -32,7 +31,6 @@
       <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
       <ArmorRating_Heat>0.35</ArmorRating_Heat>
-      <ArmorRating_Electric>0</ArmorRating_Electric>
       <Insulation_Cold>-3</Insulation_Cold>
       <Insulation_Heat>3</Insulation_Heat>
 		</statBases>
@@ -61,10 +59,9 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="CallOfCthulhuHatMakeableBase">
+	<ThingDef ParentName="HatMakeableBase">
 		<defName>ROM_Apparel_MERF_HeavyHelmet</defName>
-		<description>A heavy combat helmet designed for the M.E.R.F. special forces branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.
-		</description>
+		<description>A heavy combat helmet designed for the M.E.R.F. special forces branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.</description>
 		<label>MERF heavy helmet</label>
 		<graphicData>
 			<texPath>Apparel/Display/ROMHeavyHelmet</texPath>
@@ -77,7 +74,7 @@
       <li>Leathery</li>
     </stuffCategories>
 	<costList>
-      <Component>6</Component>
+      <ComponentIndustrial>6</ComponentIndustrial>
       <Steel>80</Steel>
 	</costList>
 	<statBases>
@@ -88,7 +85,6 @@
       <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
       <ArmorRating_Heat>0.45</ArmorRating_Heat>
-      <ArmorRating_Electric>0</ArmorRating_Electric>
       <Insulation_Cold>-6</Insulation_Cold>
       <Insulation_Heat>6</Insulation_Heat>
 		</statBases>
@@ -118,10 +114,9 @@
 	  </ThingDef>
 
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_MERF_Armor</defName>
-		<description>Specialized body armor to protect members of the M.E.R.F. branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.
-		</description>
+		<description>Specialized body armor to protect members of the M.E.R.F. branch of The Agency. M.E.R.F. stands for Mobile Eldritch Response Force.</description>
 		<label>MERF body armor</label>
 		<graphicData>
 			<texPath>Apparel/Display/ROMMerfArmor</texPath>
@@ -134,7 +129,7 @@
       <li>Leathery</li>
     </stuffCategories>
 	<costList>
-      <Component>8</Component>
+      <ComponentIndustrial>8</ComponentIndustrial>
       <Steel>135</Steel>
 	</costList>
 		<thingCategories>
@@ -183,10 +178,9 @@
 		</recipeMaker>
 	</ThingDef>
 
-	<ThingDef ParentName="CallOfCthulhuApparelMakeableBase">
+	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>ROM_Apparel_MERF_Coat</defName>
-		<description>Extra padding for supporting M.E.R.F. members during their service.
-		</description>
+		<description>Extra padding for supporting M.E.R.F. members during their service.</description>
 		<label>MERF coat</label>
 		<graphicData>
 			<texPath>Apparel/Display/ROMMerfCoat</texPath>
@@ -199,7 +193,7 @@
       <li>Leathery</li>
     </stuffCategories>
 	<costList>
-      <Component>8</Component>
+      <ComponentIndustrial>8</ComponentIndustrial>
       <Steel>30</Steel>
 	</costList>
 		<thingCategories>
