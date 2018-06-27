@@ -68,13 +68,6 @@
 		  <ROM_MERF>100</ROM_MERF>
         </options>
       </li>
-	  <li>
-		<kindDef>ROM_AgencyMERF</kindDef>
-        <options>
-		  <ROM_HeavyMERF>10</ROM_HeavyMERF>
-		  <ROM_MERF>100</ROM_MERF>
-        </options>
-      </li>
       <li>
 		<kindDef>Trader</kindDef>
         <traders>
