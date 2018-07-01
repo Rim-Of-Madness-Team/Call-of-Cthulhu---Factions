@@ -112,7 +112,7 @@ namespace CthulhuFactions
             resolveParams.rect = rp.rect.ExpandedBy(1);
             resolveParams.faction = rp.faction;
             resolveParams.singlePawnLord = singlePawnLord;
-            resolveParams.pawnGroupKindDef = CthulhuFactionsDefOf.ROM_AgencyMERF;
+            resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.Combat; //CthulhuFactionsDefOf.ROM_AgencyMERF;
             float points = 10000;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
             resolveParams.pawnGroupMakerParams.tile = map.Tile;

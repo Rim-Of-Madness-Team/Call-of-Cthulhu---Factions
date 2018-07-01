@@ -59,7 +59,7 @@
 	  </options>
   </li>
 	<li>
-    <kindDef>FactionBase</kindDef>
+    <kindDef>Settlement</kindDef>
 		<options>
 		  <ROM_LostPlatoon_Captain>1</ROM_LostPlatoon_Captain>
 		  <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>

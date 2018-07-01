@@ -109,7 +109,7 @@
         </guards>
       </li>
 	<li>
-        <kindDef>FactionBase</kindDef>
+        <kindDef>Settlement</kindDef>
 		<options>
 		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
 		  <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>

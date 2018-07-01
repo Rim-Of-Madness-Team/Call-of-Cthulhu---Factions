@@ -84,7 +84,7 @@
         </guards>
       </li>
 	<li>
-		<kindDef>FactionBase</kindDef>
+		<kindDef>Settlement</kindDef>
         <options>
 		  <ROM_DetectiveSenior>8</ROM_DetectiveSenior>
 		  <ROM_DetectiveJunior>100</ROM_DetectiveJunior>

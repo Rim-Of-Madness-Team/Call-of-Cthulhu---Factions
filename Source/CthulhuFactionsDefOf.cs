@@ -11,7 +11,6 @@ namespace CthulhuFactions
     public static class CthulhuFactionsDefOf
     {
         public static TerrainDef SterileTile;
-        public static PawnGroupKindDef ROM_AgencyMERF;
         public static ThingDef ROM_TemporaryRegionBarrier;
         public static ThingDef ROM_TemporaryDoorMarker;
     }

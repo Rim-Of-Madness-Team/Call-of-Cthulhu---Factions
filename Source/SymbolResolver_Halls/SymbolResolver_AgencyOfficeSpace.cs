@@ -87,7 +87,7 @@ namespace CthulhuFactions
             resolveParams.rect = rp.rect.ExpandedBy(1);
             resolveParams.faction = rp.faction;
             resolveParams.singlePawnLord = singlePawnLord;
-            resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.FactionBase;
+            resolveParams.pawnGroupKindDef = PawnGroupKindDefOf.Settlement;
             float points = 500;
             resolveParams.pawnGroupMakerParams = new PawnGroupMakerParms();
             resolveParams.pawnGroupMakerParams.tile = map.Tile;

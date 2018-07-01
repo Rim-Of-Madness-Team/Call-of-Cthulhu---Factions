@@ -17,28 +17,28 @@ namespace CthulhuFactions
         {
             HarmonyInstance harmony = HarmonyInstance.Create("rimworld.jecrell.cthulhu.factions");
 
-            harmony.Patch(AccessTools.Method(typeof(TileFinder), "RandomFactionBaseTileFor"),
-                new HarmonyMethod(typeof(HarmonyFactions), nameof(RandomFactionBaseTileFor_PreFix)), null);
+            harmony.Patch(AccessTools.Method(typeof(TileFinder), "RandomSettlementTileFor"),
+                new HarmonyMethod(typeof(HarmonyFactions), nameof(RandomSettlementTileFor_PreFix)), null);
         }
 
-        public static bool RandomFactionBaseTileFor_PreFix(Faction faction, ref int __result)
+        public static bool RandomSettlementTileFor_PreFix(Faction faction, ref int __result)
 
         {
             //if (faction.def.defName == "TheAgency")
             //{
-            //    __result = RandomFactionBaseTileFor_TheAgency(faction);
+            //    __result = RandomSettlementTileFor_TheAgency(faction);
             //    return false;
             //}
             if (faction?.def?.defName == "ROM_Townsfolk")
             {
-                __result = RandomFactionBaseTileFor_Townsfolk(faction);
+                __result = RandomSettlementTileFor_Townsfolk(faction);
                 return false;
             }
             return true;
         }
 
 
-        public static int RandomFactionBaseTileFor_Townsfolk(Faction faction, bool mustBeAutoChoosable = false)
+        public static int RandomSettlementTileFor_Townsfolk(Faction faction, bool mustBeAutoChoosable = false)
         {
             for (int i = 0; i < 500; i++)
             {
@@ -66,7 +66,7 @@ namespace CthulhuFactions
                         }
                     }
 
-                    return tile.biome.factionBaseSelectionWeight;
+                    return tile.biome.settlementSelectionWeight;
                 }, out num))
                 {
                     if (TileFinder.IsValidTileForNewSettlement(num, null))
