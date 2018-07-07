@@ -52,7 +52,7 @@
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
 	<li>
-		<kindDef>Combat</kindDef>
+		<kindDef>Peaceful</kindDef>
         <options>
 		  <ROM_DetectiveSenior>5</ROM_DetectiveSenior>
 		  <ROM_DetectiveGrizzled>300</ROM_DetectiveGrizzled>

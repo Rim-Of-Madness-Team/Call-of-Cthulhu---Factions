@@ -53,6 +53,12 @@
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
 	<li>
+    <kindDef>Peaceful</kindDef>
+	  <options>
+      <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+	  </options>
+  </li>
+	<li>
     <kindDef>Combat</kindDef>
 	  <options>
       <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
