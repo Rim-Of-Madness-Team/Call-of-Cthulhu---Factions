@@ -14,7 +14,7 @@
 	<statBases>
 		<WorkToMake>17000</WorkToMake>
 		<Mass>2</Mass>
-		<Weapon_Bulk>1.0</Weapon_Bulk>
+		
 	</statBases>
 	<stuffCategories>
 		<li>Metallic</li>
@@ -62,7 +62,7 @@
     <statBases>
       <WorkToMake>12000</WorkToMake>
 	  <Mass>1.5</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk> 
+       
 	 </statBases>
 	<!-- TODO PlantCutting Speed Bonus -->
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -110,7 +110,7 @@
     <statBases>
       <WorkToMake>8000</WorkToMake>
 	  <Mass>1.8</Mass>
-      <Weapon_Bulk>1.0</Weapon_Bulk> 
+       
     </statBases>
 	<equippedStatOffsets>
 		<PlantWorkSpeed>0.15</PlantWorkSpeed>

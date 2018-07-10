@@ -81,7 +81,7 @@
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
-	  <Weapon_Bulk>0.5</Weapon_Bulk>
+	  
     </statBases>
     <costList>
       <Steel>40</Steel>
@@ -159,7 +159,7 @@
       <AccuracyMedium>0.70</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-	  <Weapon_Bulk>1.0</Weapon_Bulk>
+	  
     </statBases>
 		<costStuffCount>90</costStuffCount>
     <stuffCategories>
@@ -247,7 +247,7 @@
       <AccuracyMedium>0.31</AccuracyMedium>
       <AccuracyLong>0.31</AccuracyLong>
       <RangedWeapon_Cooldown>8.33</RangedWeapon_Cooldown>
-	  <Weapon_Bulk>0.5</Weapon_Bulk>
+	  
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -322,7 +322,7 @@
   			<AccuracyMedium>0.37</AccuracyMedium>
   			<AccuracyLong>0.22</AccuracyLong>
   			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
-		    <Weapon_Bulk>1.0</Weapon_Bulk>
+		    
   		</statBases>
   		<costList>
   			<Steel>45</Steel>
@@ -385,7 +385,7 @@
       <AccuracyMedium>0.77</AccuracyMedium>
       <AccuracyLong>0.64</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -443,7 +443,7 @@
       <AccuracyMedium>0.96</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -501,7 +501,7 @@
       <AccuracyMedium>0.96</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      <Weapon_Bulk>1.0</Weapon_Bulk>
+      
     </statBases>
     <costList>
       <Steel>60</Steel>
