@@ -13,7 +13,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+		<li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_Thug</li>
 	</apparelTags>
     <apparelMoney>
@@ -70,7 +71,7 @@
     <race>Human</race>
     <combatPower>48</combatPower>
     <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <gearHealthRange>
       <min>0.2</min>
       <max>2.0</max>
@@ -131,7 +132,7 @@
     <race>Human</race>
     <combatPower>48</combatPower>
     <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <gearHealthRange>
       <min>0.2</min>
       <max>2.0</max>
@@ -191,13 +192,18 @@
     <race>Human</race>
     <combatPower>48</combatPower>
     <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <gearHealthRange>
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
+	<apparelRequired>
+		<li>ROM_Apparel_CallOfCthulhuPlaidShirt</li>
+		<li>Apparel_Pants</li>
+    </apparelRequired>
 	<apparelTags>
-		<li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>
@@ -250,14 +256,15 @@
     <race>Human</race>
     <combatPower>48</combatPower>
     <itemQuality>Poor</itemQuality>
-    <isFighter>false</isFighter>
+    <isFighter>true</isFighter>
     <gearHealthRange>
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
 	<!-- TO DO -->
 	<apparelTags>
-		<li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
 	<apparelRequired>
@@ -312,13 +319,15 @@
     <label>patrol officer</label>
     <race>Human</race>
     <combatPower>70</combatPower>
+    <isFighter>true</isFighter>
     <maxGenerationAge>35</maxGenerationAge>
     <gearHealthRange>
       <min>0.5</min>
       <max>1.8</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_TownsfolkPolice</li>
 	</apparelTags>
 	<apparelRequired>
@@ -368,7 +377,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
 	</apparelTags>
 	<apparelRequired>
 		<li>ROM_ApparelRaincoat</li>

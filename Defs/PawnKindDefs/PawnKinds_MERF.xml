@@ -26,7 +26,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+	  <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
       <li>Military</li>
 	</apparelTags>
 	<apparelRequired>
@@ -90,7 +91,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
       <li>Military</li>
 	</apparelTags>
 	<apparelRequired>

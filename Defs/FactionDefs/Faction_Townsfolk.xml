@@ -65,8 +65,14 @@
 	<li>
        <kindDef>Peaceful</kindDef>
 		<options>
-		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
+		  <ROM_TownsfolkThug>100</ROM_TownsfolkThug>
 		  <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
+		  </options>
+    </li>
+	<li>
+       <kindDef>Peaceful</kindDef>
+		<options>
+		  <ROM_TownsfolkLumberjack>100</ROM_TownsfolkLumberjack>
 		  </options>
     </li>
 	<li>
@@ -76,15 +82,6 @@
 		  <ROM_TownsfolkDoctor>100</ROM_TownsfolkDoctor>
 		  <ROM_TownsfolkNurse>100</ROM_TownsfolkNurse>
 		  <ROM_TownsfolkPolice>250</ROM_TownsfolkPolice>
-		  </options>
-    </li>
-	<li>
-       <kindDef>Peaceful</kindDef>
-		<options>
-		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
-		  <ROM_TownsfolkFarmer>100</ROM_TownsfolkFarmer>
-		  <ROM_TownsfolkRancher>100</ROM_TownsfolkRancher>
-		  <ROM_TownsfolkLumberjack>100</ROM_TownsfolkLumberjack>
 		  </options>
     </li>
 	<li>

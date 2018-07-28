@@ -25,7 +25,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+		<li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>
@@ -89,7 +90,8 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-		<li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
         <li>CallOfCthulhu_Townsfolk</li>
 	</apparelTags>
     <apparelMoney>

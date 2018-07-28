@@ -27,7 +27,8 @@
     </gearHealthRange>
 	<apparelTags>
 		<li>CallOfCthulhu_Infantry</li>
-    <li>Outlander</li>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
     <li>Military</li>
 	</apparelTags>
 	<apparelRequired>
