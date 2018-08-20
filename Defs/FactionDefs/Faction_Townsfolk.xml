@@ -32,7 +32,7 @@
 	<factionNameMaker>ROM_NamerFactionCFV</factionNameMaker>
 	<settlementNameMaker>ROM_NamerFactionBaseCFV</settlementNameMaker>
 	<techLevel>Industrial</techLevel>
-	<backstoryCategory>Civil</backstoryCategory>
+	<backstoryCategories><li>Civil</li></backstoryCategories>
 	<hairTags>
 		<li>Rural</li>
 	</hairTags>

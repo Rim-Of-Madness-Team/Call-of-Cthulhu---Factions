@@ -5,7 +5,7 @@
     <race>Human</race>
     <defaultFactionType>ROM_Townsfolk</defaultFactionType>
     <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryCategories><li>Civil</li></backstoryCategories>
     <chemicalAddictionChance>0.025</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>

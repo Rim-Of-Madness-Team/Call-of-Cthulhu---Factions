@@ -5,7 +5,7 @@
     <race>Human</race>
     <defaultFactionType>ROM_TheAgency</defaultFactionType>
     <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryCategories><li>Civil</li></backstoryCategories>
     <chemicalAddictionChance>0.1</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>

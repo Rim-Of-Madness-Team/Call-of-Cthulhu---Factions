@@ -31,7 +31,7 @@
 	<factionNameMaker>ROM_NamerFactionLP</factionNameMaker>
 	<settlementNameMaker>ROM_NamerFactionBaseLP</settlementNameMaker>
 	<techLevel>Industrial</techLevel>
-	<backstoryCategory>Civil</backstoryCategory>
+	<backstoryCategories><li>Civil</li></backstoryCategories>
 	<hairTags>
 		<li>Rural</li>
 	</hairTags>

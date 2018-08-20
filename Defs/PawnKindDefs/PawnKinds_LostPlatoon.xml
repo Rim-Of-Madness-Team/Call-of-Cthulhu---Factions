@@ -5,7 +5,7 @@
     <race>Human</race>
     <defaultFactionType>ROM_LostPlatoon</defaultFactionType>
     <baseRecruitDifficulty>0.6</baseRecruitDifficulty>
-    <backstoryCategory>Civil</backstoryCategory>
+    <backstoryCategories><li>Civil</li></backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>

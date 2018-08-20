@@ -5,6 +5,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_PoleHook</defName>
     <label>polehook</label>
+	<techLevel>Neolithic</techLevel>
     <description>A meat hook fixed to the end of a pole. A terrifying weapon to behold.</description>
     <graphicData>
       <texPath>WeaponMelee/CallOfCthulhu_PoleHook</texPath>
@@ -14,7 +15,6 @@
 	<statBases>
 		<WorkToMake>17000</WorkToMake>
 		<Mass>2</Mass>
-		
 	</statBases>
 	<stuffCategories>
 		<li>Metallic</li>
@@ -53,6 +53,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_WoodAxe</defName>
     <label>wood axe</label>
+	<techLevel>Neolithic</techLevel>
     <description>An axe used by lumberjacks to quickly turn trees into valuable resources.</description>
     <graphicData>
       <texPath>WeaponMelee/CallOfCthulhu_WoodAxe</texPath>
@@ -101,6 +102,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_Pitchfork</defName>
     <label>pitchfork</label>
+	<techLevel>Neolithic</techLevel>
     <description>Used by farmers to help manage hay.</description>
     <graphicData>
       <texPath>WeaponMelee/CallOfCthulhu_Pitchfork</texPath>
@@ -167,6 +169,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
     <defName>ROM_BrandingIron</defName>
     <label>hot branding iron</label>
+	<techLevel>Neolithic</techLevel>
     <description>A burning hot tool commonly used to brand livestock with prescribed insignias.</description>
     <graphicData>
       <texPath>WeaponMelee/CallOfCthulhu_BrandingIron</texPath>
