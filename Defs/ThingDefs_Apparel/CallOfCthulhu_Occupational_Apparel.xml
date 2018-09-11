@@ -11,8 +11,12 @@
 			<texPath>Apparel/Display/ROMRainCoat</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
+	  <color>(26, 215, 51)</color>
     </graphicData>
     <costStuffCount>150</costStuffCount>
+	<thingSetMakerTags>
+	  <li>NoRecolor</li>
+	</thingSetMakerTags>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
@@ -55,6 +59,11 @@
 			</recipeUsers>
 			<researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
 		</recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
 	</ThingDef>
 
   <ThingDef ParentName="HatMakeableBase">

@@ -58,7 +58,7 @@
 			<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Apparel/Bodywear_Clothing/ShirtPlaid/ShirtPlaid</texPath>
+			<texPath>Apparel/Bodywear_Clothing/ShirtPlaid/SShirtPlaid</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<costList>
@@ -82,7 +82,7 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Apparel/Bodywear_Clothing/ShirtPlaid/ShirtPlaid</wornGraphicPath>
+			<wornGraphicPath>Apparel/Bodywear_Clothing/ShirtPlaid/SShirtPlaid</wornGraphicPath>
 			<layers>
 				<li>OnSkin</li>
 			</layers>
