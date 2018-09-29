@@ -483,6 +483,7 @@
 			<bodyPartGroups>
 				<li>Torso</li>
 				<li>Shoulders</li>
+				<li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Apparel/Bodywear_Clothing/WW1NurseUniform/WW1Nurse</wornGraphicPath>
 			<layers>
