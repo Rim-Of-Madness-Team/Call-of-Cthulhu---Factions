@@ -1,68 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-
-  <ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
-		<techLevel>Industrial</techLevel>
-		<smeltable>true</smeltable>
-		<thingCategories>
-      <li>WeaponsRanged</li>
-    </thingCategories>
-    <inspectorTabs>
-      <li>ITab_Art</li>
-    </inspectorTabs>
-    <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
-      <li Class="CompProperties_Art">
-        <nameMaker>NamerArtWeaponGun</nameMaker>
-        <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>SmithingSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Smith</effectWorking>
-      <soundWorking>Recipe_Smith</soundWorking>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
-      <researchPrerequisite>Gunsmithing</researchPrerequisite>
-    </recipeMaker>
-  </ThingDef>
-
-  <ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-  </ThingDef>
-  
-  <ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
-    <weaponTags>
-      <li>Gun</li>
-    </weaponTags>
-  </ThingDef>
-
-  <ThingDef Name="BaseBullet" Abstract="True">
-    <category>Projectile</category>
-    <tickerType>Normal</tickerType>
-    <altitudeLayer>Projectile</altitudeLayer>
-    <thingClass>Bullet</thingClass>
-    <label>bullet</label>
-    <useHitPoints>False</useHitPoints>
-    <neverMultiSelect>True</neverMultiSelect>
-    <graphicData>
-      <shaderType>Transparent</shaderType>
-    </graphicData>
-  </ThingDef>
-
-  <!-- ============================================================== -->
   
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>ROM_Gun_Revolver</defName>

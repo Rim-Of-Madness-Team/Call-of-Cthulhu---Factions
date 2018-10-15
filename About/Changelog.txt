@@ -1,0 +1,4 @@
+1.19.0.3 (10-16-2018)
+========================
+Removes abstract bases for BaseGun etc
+
