@@ -25,8 +25,7 @@
       <max>2.0</max>
     </gearHealthRange>
 	<apparelTags>
-	  <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
+	  <li>CallOfCthulhu_Detective</li>
 	</apparelTags>
 	<apparelRequired>
 		<li>ROM_Apparel_CallOfCthulhuBowler</li>
@@ -76,72 +75,16 @@
     </inventoryOptions>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="DetectiveBase">
-    <defName>ROM_DetectiveSenior</defName>
-    <label>chief</label>
-    <factionLeader>true</factionLeader>
-    <race>Human</race>
+  <PawnKindDef ParentName="DetectiveInvestigator" Name="DetectiveChiefBase">
+    <defName>ROM_DetectiveChief</defName>
     <combatPower>220</combatPower>
-    <itemQuality>Poor</itemQuality>
-    <isFighter>true</isFighter>
-    <gearHealthRange>
-      <min>0.8</min>
-      <max>3.5</max>
-    </gearHealthRange>
-	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>BeltDefensePop</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuBowler</li>
-		<li>ROM_Apparel_CallOfCthulhuShirtTie</li>
-    </apparelRequired>
-    <apparelMoney>
-      <min>5000</min>
-      <max>9000</max>
-    </apparelMoney>
-    <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
-    <weaponMoney>
-      <min>5000</min>
-      <max>6000</max>
-    </weaponMoney>
-    <weaponTags>
-      <li>Gun</li>
-      <li>CallOfCthulhu_Guns</li>
-    </weaponTags>
-    <techHediffsMoney>
-      <min>5000</min>
-      <max>6000</max>
-    </techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-    <techHediffsChance>0.5</techHediffsChance>
-    <invNutrition>2.55</invNutrition>
-    <inventoryOptions>
-      <skipChance>0.75</skipChance>
-      <subOptionsChooseOne>
-        <li>
-          <choiceChance>90</choiceChance>
-          <thingDef>Silver</thingDef>
-          <countRange>
-            <min>225</min>
-            <max>500</max>
-          </countRange>
-        </li>
-        <li>
-          <choiceChance>10</choiceChance>
-          <thingDef>MedicineIndustrial</thingDef>
-          <countRange>
-            <min>2</min>
-            <max>3</max>
-          </countRange>
-        </li>
-      </subOptionsChooseOne>
-    </inventoryOptions>
+    <baseRecruitDifficulty>0.90</baseRecruitDifficulty>
+    <minGenerationAge>50</minGenerationAge>
+    <maxGenerationAge>999</maxGenerationAge>
+    <itemQuality>Normal</itemQuality>
+    <factionLeader>true</factionLeader>
+    <canBeSapper>true</canBeSapper>
   </PawnKindDef>
-
 
   <PawnKindDef ParentName="DetectiveInvestigator">
     <defName>ROM_DetectiveTrader</defName>
@@ -160,8 +103,7 @@
       <max>1.8</max>
     </gearHealthRange>
 	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
+        <li>CallOfCthulhu_Detective</li>
 	</apparelTags>
 	<apparelRequired>
 		<li>ROM_Apparel_CallOfCthulhuFedora</li>
@@ -209,8 +151,7 @@
       <max>1.8</max>
     </gearHealthRange>
 	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
+        <li>CallOfCthulhu_Detective</li>
 	</apparelTags>
 	<apparelRequired>
 		<li>ROM_Apparel_CallOfCthulhuFedora</li>
@@ -258,8 +199,7 @@
       <max>3.8</max>
     </gearHealthRange>
 	<apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_Detective</li>
       <li>BeltDefensePop</li>
 	</apparelTags>
 	<apparelRequired>

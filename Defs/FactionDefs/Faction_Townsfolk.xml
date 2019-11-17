@@ -1,23 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <FactionDef>
-	<defName>ROM_Townsfolk</defName>
-	<label>Coastal Fishing Town</label>
+    <defName>ROM_Townsfolk</defName>
+    <label>Coastal Fishing Town</label>
     <description>A coastal community of fishermen and tanners, with designated law enforcers.\n\nThese fishing villages seemingly come into existence overnight. A wild untamed forest can turn into a creaking assortment of docks and buildings. If one didn't know how they had mysteriously arrived, one would assume they had been there for decades. The weathered locals curiously ignore any questions as to how they arrived, or how they constructed a village so quickly and quietly.\n\nThe gruff citizens of these damp townships are slow to trust, but earning it can be worthwhile. The residents of these communities can be found wielding large hooks, branding irons, and the powerful harpoon gun. They are usually only willing to trade among their own people, but on the Rimworlds, these callused strangers will settle for anyone sane enough to barter.</description>
-    <pawnsPlural>townsfolk</pawnsPlural>
-    <settlementGenerationWeight>0.7</settlementGenerationWeight>
-    <requiredCountAtGameStart>1</requiredCountAtGameStart>
-    <canMakeRandomly>true</canMakeRandomly>
-	<raidCommonalityFromPointsCurve>
-		<points>
-			<li>(40, 3)</li>
-			<li>(400, 1)</li>
-		</points>
-	</raidCommonalityFromPointsCurve>
-    <canSiege>true</canSiege>
-    <canStageAttacks>true</canStageAttacks>
-    <leaderTitle>mayor</leaderTitle>
-    <expandingIconTexture>World/WorldObjects/Expanding/CoastalFishingVillage</expandingIconTexture>
     <colorSpectrum>
       <li>(0.9, 1.0, 0.8)</li>
       <li>(0.9, 1.0, 0.9)</li>
@@ -28,18 +14,33 @@
       <min>-5</min>
       <max>15</max>
     </startingGoodwill>
-	 
-	<factionNameMaker>ROM_NamerFactionCFV</factionNameMaker>
-	<settlementNameMaker>ROM_NamerFactionBaseCFV</settlementNameMaker>
-	<techLevel>Industrial</techLevel>
-	<backstoryCategories><li>Civil</li></backstoryCategories>
-	<hairTags>
-		<li>Rural</li>
-	</hairTags>
     <naturalColonyGoodwill>
       <min>0</min>
       <max>30</max>
     </naturalColonyGoodwill>
+    <pawnSingular>townsfolk</pawnSingular>
+    <pawnsPlural>townsfolk</pawnsPlural>
+    <listOrderPriority>32</listOrderPriority>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>mayor</leaderTitle>
+    <expandingIconTexture>World/WorldObjects/Expanding/CoastalFishingVillage</expandingIconTexture>
+    <factionNameMaker>ROM_NamerFactionCFV</factionNameMaker>
+    <settlementNameMaker>ROM_NamerFactionBaseCFV</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <geneticVariance>0.8</geneticVariance>
+    <hairTags>
+      <li>Rural</li>
+    </hairTags>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
     <caravanTraderKinds>
       <li>Caravan_Outlander_BulkGoods</li>
       <li>ROM_Caravan_CFV_CombatSupplier</li>
@@ -62,73 +63,100 @@
       </points>
     </maxPawnCostPerTotalPointsCurve>
     <pawnGroupMakers>
-	<li>
-       <kindDef>Peaceful</kindDef>
-		<options>
-		  <ROM_TownsfolkThug>100</ROM_TownsfolkThug>
-		  <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
-		  </options>
-    </li>
-	<li>
-       <kindDef>Peaceful</kindDef>
-		<options>
-		  <ROM_TownsfolkLumberjack>100</ROM_TownsfolkLumberjack>
-		  </options>
-    </li>
-	<li>
-       <kindDef>Peaceful</kindDef>
-		<options>
-		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
-		  <ROM_TownsfolkDoctor>100</ROM_TownsfolkDoctor>
-		  <ROM_TownsfolkNurse>100</ROM_TownsfolkNurse>
-		  <ROM_TownsfolkPolice>250</ROM_TownsfolkPolice>
-		  </options>
-    </li>
-	<li>
-       <kindDef>Peaceful</kindDef>
-		<options>
-		  <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>
-		  </options>
-    </li>
       <li>
-	    <kindDef>Trader</kindDef>
+        <!-- Mixed group -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <ROM_TownsfolkAngler>10</ROM_TownsfolkAngler>
+          <ROM_TownsfolkPolice>15</ROM_TownsfolkPolice>
+          <ROM_TownsfolkFarmer>10</ROM_TownsfolkFarmer>
+          <ROM_TownsfolkRancher>10</ROM_TownsfolkRancher>
+          <ROM_TownsfolkLumberjack>10</ROM_TownsfolkLumberjack>
+          <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
+        </options>
+      </li>
+      <li>
+        <!-- Melee group -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ROM_TownsfolkAngler>10</ROM_TownsfolkAngler>
+          <ROM_TownsfolkLumberjack>10</ROM_TownsfolkLumberjack>
+          <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
+        </options>
+      </li>
+      <li>
+        <!-- Ranged group -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ROM_TownsfolkPolice>15</ROM_TownsfolkPolice>
+          <ROM_TownsfolkFarmer>10</ROM_TownsfolkFarmer>
+          <ROM_TownsfolkRancher>10</ROM_TownsfolkRancher>
+          <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ROM_TownsfolkThug>10</ROM_TownsfolkThug>
+          <ROM_TownsfolkVillager>10</ROM_TownsfolkVillager>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ROM_TownsfolkLumberjack>10</ROM_TownsfolkLumberjack>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <ROM_TownsfolkDoctor>10</ROM_TownsfolkDoctor>
+          <ROM_TownsfolkNurse>10</ROM_TownsfolkNurse>
+          <ROM_TownsfolkPolice>25</ROM_TownsfolkPolice>
+          <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
         <traders>
-			<ROM_TownsfolkTrader>100</ROM_TownsfolkTrader>
+          <ROM_TownsfolkTrader>100</ROM_TownsfolkTrader>
         </traders>
         <carriers>
           <Muffalo>1</Muffalo>
           <Dromedary>1</Dromedary>
         </carriers>
         <guards>
-		  <ROM_TownsfolkThug>60</ROM_TownsfolkThug>
-		  <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
-		  <ROM_TownsfolkPolice>20</ROM_TownsfolkPolice>
+          <ROM_TownsfolkThug>60</ROM_TownsfolkThug>
+          <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
+          <ROM_TownsfolkPolice>20</ROM_TownsfolkPolice>
         </guards>
       </li>
-	<li>
+      <li>
         <kindDef>Settlement</kindDef>
-		<options>
-		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
-		  <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>
-		  <ROM_TownsfolkVillager>100</ROM_TownsfolkVillager>
-		  <ROM_TownsfolkDoctor>100</ROM_TownsfolkDoctor>
-		  <ROM_TownsfolkNurse>100</ROM_TownsfolkNurse>
-		  <ROM_TownsfolkPolice>100</ROM_TownsfolkPolice>
-		  <ROM_TownsfolkFarmer>100</ROM_TownsfolkFarmer>
-		  <ROM_TownsfolkRancher>100</ROM_TownsfolkRancher>
-		  <ROM_TownsfolkLumberjack>100</ROM_TownsfolkLumberjack>
-		  </options>
-      </li>
-	<li>
-        <kindDef>Combat</kindDef>
-		<options>
-		  <ROM_TownsfolkMayor>1</ROM_TownsfolkMayor>
-		  <ROM_TownsfolkAngler>100</ROM_TownsfolkAngler>
-		  <ROM_TownsfolkPolice>100</ROM_TownsfolkPolice>
-		  <ROM_TownsfolkFarmer>100</ROM_TownsfolkFarmer>
-		  <ROM_TownsfolkRancher>100</ROM_TownsfolkRancher>
-		  <ROM_TownsfolkLumberjack>100</ROM_TownsfolkLumberjack>
-		  </options>
+        <options>
+          <ROM_TownsfolkAngler>10</ROM_TownsfolkAngler>
+          <ROM_TownsfolkDoctor>10</ROM_TownsfolkDoctor>
+          <ROM_TownsfolkNurse>10</ROM_TownsfolkNurse>
+          <ROM_TownsfolkPolice>10</ROM_TownsfolkPolice>
+          <ROM_TownsfolkFarmer>10</ROM_TownsfolkFarmer>
+          <ROM_TownsfolkRancher>10</ROM_TownsfolkRancher>
+          <ROM_TownsfolkLumberjack>10</ROM_TownsfolkLumberjack>
+          <ROM_TownsfolkVillager>15</ROM_TownsfolkVillager>
+          <ROM_TownsfolkMayor>15</ROM_TownsfolkMayor>
+        </options>
       </li>
     </pawnGroupMakers>
     <homeIconPath>World/WorldObjects/DefaultSettlement</homeIconPath>
