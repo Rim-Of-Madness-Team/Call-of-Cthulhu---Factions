@@ -1,3 +1,7 @@
+1.21.0.0 (03-07-2020)
+========================
+Added support for RimWorld 1.1. Adjusted flavor text. Changed the leader title from Mayor to Governor for the Fishing Towns.
+
 1.20.0.3 (11-16-2019)
 ========================
 Agency and Coastal Village now spawn with leaders. Both factions now have acceptable temperature ranges for arrivals to avoid dead on arrival scenarios. Shirt and ties and plaid shirts now have insulation and defensive stats.

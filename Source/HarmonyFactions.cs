@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 //using CombatExtended;
-using Harmony;
+using HarmonyLib;
 using Verse;
 using RimWorld.Planet;
 using RimWorld;
@@ -15,7 +15,7 @@ namespace CthulhuFactions
     {
         static HarmonyFactions()
         {
-            HarmonyInstance harmony = HarmonyInstance.Create("rimworld.jecrell.cthulhu.factions");
+            var harmony = new Harmony("rimworld.jecrell.cthulhu.factions");
 
             harmony.Patch(AccessTools.Method(typeof(TileFinder), "RandomSettlementTileFor"),
                 new HarmonyMethod(typeof(HarmonyFactions), nameof(RandomSettlementTileFor_PreFix)), null);
