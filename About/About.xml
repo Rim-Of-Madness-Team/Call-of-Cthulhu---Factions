@@ -16,7 +16,7 @@
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
   </modDependencies>
-  <description>1.21.0.0 (03-07-2020)
+  <description>1.21.0.1 (03-07-2020)
 
 While the lingering fear of Cthulhu is most unnerving, you are not alone. The Agency and coastal fishing villages have appeared in the overworld.
 
@@ -52,6 +52,10 @@ Marcus Bell, RainerWingel, Dalton Johnson, Chris Seieroe, Robin Gleeson, Robert 
 ========================
 Changelog
 ========================
+1.21.0.1 (03-07-2020)
+========================
+Adds RimWorld 1.1 support. Makes a quick fix for steam upload compatibility.
+
 1.21.0.0 (03-07-2020)
 ========================
 Added support for RimWorld 1.1. Adjusted flavor text. Changed the leader title from Mayor to Governor for the Fishing Towns.

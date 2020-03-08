@@ -1,3 +1,7 @@
+1.21.0.1 (03-07-2020)
+========================
+Adds RimWorld 1.1 support. Makes a quick fix for steam upload compatibility.
+
 1.21.0.0 (03-07-2020)
 ========================
 Added support for RimWorld 1.1. Adjusted flavor text. Changed the leader title from Mayor to Governor for the Fishing Towns.
