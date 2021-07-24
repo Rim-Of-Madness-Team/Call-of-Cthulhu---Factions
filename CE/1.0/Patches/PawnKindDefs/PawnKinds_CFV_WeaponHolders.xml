@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkThug"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkFarmer"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkRancher"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkLumberjack"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkButcher"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkPolice"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/PawnKindDef[defName="ROM_TownsfolkAngler"]</xpath>
+    <value>
+      <li Class="CombatExtended.LoadoutPropertiesExtension">
+        <primaryMagazineCount>
+          <min>3</min>
+          <max>5</max>
+        </primaryMagazineCount>
+      </li>
+    </value>
+  </Operation>
+</Patch>

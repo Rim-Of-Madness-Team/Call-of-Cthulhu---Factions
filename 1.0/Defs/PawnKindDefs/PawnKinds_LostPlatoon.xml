@@ -1,18 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef Name="LostPlatoonBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ROM_LostPlatoon</defaultFactionType>
     <baseRecruitDifficulty>0.6</baseRecruitDifficulty>
-    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <maxGenerationAge>30</maxGenerationAge>
   </PawnKindDef>
-
   <PawnKindDef Name="LostPlatoonSoldier" ParentName="LostPlatoonBase">
     <defName>ROM_LostPlatoon_Soldier</defName>
     <label>Lost Soldier</label>
@@ -25,15 +25,15 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-		<li>CallOfCthulhu_Infantry</li>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-    <li>Military</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_ApparelWWIUniform</li>
-		<li>ROM_ApparelWWIHelmet</li>
+    <apparelTags>
+      <li>CallOfCthulhu_Infantry</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>Military</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_ApparelWWIUniform</li>
+      <li>ROM_ApparelWWIHelmet</li>
     </apparelRequired>
     <apparelMoney>
       <min>1200</min>
@@ -70,15 +70,13 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="LostPlatoonSoldier">
     <defName>ROM_LostPlatoon_Captain</defName>
     <label>Lost Captain</label>
-	  <description>They do not belong here.</description>
+    <description>They do not belong here.</description>
     <combatPower>120</combatPower>
     <itemQuality>Good</itemQuality>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
     <factionLeader>true</factionLeader>
   </PawnKindDef>
-
 </Defs>

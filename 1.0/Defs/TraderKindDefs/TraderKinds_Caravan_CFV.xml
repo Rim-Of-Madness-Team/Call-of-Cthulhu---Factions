@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <TraderKindDef>
     <defName>ROM_Caravan_CFV_CombatSupplier</defName>
     <label>weapons dealer</label>
@@ -101,8 +100,6 @@
       <li Class="StockGenerator_BuyWeirdOrganic" />
     </stockGenerators>
   </TraderKindDef>
-
-
   <TraderKindDef>
     <defName>ROM_Caravan_CFV_Smuggler</defName>
     <label>smuggler</label>
@@ -213,10 +210,10 @@
       </li>
       <li Class="StockGenerator_Animals">
         <checkTemperature>true</checkTemperature>
-				<tradeTagsSell>
-					<li>AnimalUncommon</li>
-					<li>AnimalFighter</li>
-				</tradeTagsSell>
+        <tradeTagsSell>
+          <li>AnimalUncommon</li>
+          <li>AnimalFighter</li>
+        </tradeTagsSell>
         <tradeTagsBuy>
           <li>AnimalExotic</li>
         </tradeTagsBuy>
@@ -238,6 +235,4 @@
       <li Class="StockGenerator_BuyWeirdOrganic" />
     </stockGenerators>
   </TraderKindDef>
-
-
 </Defs>

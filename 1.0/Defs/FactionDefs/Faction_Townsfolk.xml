@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <FactionDef>
     <defName>ROM_Townsfolk</defName>
@@ -31,14 +31,17 @@
     <factionNameMaker>ROM_NamerFactionCFV</factionNameMaker>
     <settlementNameMaker>ROM_NamerFactionBaseCFV</settlementNameMaker>
     <techLevel>Industrial</techLevel>
-    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <geneticVariance>0.8</geneticVariance>
     <hairTags>
       <li>Rural</li>
     </hairTags>
     <raidCommonalityFromPointsCurve>
       <points>
-        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+        <li>(0, 1)</li>
+        <!--Constant 1 at all points levels-->
       </points>
     </raidCommonalityFromPointsCurve>
     <caravanTraderKinds>

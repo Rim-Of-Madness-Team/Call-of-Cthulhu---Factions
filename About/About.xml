@@ -1,12 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <packageId>rimofmadness.callofcthulhu.factions</packageId>
-  <name>Call of Cthulhu - Factions</name>
+  <name>Call of Cthulhu - Factions (Continued)</name>
+  <packageId>Mlie.CallofCthulhuFactions</packageId>
   <author>Jecrell</author>
-  <url>https://discord.gg/AaVFA7V</url>
+  <url>https://github.com/emipa606/CallofCthulhuFactions</url>
   <supportedVersions>
     <li>1.0</li>
     <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -15,74 +17,72 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
+    <li>
+      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
+      <displayName>Enable Oversized Weapons</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
+    </li>
   </modDependencies>
-  <description>1.21.0.1 (03-07-2020)
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>CarnySenpai.EnableOversizedWeapons</li>
+    <li>CETeam.CombatExtended</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Jecrells mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=764375772
 
-While the lingering fear of Cthulhu is most unnerving, you are not alone. The Agency and coastal fishing villages have appeared in the overworld.
+- This is an unofficial port
+- This will be removed when/if Jecrell comes back
+- Added support for Combat Extended
 
-	The detectives from The Agency dress themselves with proper detective gear including bowler caps, fedoras, shirts with ties, and trench coats.
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-	Citizens from the coastal fishing villages wear occupational attire including: police uniforms with caps, farmer overalls and straw hats, raincoats and slicker hats, and nurse uniforms with caps.
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/CallofCthulhuFactions][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
 
-	A strange incident has also stranded a mysterious infantry unit from a long lost great war on your world.
+[h1]Adds three new factions to RimWorld inspired by the works of HP Lovecraft.[/h1]
 
-	Top hats, newsboy caps, are also now included.
 
-	Finally, a special branch of the Agency used to root out monstrous forces can be seen wearing lighter special forces gear. They are called M.E.R.F. (Mobile Eldritch Response Force), and they come equipped with combat armor and helmets (light and heavy variants).
+[h1]::::: NOTICE :::::
+::::: THIS MOD REQUIRES JECSTOOLS ::::::
+Download[/h1]
+http://steamcommunity.com/sharedfiles/filedetails/?id=932008009
 
-	Have fun!
+While the lingering fear of Cthulhu is most unnerving, you are not alone. Secretive coastal fishing villages and bases of operations for The Agency have begun to appear across the rimworlds. While the villages are not fond of outsiders, should you trade with them, you might acquire large hooks, branding irons, flare guns, or even a harpoon. The Agency come attired in stylish trench coats, fedoras, bowler hats, and wield revolvers to put down potential threats. Have fun!
 
-	Contributors:
-    drynyn (Writer)
-	Junkyard Joe (Writer)
-	Nackblad (Artist)
-	SticksNTricks (Artist)
-	Erdelf (Coder)
+Also, special thanks to the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=745193823andsearchtext=]fashionrimsta[/url] team for working with us to help make more outfits.
+[h1]Features[/h1]
+[list]
+[*]Adds The Agency faction
+[*]Adds Coastal Fishing Town faction
+[*]Adds Lost Platoon faction.
+[*]Adds 16 new pieces of apparel: Police Hat, Police Outfit, Bowler Hat, Fedora, Top hat, Trench Coat, Nurse uniform, Nurse cap, Newsboy cap, Slicker hat, Straw hat, and Raincoat. Special forces combat uniform for MERF, MERF coat, light helmet, heavy helmet, and World War I uniforms and helmets for Lost Platoon members.
+[*]Adds 2 new melee weapons: Hot branding iron (burn damage), Pole hook
+[*]Adds 3 new ranged weapons: Flare gun, Revolver, Hand-held Harpoon Gun
+[*]Adds custom faction base generation.
+[/list]
 
-	Want to contribute? Get in touch with us in the workshop or Ludeon forums.
+[h1]QandA[/h1]
+[b]Q)[/b] Deep Ones?
+[b]A)[/b] In the monster pack
 
-	Uses Assets From:
-	Fashionrimsta (Overalls)
 
-Thank you to my Patrons for supporting me in my efforts. Without you, none of this would be possible.
-
-These are the most excellent rim dwellers who support me: 
-Marcus Bell, RainerWingel, Dalton Johnson, Chris Seieroe, Robin Gleeson, Robert Alessi, Lea Stannard, Teres, David Silberstein, Sam, Kiya Nicoll, Matt Harris, Paul Fenwick, Grendalloffen, Don Homer, Josh McCabe, Elodie, Gothi, J, Michael Paugh, Audrin Navarro, Михаил Юрченко, Calum, Tim Stillson, Adam Bliss, Populous25, Marcus Sireanu, Maaxar, John Kanady, Midgeman, Dick Jones, Patrick, TinyFloatingTurtle, Nathan Getman, LionsFate, Sharp Spook, Cristina Shaver, Mark, George Chong Chuang Ming, Oliver White, roxxploxx, Emily Shaw, Karol Rybak, Justin Andres, Marcus Regan, Robin Hager, Allic, Austin Harbert, E_T, Alex Mederer, Alexander, Toss Antilles
-
-========================
-Changelog
-========================
-1.21.0.1 (03-07-2020)
-========================
-Adds RimWorld 1.1 support. Makes a quick fix for steam upload compatibility.
-
-1.21.0.0 (03-07-2020)
-========================
-Added support for RimWorld 1.1. Adjusted flavor text. Changed the leader title from Mayor to Governor for the Fishing Towns.
-
-1.20.0.3 (11-16-2019)
-========================
-Agency and Coastal Village now spawn with leaders. Both factions now have acceptable temperature ranges for arrivals to avoid dead on arrival scenarios. Shirt and ties and plaid shirts now have insulation and defensive stats.
-
-1.20.0.2 (11-04-2018)
-========================
-Russian translation by Makrist added
-
-1.20.0.1 (10-23-2018)
-========================
-Added Korean language translation by MisulOpja
-
-1.20.0.0 (10-18-2018)
-========================
-Initial release for RimWorld 1.0. Also supports Fluffys Mod Manager.
-
-1.20.0.0 (10-18-2018)
-========================
-Initial release of RimWorld 1.0 update for Factions. Also added Manifest.XML for Fluffy's Mod Manager.
-
-1.19.0.3 (10-16-2018)
-========================
-Removes abstract bases for BaseGun etc
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
 
 </description>
 </ModMetaData>

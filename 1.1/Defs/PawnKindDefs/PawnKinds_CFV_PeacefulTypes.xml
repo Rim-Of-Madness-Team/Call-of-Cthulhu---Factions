@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkDoctor</defName>
     <label>doctor</label>
@@ -12,13 +11,13 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>CallOfCthulhu_Townsfolk</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuBowler</li>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_Townsfolk</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuBowler</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>
@@ -64,7 +63,6 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkNurse</defName>
     <label>nurse</label>
@@ -76,14 +74,14 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>CallOfCthulhu_TownsfolkNurse</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_WW1NurseUniform</li>
-		<li>ROM_Apparel_NurseCap</li>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_TownsfolkNurse</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_WW1NurseUniform</li>
+      <li>ROM_Apparel_NurseCap</li>
     </apparelRequired>
     <apparelMoney>
       <min>400</min>
@@ -121,7 +119,6 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkTeacher</defName>
     <label>villager</label>
@@ -133,13 +130,13 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>CallOfCthulhu_Townsfolk</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuBowler</li>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_Townsfolk</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuBowler</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>
@@ -181,5 +178,4 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
 </Defs>

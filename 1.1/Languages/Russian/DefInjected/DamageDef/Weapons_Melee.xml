@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_MeleeBurn.label>горит</ROM_MeleeBurn.label>
-  <ROM_MeleeBurn.deathMessage>{0} сгорело дотла.</ROM_MeleeBurn.deathMessage>
-
-
-</LanguageData>

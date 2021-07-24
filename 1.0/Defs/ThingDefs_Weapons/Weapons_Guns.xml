@@ -1,7 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  
   <ThingDef ParentName="BaseHumanMakeableGun">
     <defName>ROM_Gun_Revolver</defName>
     <label>webley revolver</label>
@@ -13,13 +11,12 @@
     <soundInteract>ROM_InteractRevolver</soundInteract>
     <statBases>
       <WorkToMake>17000</WorkToMake>
-	  <Mass>1.4</Mass>
+      <Mass>1.4</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.71</AccuracyShort>
       <AccuracyMedium>0.50</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>1.56</RangedWeapon_Cooldown>
-	  
     </statBases>
     <costList>
       <Steel>40</Steel>
@@ -60,17 +57,14 @@
       <li>CallOfCthulhu_Guns</li>
     </weaponTags>
   </ThingDef>
-
   <!-- ============================================================== -->
-
-
   <ThingDef ParentName="BaseBullet">
     <defName>ROM_Bullet_Harpoon</defName>
     <label>harpoon bolt</label>
     <graphicData>
       <texPath>Projectile/CallOfCthulhu_HarpoonBullet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.4</drawSize>
+      <drawSize>1.4</drawSize>
     </graphicData>
     <projectile>
       <flyOverhead>false</flyOverhead>
@@ -91,15 +85,14 @@
     <statBases>
       <WorkToMake>100000</WorkToMake>
       <MarketValue>700</MarketValue>
-	  <Mass>1.5</Mass>
+      <Mass>1.5</Mass>
       <AccuracyTouch>0.91</AccuracyTouch>
       <AccuracyShort>0.71</AccuracyShort>
       <AccuracyMedium>0.70</AccuracyMedium>
       <AccuracyLong>0.32</AccuracyLong>
       <RangedWeapon_Cooldown>2.33</RangedWeapon_Cooldown>
-	  
     </statBases>
-		<costStuffCount>90</costStuffCount>
+    <costStuffCount>90</costStuffCount>
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
@@ -116,7 +109,7 @@
         <muzzleFlashScale>12</muzzleFlashScale>
       </li>
     </verbs>
-	    <tools>
+    <tools>
       <li>
         <label>grip</label>
         <capacities>
@@ -134,7 +127,7 @@
         <power>9</power>
         <cooldownTime>1.55</cooldownTime>
       </li>
-	  <li>
+      <li>
         <label>head</label>
         <capacities>
           <li>Stab</li>
@@ -145,15 +138,13 @@
     </tools>
     <comps>
       <li Class="CompOversizedWeapon.CompProperties_OversizedWeapon">
-	  </li>
+      </li>
     </comps>
     <weaponTags>
       <li>CallOfCthulhu_CoastalGuns</li>
       <li>CallOfCthulhu_Angler</li>
     </weaponTags>
   </ThingDef>
-
-
   <ThingDef ParentName="BaseBullet">
     <defName>ROM_Bullet_Flare</defName>
     <label>flare</label>
@@ -178,14 +169,13 @@
     </graphicData>
     <statBases>
       <WorkToMake>14000</WorkToMake>
-	  <Mass>1.5</Mass>
+      <Mass>1.5</Mass>
       <MarketValue>700</MarketValue>
       <AccuracyTouch>0.31</AccuracyTouch>
       <AccuracyShort>0.31</AccuracyShort>
       <AccuracyMedium>0.31</AccuracyMedium>
       <AccuracyLong>0.31</AccuracyLong>
       <RangedWeapon_Cooldown>8.33</RangedWeapon_Cooldown>
-	  
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -226,61 +216,57 @@
       <li>CallOfCthulhu_Angler</li>
     </weaponTags>
   </ThingDef>
-
-
-  	<!-- ============================================== -->
-
-  	<ThingDef ParentName="BaseBullet">
-  		<defName>ROM_Bullet_TommyGun</defName>
-  		<label>tommy gun bullet</label>
-  		<graphicData>
-  			<texPath>Things/Projectile/Bullet_Small</texPath>
-  			<graphicClass>Graphic_Single</graphicClass>
-  		</graphicData>
-  		<projectile>
-  			<damageDef>Bullet</damageDef>
-  			<damageAmountBase>8</damageAmountBase>
-  			<speed>55</speed>
-  		</projectile>
-  	</ThingDef>
-  	<ThingDef ParentName="BaseHumanMakeableGun">
-  		<defName>ROM_Gun_TommyGun</defName>
-  		<label>tommy gun</label>
-  		<description>A classic submachine gun also known as the Chicago Typewriter. Medium range, decent power, high rate of fire. Very quick to aim and fire.</description>
-  		<graphicData>
-  			<texPath>Guns/CallOfCthulhu_tommygun</texPath>
-  			<graphicClass>Graphic_Single</graphicClass>
-  		</graphicData>
-  		<soundInteract>Interact_SMG</soundInteract>
-      <statBases>
-  			<WorkToMake>28000</WorkToMake>
-  			<Mass>3.2</Mass>
-  			<AccuracyTouch>0.89</AccuracyTouch>
-  			<AccuracyShort>0.64</AccuracyShort>
-  			<AccuracyMedium>0.37</AccuracyMedium>
-  			<AccuracyLong>0.22</AccuracyLong>
-  			<RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
-		    
-  		</statBases>
-  		<costList>
-  			<Steel>45</Steel>
-  			<ComponentIndustrial>3</ComponentIndustrial>
-  		</costList>
-  		<verbs>
-  			<li>
-  				<verbClass>Verb_Shoot</verbClass>
-  				<hasStandardCommand>true</hasStandardCommand>
-  				<defaultProjectile>ROM_Bullet_TommyGun</defaultProjectile>
-  				<warmupTime>0.5</warmupTime>
-  				<range>28</range>
-  				<burstShotCount>3</burstShotCount>
-  				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-  				<soundCast>Shot_HeavySMG</soundCast>
-  				<soundCastTail>GunTail_Light</soundCastTail>
-  				<muzzleFlashScale>9</muzzleFlashScale>
-  			</li>
-  		</verbs>
-		<tools>
+  <!-- ============================================== -->
+  <ThingDef ParentName="BaseBullet">
+    <defName>ROM_Bullet_TommyGun</defName>
+    <label>tommy gun bullet</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>8</damageAmountBase>
+      <speed>55</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>ROM_Gun_TommyGun</defName>
+    <label>tommy gun</label>
+    <description>A classic submachine gun also known as the Chicago Typewriter. Medium range, decent power, high rate of fire. Very quick to aim and fire.</description>
+    <graphicData>
+      <texPath>Guns/CallOfCthulhu_tommygun</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_SMG</soundInteract>
+    <statBases>
+      <WorkToMake>28000</WorkToMake>
+      <Mass>3.2</Mass>
+      <AccuracyTouch>0.89</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.37</AccuracyMedium>
+      <AccuracyLong>0.22</AccuracyLong>
+      <RangedWeapon_Cooldown>1.65</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>45</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>ROM_Bullet_TommyGun</defaultProjectile>
+        <warmupTime>0.5</warmupTime>
+        <range>28</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_HeavySMG</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
       <li>
         <label>grip</label>
         <capacities>
@@ -299,15 +285,13 @@
         <cooldownTime>1.55</cooldownTime>
       </li>
     </tools>
-      <weaponTags>
-        <li>CallOfCthulhu_Guns</li>
-      </weaponTags>
-  	</ThingDef>
-
-<!-- Cloned for Tags -->
-
-   <ThingDef ParentName="BaseHumanGun">
-   <defName>ROM_Gun_PumpShotgun_COC</defName>
+    <weaponTags>
+      <li>CallOfCthulhu_Guns</li>
+    </weaponTags>
+  </ThingDef>
+  <!-- Cloned for Tags -->
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>ROM_Gun_PumpShotgun_COC</defName>
     <label>farmer's shotgun</label>
     <description>Ancient design. Deadly, but short range.</description>
     <graphicData>
@@ -323,7 +307,6 @@
       <AccuracyMedium>0.77</AccuracyMedium>
       <AccuracyLong>0.64</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -361,18 +344,16 @@
       </li>
     </tools>
   </ThingDef>
-
-
-     <ThingDef ParentName="BaseHumanGun">
-     <defName>ROM_Gun_SurvivalRifle_COC</defName>
-     <label>hunting rifle</label>
-     <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>ROM_Gun_SurvivalRifle_COC</defName>
+    <label>hunting rifle</label>
+    <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-		<generateCommonality>1.5</generateCommonality>
+    <generateCommonality>1.5</generateCommonality>
     <statBases>
       <WorkToMake>25000</WorkToMake>
       <Mass>3.5</Mass>
@@ -381,7 +362,6 @@
       <AccuracyMedium>0.96</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -419,18 +399,16 @@
       </li>
     </tools>
   </ThingDef>
-
-
-      <ThingDef ParentName="BaseHumanGun">
-      <defName>ROM_Gun_LPRifle_COC</defName>
-      <label>old-fashioned rifle</label>
-      <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
-	      <graphicData>
+  <ThingDef ParentName="BaseHumanGun">
+    <defName>ROM_Gun_LPRifle_COC</defName>
+    <label>old-fashioned rifle</label>
+    <description>Ancient pattern bolt-action rifle. Good range, good power, low rate of fire.</description>
+    <graphicData>
       <texPath>Things/Item/Equipment/WeaponRanged/BoltActionRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_Rifle</soundInteract>
-		<generateCommonality>1.5</generateCommonality>
+    <generateCommonality>1.5</generateCommonality>
     <statBases>
       <WorkToMake>25000</WorkToMake>
       <Mass>3.5</Mass>
@@ -439,7 +417,6 @@
       <AccuracyMedium>0.96</AccuracyMedium>
       <AccuracyLong>0.90</AccuracyLong>
       <RangedWeapon_Cooldown>1.26</RangedWeapon_Cooldown>
-      
     </statBases>
     <costList>
       <Steel>60</Steel>
@@ -476,10 +453,8 @@
         <cooldownTime>1.9</cooldownTime>
       </li>
     </tools>
-	      <weaponTags>
-        <li>CallOfCthulhu_InfantryGun</li>
-      </weaponTags>
+    <weaponTags>
+      <li>CallOfCthulhu_InfantryGun</li>
+    </weaponTags>
   </ThingDef>
-
-
 </Defs>

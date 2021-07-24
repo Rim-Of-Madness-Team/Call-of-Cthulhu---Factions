@@ -1,0 +1,32 @@
+1.21.0.1 (03-07-2020)
+========================
+Adds RimWorld 1.1 support. Makes a quick fix for steam upload compatibility.
+
+1.21.0.0 (03-07-2020)
+========================
+Added support for RimWorld 1.1. Adjusted flavor text. Changed the leader title from Mayor to Governor for the Fishing Towns.
+
+1.20.0.3 (11-16-2019)
+========================
+Agency and Coastal Village now spawn with leaders. Both factions now have acceptable temperature ranges for arrivals to avoid dead on arrival scenarios. Shirt and ties and plaid shirts now have insulation and defensive stats.
+
+1.20.0.2 (11-04-2018)
+========================
+Russian translation by Makrist added
+
+1.20.0.1 (10-23-2018)
+========================
+Added Korean language translation by MisulOpja
+
+1.20.0.0 (10-18-2018)
+========================
+Initial release for RimWorld 1.0. Also supports Fluffys Mod Manager.
+
+1.20.0.0 (10-18-2018)
+========================
+Initial release of RimWorld 1.0 update for Factions. Also added Manifest.XML for Fluffy's Mod Manager.
+
+1.19.0.3 (10-16-2018)
+========================
+Removes abstract bases for BaseGun etc
+

@@ -1,48 +1,43 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<!-- Lost Platoon -->
-
-    <RulePackDef>
-      <defName>ROM_NamerFactionLP</defName>
-      <rulePack>
-        <rulesStrings>
-          <li>name->4th Infantry Division</li>
-          <li>name->8th Infantry Division</li>
-          <li>name->9th Infantry Division</li>
-          <li>name->13th Infantry Division</li>
-        </rulesStrings>
-      </rulePack>
-    </RulePackDef>
-
-    <RulePackDef>
-      <defName>ROM_NamerFactionBaseLP</defName>
-      <rulePack>
-        <rulesStrings>
-          <li>name->Camp [president]</li>
-        </rulesStrings>
-  	  <rulesRaw>
-  		<li Class="Rule_File">
-  		<keyword>president</keyword>
-  		<path>NameBanks/Names_USPresidents</path>
-  		</li>
-  	  </rulesRaw>
-      </rulePack>
-    </RulePackDef>
-
-<!-- Coastal Fishing Villages -->
-
+  <!-- Lost Platoon -->
+  <RulePackDef>
+    <defName>ROM_NamerFactionLP</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;4th Infantry Division</li>
+        <li>name-&gt;8th Infantry Division</li>
+        <li>name-&gt;9th Infantry Division</li>
+        <li>name-&gt;13th Infantry Division</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ROM_NamerFactionBaseLP</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>name-&gt;Camp [president]</li>
+      </rulesStrings>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>president</keyword>
+          <path>NameBanks/Names_USPresidents</path>
+        </li>
+      </rulesRaw>
+    </rulePack>
+  </RulePackDef>
+  <!-- Coastal Fishing Villages -->
   <RulePackDef>
     <defName>ROM_NamerFactionCFV</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->Coastal Townsfolk of [badasscolor] [geography]</li>
-        <li>name->Seaside Townsfolk of [badasscolor] [geography]</li>
-        <li>name->Portside Townsfolk of [badasscolor] [geography]</li>
-        <li>name->Seafaring Townsfolk of [badasscolor] [geography]</li>
-        <li>geography->[terrainfeature]</li>
+        <li>name-&gt;Coastal Townsfolk of [badasscolor] [geography]</li>
+        <li>name-&gt;Seaside Townsfolk of [badasscolor] [geography]</li>
+        <li>name-&gt;Portside Townsfolk of [badasscolor] [geography]</li>
+        <li>name-&gt;Seafaring Townsfolk of [badasscolor] [geography]</li>
+        <li>geography-&gt;[terrainfeature]</li>
       </rulesStrings>
-	  <rulesRaw>
+      <rulesRaw>
         <li Class="Rule_File">
           <keyword>terrainfeature</keyword>
           <path>Words/Nouns/TerrainFeatures</path>
@@ -51,67 +46,59 @@
           <keyword>badasscolor</keyword>
           <path>Words/Nouns/Colors_Badass</path>
         </li>
-		<li Class="Rule_File">
-		<keyword>town</keyword>
-		<path>NameBanks/Names_LovecraftCounty</path>
-		</li>
-	  </rulesRaw>
+        <li Class="Rule_File">
+          <keyword>town</keyword>
+          <path>NameBanks/Names_LovecraftCounty</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
-
-
   <RulePackDef>
     <defName>ROM_NamerFactionBaseCFV</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->[town]</li>
+        <li>name-&gt;[town]</li>
       </rulesStrings>
-	  <rulesRaw>
-		<li Class="Rule_File">
-		<keyword>town</keyword>
-		<path>NameBanks/Names_LovecraftCounty</path>
-		</li>
-	  </rulesRaw>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>town</keyword>
+          <path>NameBanks/Names_LovecraftCounty</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
-
-
   <RulePackDef>
     <defName>ROM_NamerFactionTheAgency</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->The Agency</li>
+        <li>name-&gt;The Agency</li>
       </rulesStrings>
-	  <rulesRaw>
-		<li Class="Rule_File">
-		<keyword>agency</keyword>
-		<path>NameBanks/Names_AgencyDepartments</path>
-		</li>
-	  </rulesRaw>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>agency</keyword>
+          <path>NameBanks/Names_AgencyDepartments</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
-
-
   <RulePackDef>
     <defName>ROM_NamerFactionBaseTheAgency</defName>
     <rulePack>
       <rulesStrings>
-        <li>name->[town] Base of Operations</li>
-        <li>name->[town] Headquarters</li>
-        <li>name->Department of [agency]</li>
+        <li>name-&gt;[town] Base of Operations</li>
+        <li>name-&gt;[town] Headquarters</li>
+        <li>name-&gt;Department of [agency]</li>
       </rulesStrings>
-	  <rulesRaw>
-		<li Class="Rule_File">
-		<keyword>agency</keyword>
-		<path>NameBanks/Names_AgencyDepartments</path>
-		</li>
-		<li Class="Rule_File">
-		<keyword>town</keyword>
-		<path>NameBanks/Names_NewEngland</path>
-		</li>
-	  </rulesRaw>
+      <rulesRaw>
+        <li Class="Rule_File">
+          <keyword>agency</keyword>
+          <path>NameBanks/Names_AgencyDepartments</path>
+        </li>
+        <li Class="Rule_File">
+          <keyword>town</keyword>
+          <path>NameBanks/Names_NewEngland</path>
+        </li>
+      </rulesRaw>
     </rulePack>
   </RulePackDef>
-
-
 </Defs>

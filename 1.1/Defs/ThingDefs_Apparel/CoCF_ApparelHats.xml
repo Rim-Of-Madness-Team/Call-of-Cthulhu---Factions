@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuTopHat</defName>
     <label>top hat</label>
@@ -24,7 +23,7 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-		<generateCommonality>0.11</generateCommonality>
+    <generateCommonality>0.11</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -34,15 +33,14 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>CallOfCthulhu_Townsfolk</li>
+        <li>CallOfCthulhu_Townsfolk</li>
       </tags>
       <defaultOutfitTags>
-		<li>CallOfCthulhu_Townsfolk</li>
+        <li>CallOfCthulhu_Townsfolk</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuNewsboyCap</defName>
     <label>newsboy cap</label>
@@ -66,7 +64,7 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-		<generateCommonality>0.111</generateCommonality>
+    <generateCommonality>0.111</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -76,18 +74,14 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		    <li>CallOfCthulhu_Thug</li>
+        <li>CallOfCthulhu_Thug</li>
       </tags>
       <defaultOutfitTags>
-		    <li>CallOfCthulhu_Thug</li>
+        <li>CallOfCthulhu_Thug</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-
-
-
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuFedora</defName>
     <label>fedora</label>
@@ -111,7 +105,7 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-		<generateCommonality>0.1</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -121,17 +115,15 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>CallOfCthulhu_JuniorDetective</li>
-		<li>CallOfCthulhu_Detective</li>
+        <li>CallOfCthulhu_JuniorDetective</li>
+        <li>CallOfCthulhu_Detective</li>
       </tags>
       <defaultOutfitTags>
-		<li>CallOfCthulhu_Detective</li>
+        <li>CallOfCthulhu_Detective</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-
-
   <ThingDef ParentName="HatMakeableBase">
     <defName>ROM_Apparel_CallOfCthulhuBowler</defName>
     <label>bowler hat</label>
@@ -155,8 +147,7 @@
     <equippedStatOffsets>
       <SocialImpact>0.15</SocialImpact>
     </equippedStatOffsets>
-
-		<generateCommonality>0.1</generateCommonality>
+    <generateCommonality>0.1</generateCommonality>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -173,15 +164,13 @@
         <li>CallOfCthulhu_Townsfolk</li>
       </defaultOutfitTags>
     </apparel>
-		<recipeMaker>
-			<recipeUsers>
-				<li>ElectricTailoringBench</li>
-				<li>HandTailoringBench</li>
-
-			</recipeUsers>
-			<researchPrerequisite>ComplexClothing</researchPrerequisite>
-		</recipeMaker>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ComplexClothing</researchPrerequisite>
+    </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
-
 </Defs>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>6183f3ce-91c8-4dce-b2e3-8e6bec944425</ID>
+  <ModName>Call of Cthulhu - Factions (Continued)</ModName>
+  <Version>1.0.3.0</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>emipa606</Owner>
+    <Project>CallofCthulhuFactions</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncMainPage</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>

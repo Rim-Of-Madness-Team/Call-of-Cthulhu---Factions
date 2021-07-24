@@ -1,18 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef Name="TownsfolkBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ROM_Townsfolk</defaultFactionType>
     <baseRecruitDifficulty>0.60</baseRecruitDifficulty>
-    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0.025</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <maxGenerationAge>75</maxGenerationAge>
   </PawnKindDef>
-
   <PawnKindDef Name="TownsfolkVillager" ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkVillager</defName>
     <label>villager</label>
@@ -24,17 +24,17 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-		<li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>CallOfCthulhu_Townsfolk</li>
-	</apparelTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_Townsfolk</li>
+    </apparelTags>
     <apparelMoney>
       <min>1000</min>
       <max>2000</max>
     </apparelMoney>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuBowler</li>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuBowler</li>
     </apparelRequired>
     <apparelAllowHeadgearChance>1.0</apparelAllowHeadgearChance>
     <weaponMoney>
@@ -76,8 +76,7 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
-   <PawnKindDef ParentName="TownsfolkBase">
+  <PawnKindDef ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkMayor</defName>
     <label>town mayor</label>
     <factionLeader>true</factionLeader>
@@ -89,11 +88,11 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>CallOfCthulhu_Townsfolk</li>
-	</apparelTags>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>CallOfCthulhu_Townsfolk</li>
+    </apparelTags>
     <apparelMoney>
       <min>1000</min>
       <max>2000</max>
@@ -138,12 +137,9 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="TownsfolkVillager">
     <defName>ROM_TownsfolkTrader</defName>
     <label>town trader</label>
     <trader>true</trader>
   </PawnKindDef>
-
-
 </Defs>

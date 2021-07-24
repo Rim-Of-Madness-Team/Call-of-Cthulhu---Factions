@@ -1,22 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef Name="MERFBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ROM_TheAgency</defaultFactionType>
     <baseRecruitDifficulty>0.99</baseRecruitDifficulty>
-    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0.1</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <maxGenerationAge>65</maxGenerationAge>
   </PawnKindDef>
-
   <PawnKindDef Name="MERF" ParentName="MERFBase">
     <defName>ROM_MERF</defName>
     <label>MERF</label>
-	<description>MERF stands for Mobile Eldritch Response Force.</description>
+    <description>MERF stands for Mobile Eldritch Response Force.</description>
     <race>Human</race>
     <combatPower>1000</combatPower>
     <itemQuality>Poor</itemQuality>
@@ -25,14 +25,14 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-	  <li>IndustrialBasic</li>
+    <apparelTags>
+      <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
       <li>Military</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_MERF_Armor</li>
-		<li>ROM_Apparel_MERF_LightHelmet</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_MERF_Armor</li>
+      <li>ROM_Apparel_MERF_LightHelmet</li>
     </apparelRequired>
     <apparelMoney>
       <min>2500</min>
@@ -77,11 +77,10 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="MERFBase">
     <defName>ROM_HeavyMERF</defName>
     <label>MERF Heavy</label>
-	<description>MERF stands for Mobile Eldritch Response Force.</description>
+    <description>MERF stands for Mobile Eldritch Response Force.</description>
     <race>Human</race>
     <combatPower>1500</combatPower>
     <itemQuality>Poor</itemQuality>
@@ -90,15 +89,15 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
+    <apparelTags>
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
       <li>Military</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_MERF_HeavyHelmet</li>
-		<li>ROM_Apparel_MERF_Armor</li>
-		<li>ROM_Apparel_MERF_Coat</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_MERF_HeavyHelmet</li>
+      <li>ROM_Apparel_MERF_Armor</li>
+      <li>ROM_Apparel_MERF_Coat</li>
     </apparelRequired>
     <apparelMoney>
       <min>2500</min>
@@ -143,5 +142,4 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
 </Defs>

@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_TheAgency.label>비밀조직</ROM_TheAgency.label>
-  <ROM_TheAgency.description>엘드리치의 군대로부터 대항하고 지키기위해 헌신하는 비밀조직입니다.\n\n고대의 법 집행기관을 본따 만든 조직으로, 가장 악독하고 혐오스러운 엘드리히에 의해 재앙받는 지역 근처에 전초기지를 세웁니다. 이들의 목표는 오랜 잠에서 깨어난 괴물들과 맞서 싸우기 위해 새로운 전략과 유물을 조사하고 연구하는 것입니다. 코즈믹 호러로부터 잃어버린 오래된 세상에서 전통 경찰복과 수사복장을 하고 6연발 리볼버를 휘두르는 것을 즐기며, 지극히 비밀스러운 물건을 거래하는 것을 즐깁니다.\n\n이 조직은 군대처럼 간부 후보생부터 국장에게 이르기까지 등급으로 조직되어 있습니다. 도움이 필요한 자들을 위해 잘 무장된 병력들을 지원해주는 경향이 있으며, 흉측하고 기괴한 상황에서도 압박감을 느끼지 않습니다.</ROM_TheAgency.description>
-  <ROM_TheAgency.pawnsPlural>대리인</ROM_TheAgency.pawnsPlural>
-  <ROM_TheAgency.leaderTitle>국장</ROM_TheAgency.leaderTitle>
-
-</LanguageData>

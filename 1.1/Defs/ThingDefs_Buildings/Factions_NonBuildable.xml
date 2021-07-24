@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-<!-- =========== BASE GENERATION ========= -->
-
-
+  <!-- =========== BASE GENERATION ========= -->
   <ThingDef>
     <defName>ROM_TemporaryRegionBarrier</defName>
     <category>Ethereal</category>
@@ -14,7 +11,6 @@
     <useHitPoints>false</useHitPoints>
     <tradeability>None</tradeability>
   </ThingDef>
-
   <ThingDef>
     <defName>ROM_TemporaryDoorMarker</defName>
     <category>Ethereal</category>
@@ -25,9 +21,7 @@
     <useHitPoints>false</useHitPoints>
     <tradeability>None</tradeability>
   </ThingDef>
-
   <!-- ============ BASE OBJECTS ========== -->
-
   <ThingDef ParentName="BuildingBase">
     <defName>ROM_AgencySymbolFloorPainting</defName>
     <label>agency emblem floor painting</label>
@@ -43,8 +37,8 @@
       <WorkToBuild>0</WorkToBuild>
     </statBases>
     <useHitPoints>False</useHitPoints>
-		<scatterableOnMapGen>false</scatterableOnMapGen>
-		<size>(7,4)</size>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(7,4)</size>
     <passability>Standable</passability>
     <building>
       <sowTag>SupportPlantsOnly</sowTag>
@@ -52,14 +46,13 @@
     </building>
     <designationHotKey>Misc10</designationHotKey>
   </ThingDef>
-
-    <ThingDef ParentName="TableBase">
+  <ThingDef ParentName="TableBase">
     <defName>ROM_AgencyReceptionistTable</defName>
     <label>table (reception)</label>
     <graphicData>
       <texPath>BaseObjects/TheAgency/AgencyReceptionDesk</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
+      <shaderType>CutoutComplex</shaderType>
       <drawSize>(5,2.5)</drawSize>
       <damageData>
         <rectN>(0,0.27,2,3.73)</rectN>
@@ -82,5 +75,4 @@
     <size>(5,2)</size>
     <costStuffCount>95</costStuffCount>
   </ThingDef>
-
 </Defs>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>AmmoHarpoon</defName>
+    <label>Harpoon</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+  </ThingCategoryDef>
+  <CombatExtended.AmmoCategoryDef>
+    <defName>AmmoCategoryHarpoongun</defName>
+    <label>harpoon</label>
+  </CombatExtended.AmmoCategoryDef>
+  <!-- ==================== AmmoSet ========================== -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_Harpoon</defName>
+    <label>Harpoon</label>
+    <ammoTypes>
+      <Ammo_Harpoon>Bullet_Harpoon</Ammo_Harpoon>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  <!-- ==================== Ammo ========================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" Name="HarpoonBase" ParentName="AmmoBase" Abstract="True">
+    <description>Harpoon</description>
+    <statBases>
+      <Mass>0.01</Mass>
+      <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoHarpoon</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="HarpoonBase">
+    <defName>Ammo_Harpoon</defName>
+    <label>Harpoon</label>
+    <graphicData>
+      <texPath>Things/Ammo/Harpoon</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>AmmoCategoryHarpoongun</ammoClass>
+    <cookOffProjectile>Bullet_Harpoon</cookOffProjectile>
+  </ThingDef>
+  <!-- ================== Projectiles ================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseHarpoon" ParentName="BaseBullet" Abstract="true">
+    <thingClass>CombatExtended.BulletCE</thingClass>
+    <graphicData>
+      <texPath>Projectile/CallOfCthulhu_HarpoonBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Bullet</damageDef>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseHarpoon">
+    <defName>Bullet_Harpoon</defName>
+    <label>Harpoon</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationSharp>6</armorPenetrationSharp>
+      <armorPenetrationBlunt>11</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_Harpoon</defName>
+    <label>make Harpoons x10</label>
+    <description>Craft 10 Harpoons.</description>
+    <jobString>Making Harpoons.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>9</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_Harpoon>10</Ammo_Harpoon>
+    </products>
+    <workAmount>2250</workAmount>
+  </RecipeDef>
+</Defs>

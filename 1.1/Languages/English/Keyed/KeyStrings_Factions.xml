@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<LanguageData>
-
-<AgencyDiscoveredCult>Cult Discovered</AgencyDiscoveredCult>
-<AgencyDiscoveredCultDesc>During {0} visit, {1} discovered a {2} and alerted the agency about the presence of a cult. The Agency is now hostile to you.</AgencyDiscoveredCultDesc>
-
-</LanguageData>

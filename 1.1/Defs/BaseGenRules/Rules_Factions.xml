@@ -1,8 +1,6 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-	<!-- ============= AGENCY BASE ============= -->
-
+  <!-- ============= AGENCY BASE ============= -->
   <RuleDef>
     <defName>ROM_AgencyFactionBase</defName>
     <symbol>agencyFactionBase</symbol>
@@ -21,7 +19,7 @@
       </li>
     </resolvers>
   </RuleDef>
-    <RuleDef>
+  <RuleDef>
     <defName>ROM_AgencyFactionDoorsNS</defName>
     <symbol>agencyDoorsNS</symbol>
     <resolvers>
@@ -29,25 +27,23 @@
       </li>
     </resolvers>
   </RuleDef>
-    <RuleDef>
+  <RuleDef>
     <defName>ROM_AgencyFactionDoorsEW</defName>
     <symbol>agencyDoorsEW</symbol>
     <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyDoorsEW">
       </li>
     </resolvers>
-  </RuleDef>  
-    <RuleDef>
+  </RuleDef>
+  <RuleDef>
     <defName>ROM_AgencyFactionDoorsNSEW</defName>
     <symbol>agencyDoorsNSEW</symbol>
     <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyDoorsNSEW">
       </li>
     </resolvers>
-  </RuleDef>    
-  
-	<!-- ============= LOBBY AREA ============= -->
-  
+  </RuleDef>
+  <!-- ============= LOBBY AREA ============= -->
   <RuleDef>
     <defName>ROM_AgencyFactionLobby</defName>
     <symbol>agencyLobby</symbol>
@@ -57,7 +53,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
   <RuleDef>
     <defName>ROM_AgencyFactionFillLobby</defName>
     <symbol>agencyFillLobby</symbol>
@@ -66,11 +61,8 @@
         <minRectSize>(2, 2)</minRectSize>
       </li>
     </resolvers>
-  </RuleDef>  
-  
-  
-	<!-- ============= CONTAINMENT WING ============= -->
-  
+  </RuleDef>
+  <!-- ============= CONTAINMENT WING ============= -->
   <RuleDef>
     <defName>ROM_AgencyFactionContainmentWing</defName>
     <symbol>agencyContainmentWing</symbol>
@@ -80,27 +72,24 @@
       </li>
     </resolvers>
   </RuleDef>
-  
   <RuleDef>
     <defName>ROM_AgencyFactionCells</defName>
-	<symbol>agencyCells</symbol>
-	<resolvers>
+    <symbol>agencyCells</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyCells">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
- 
-   <RuleDef>
+  <RuleDef>
     <defName>ROM_AgencyFactionCellsH</defName>
-	<symbol>agencyCellsH</symbol>
-	<resolvers>
+    <symbol>agencyCellsH</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyCellsH">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
-
   <RuleDef>
     <defName>ROM_AgencyFillCells</defName>
     <symbol>fillCells</symbol>
@@ -108,53 +97,43 @@
       <li Class="CthulhuFactions.SymbolResolver_FillCells" />
     </resolvers>
   </RuleDef>
-
-  
   <RuleDef>
     <defName>ROM_AgencyFactionStorage</defName>
-	<symbol>agencyStorage</symbol>
-	<resolvers>
+    <symbol>agencyStorage</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyStorage">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
- 
-   <RuleDef>
+  <RuleDef>
     <defName>ROM_AgencyFactionStorageH</defName>
-	<symbol>agencyStorageH</symbol>
-	<resolvers>
+    <symbol>agencyStorageH</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyStorageH">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
-  </RuleDef> 
-  
-  
+      </li>
+    </resolvers>
+  </RuleDef>
   <RuleDef>
     <defName>ROM_AgencyFactionStorageArtifact</defName>
-	<symbol>agencyStorageArtifact</symbol>
-	<resolvers>
+    <symbol>agencyStorageArtifact</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyStorageArtifact">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
-  
-  
   <RuleDef>
     <defName>ROM_AgencyFactionFillMERF</defName>
-	<symbol>agencyFillMERF</symbol>
-	<resolvers>
+    <symbol>agencyFillMERF</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyFillMERF">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
-  
-  
-	<!-- ============= INVESTIGATION WING ============= -->
-  
+  <!-- ============= INVESTIGATION WING ============= -->
   <RuleDef>
     <defName>ROM_AgencyFactionInvestigationWing</defName>
     <symbol>agencyInvestigationWing</symbol>
@@ -164,39 +143,33 @@
       </li>
     </resolvers>
   </RuleDef>
-
   <RuleDef>
     <defName>ROM_AgencyFactionOfficeSpace</defName>
-	<symbol>agencyOfficeSpace</symbol>
-	<resolvers>
+    <symbol>agencyOfficeSpace</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyOfficeSpace">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
- 
-
   <RuleDef>
     <defName>ROM_AgencyFactionOfficeSpaceH</defName>
-	<symbol>agencyOfficeSpaceH</symbol>
-	<resolvers>
+    <symbol>agencyOfficeSpaceH</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyOfficeSpaceH">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
-  </RuleDef> 
-  
+      </li>
+    </resolvers>
+  </RuleDef>
   <RuleDef>
     <defName>ROM_AgencyFactionChiefOffice</defName>
-	<symbol>agencyChiefOffice</symbol>
-	<resolvers>
+    <symbol>agencyChiefOffice</symbol>
+    <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyChiefOffice">
         <minRectSize>(2, 2)</minRectSize>
-      </li>	
-	</resolvers>
+      </li>
+    </resolvers>
   </RuleDef>
-  
-  
   <RuleDef>
     <defName>ROM_FillWithTypewriters</defName>
     <symbol>fillWithTypewriters</symbol>
@@ -204,8 +177,6 @@
       <li Class="CthulhuFactions.SymbolResolver_FillWithTypewriters" />
     </resolvers>
   </RuleDef>
-
-    
   <RuleDef>
     <defName>ROM_FillWithResearchBenches</defName>
     <symbol>fillWithResearchBenches</symbol>
@@ -213,39 +184,28 @@
       <li Class="CthulhuFactions.SymbolResolver_FillWithResearchBenches" />
     </resolvers>
   </RuleDef>
-  
-    
   <RuleDef>
     <defName>ROM_AgencyFactionInterrogations</defName>
     <symbol>agencyInterrogations</symbol>
     <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyInterrogations" />
     </resolvers>
-  </RuleDef>  
-  
-    
-    
+  </RuleDef>
   <RuleDef>
     <defName>ROM_AgencyFactionInterrogationsH</defName>
     <symbol>agencyInterrogationsH</symbol>
     <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_AgencyInterrogationsH" />
     </resolvers>
-  </RuleDef>  
-    
-    
+  </RuleDef>
   <RuleDef>
     <defName>ROM_AgencyFactionFillWithTablesAndChairs</defName>
     <symbol>agencyFillWithTablesAndChairs</symbol>
     <resolvers>
       <li Class="CthulhuFactions.SymbolResolver_FillWithTablesAndChairs" />
     </resolvers>
-  </RuleDef>  
-  
-    
-  
-	<!-- ============= LIVING QUARTERS WING ============= -->
-  
+  </RuleDef>
+  <!-- ============= LIVING QUARTERS WING ============= -->
   <RuleDef>
     <defName>ROM_AgencyFactionLivingQuartersWing</defName>
     <symbol>agencyLivingQuartersWing</symbol>
@@ -255,8 +215,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
-  
   <RuleDef>
     <defName>ROM_AgencyFactionFillBedroom</defName>
     <symbol>agencyFillBedroom</symbol>
@@ -266,8 +224,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
-  
   <RuleDef>
     <defName>ROM_AgencyFactionBedrooms</defName>
     <symbol>agencyBedrooms</symbol>
@@ -277,7 +233,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
   <RuleDef>
     <defName>ROM_AgencyFactionBedroomsH</defName>
     <symbol>agencyBedroomsH</symbol>
@@ -287,7 +242,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
   <RuleDef>
     <defName>ROM_AgencyFactionMessHall</defName>
     <symbol>agencyMessHall</symbol>
@@ -297,7 +251,6 @@
       </li>
     </resolvers>
   </RuleDef>
-  
   <RuleDef>
     <defName>ROM_AgencyFactionMessHallH</defName>
     <symbol>agencyMessHallH</symbol>
@@ -307,6 +260,4 @@
       </li>
     </resolvers>
   </RuleDef>
-    
-  
 </Defs>

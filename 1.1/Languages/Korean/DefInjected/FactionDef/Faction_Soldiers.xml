@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_LostPlatoon.label>실종된 소대</ROM_LostPlatoon.label>
-  <ROM_LostPlatoon.description>이 군인들은 불가사의한 상황에 의해 등장하게 되었습니다. 공포로 인해 새로운 참호를 파고 소통하기보단 총알만 거래를 합니다. 이들이 본 것이 무언인지, 어디에서 왔는지 상관없이 이 세계에 속하지 않는다는 점은 확실합니다.</ROM_LostPlatoon.description>
-  <ROM_LostPlatoon.pawnsPlural>실종된 군인</ROM_LostPlatoon.pawnsPlural>
-  <ROM_LostPlatoon.leaderTitle>대장</ROM_LostPlatoon.leaderTitle>
-
-</LanguageData>

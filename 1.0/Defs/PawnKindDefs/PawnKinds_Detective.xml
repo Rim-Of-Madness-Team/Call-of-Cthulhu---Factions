@@ -1,18 +1,18 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <PawnKindDef Name="DetectiveBase" Abstract="True">
     <race>Human</race>
     <defaultFactionType>ROM_TheAgency</defaultFactionType>
     <baseRecruitDifficulty>0.70</baseRecruitDifficulty>
-    <backstoryCategories><li>Civil</li></backstoryCategories>
+    <backstoryCategories>
+      <li>Civil</li>
+    </backstoryCategories>
     <chemicalAddictionChance>0.1</chemicalAddictionChance>
     <invNutrition>2.55</invNutrition>
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <maxGenerationAge>65</maxGenerationAge>
   </PawnKindDef>
-
   <PawnKindDef Name="DetectiveInvestigator" ParentName="DetectiveBase">
     <defName>ROM_DetectiveInvestigator</defName>
     <label>Investigator</label>
@@ -24,12 +24,12 @@
       <min>0.2</min>
       <max>2.0</max>
     </gearHealthRange>
-	<apparelTags>
-	  <li>CallOfCthulhu_Detective</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuBowler</li>
-		<li>ROM_Apparel_CallOfCthulhuShirtTie</li>
+    <apparelTags>
+      <li>CallOfCthulhu_Detective</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuBowler</li>
+      <li>ROM_Apparel_CallOfCthulhuShirtTie</li>
     </apparelRequired>
     <apparelMoney>
       <min>300</min>
@@ -74,7 +74,6 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="DetectiveInvestigator" Name="DetectiveChiefBase">
     <defName>ROM_DetectiveChief</defName>
     <combatPower>220</combatPower>
@@ -85,13 +84,11 @@
     <factionLeader>true</factionLeader>
     <canBeSapper>true</canBeSapper>
   </PawnKindDef>
-
   <PawnKindDef ParentName="DetectiveInvestigator">
     <defName>ROM_DetectiveTrader</defName>
     <label>contracted supplier</label>
     <trader>true</trader>
   </PawnKindDef>
-
   <PawnKindDef ParentName="DetectiveBase">
     <defName>ROM_DetectiveJunior</defName>
     <label>junior agent</label>
@@ -102,12 +99,12 @@
       <min>0.5</min>
       <max>1.8</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>CallOfCthulhu_Detective</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuFedora</li>
-		<li>ROM_Apparel_CallOfCthulhutrench_coat</li>
+    <apparelTags>
+      <li>CallOfCthulhu_Detective</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuFedora</li>
+      <li>ROM_Apparel_CallOfCthulhutrench_coat</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>
@@ -139,7 +136,6 @@
       </countRange>
     </inventoryOptions>
   </PawnKindDef>
-
   <PawnKindDef ParentName="DetectiveBase">
     <defName>ROM_DetectiveStandard</defName>
     <label>agent</label>
@@ -150,12 +146,12 @@
       <min>0.5</min>
       <max>1.8</max>
     </gearHealthRange>
-	<apparelTags>
-        <li>CallOfCthulhu_Detective</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuFedora</li>
-		<li>ROM_Apparel_CallOfCthulhutrench_coat</li>
+    <apparelTags>
+      <li>CallOfCthulhu_Detective</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuFedora</li>
+      <li>ROM_Apparel_CallOfCthulhutrench_coat</li>
     </apparelRequired>
     <apparelMoney>
       <min>1000</min>
@@ -187,7 +183,6 @@
       </countRange>
     </inventoryOptions>
   </PawnKindDef>
-  
   <PawnKindDef ParentName="DetectiveBase">
     <defName>ROM_DetectiveGrizzled</defName>
     <label>veteran agent</label>
@@ -198,13 +193,13 @@
       <min>0.9</min>
       <max>3.8</max>
     </gearHealthRange>
-	<apparelTags>
+    <apparelTags>
       <li>CallOfCthulhu_Detective</li>
       <li>BeltDefensePop</li>
-	</apparelTags>
-	<apparelRequired>
-		<li>ROM_Apparel_CallOfCthulhuFedora</li>
-		<li>ROM_Apparel_CallOfCthulhutrench_coat</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>ROM_Apparel_CallOfCthulhuFedora</li>
+      <li>ROM_Apparel_CallOfCthulhutrench_coat</li>
     </apparelRequired>
     <apparelMoney>
       <min>3000</min>
@@ -252,5 +247,4 @@
       </subOptionsChooseOne>
     </inventoryOptions>
   </PawnKindDef>
-
 </Defs>

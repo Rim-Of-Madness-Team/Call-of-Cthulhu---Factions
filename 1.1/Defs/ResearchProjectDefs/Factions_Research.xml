@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ResearchProjectDef>
     <defName>ROM_OccupationClothing</defName>
     <label>occupational clothing</label>
@@ -11,7 +10,6 @@
       <li>ComplexClothing</li>
     </prerequisites>
   </ResearchProjectDef>
-
   <ResearchProjectDef>
     <defName>ROM_MERFOutfits</defName>
     <label>riot combat gear</label>
@@ -22,5 +20,4 @@
       <li>ROM_OccupationClothing</li>
     </prerequisites>
   </ResearchProjectDef>
-
 </Defs>

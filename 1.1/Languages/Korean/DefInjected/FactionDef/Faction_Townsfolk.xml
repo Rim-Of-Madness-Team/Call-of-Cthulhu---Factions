@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LanguageData>
-
-  <ROM_Townsfolk.label>해안 어촌</ROM_Townsfolk.label>
-  <ROM_Townsfolk.description>임명된 법 집행관과 함께 어부와 무두장이들의 해안 공동체입니다.\n\n이 어촌은 하룻밤새 생겨난 것 같습니다. 야생 그대로였던 숲이 부두와 건물들로 삐뚤삐뚤 채워질 것입니다. 이들이 어떻게 정착했는지 알지 못했다면, 수 십년동안 지낸 현지인으로 생각했었을 것입니다. 풍화된 지역에 어떻게 정착을 했고, 조용하고 빠르게 마을을 건설했는지 물어봐도 이들은 무시하기 일쑤입니다.\n\n습한 마을의 주민에게 신뢰를 얻기는 어렵지만, 수입을 마련하기엔 가치가 있는 곳입니다. 커다란 후크나 장작 받침쇠, 강력한 작살총을 지역 주민들이 다루는 것을 볼 수 있습니다. 보통 마을 주민들끼리 거래를 하려고 하지만, 림월드에서 거칠고 낯선 사람들과 물건을 교환할만큼 분별있는 사람들이라면 충분한 만족감을 선사할것입니다.</ROM_Townsfolk.description>
-  <ROM_Townsfolk.pawnsPlural>마을 주민</ROM_Townsfolk.pawnsPlural>
-  <ROM_Townsfolk.leaderTitle>시장</ROM_Townsfolk.leaderTitle>
-
-</LanguageData>
