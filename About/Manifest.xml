@@ -6,6 +6,6 @@
   <incompatibleWith />
   <loadBefore />
   <loadAfter />
-  <manifestUri>https://raw.githubusercontent.com/emipa606/CallofCthulhuFactions/master/About/Manifest.xml</manifestUri>
-  <downloadUri>https://github.com/emipa606/CallofCthulhuFactions/releases</downloadUri>
+  <manifestUri>https://raw.githubusercontent.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Factions/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/Rim-Of-Madness-Team/Call-of-Cthulhu---Factions/releases</downloadUri>
 </Manifest>
