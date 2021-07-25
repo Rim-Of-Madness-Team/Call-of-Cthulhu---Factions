@@ -1,3 +1,7 @@
+1.0.3.2 (07-25-2021)
+========================
+Added Royalty and Combat Extended support
+
 1.0.3.1 (07-24-2021)
 ========================
 Adjusted LoadFolders.xml to direct to the appropriate mod folders for version 1.3

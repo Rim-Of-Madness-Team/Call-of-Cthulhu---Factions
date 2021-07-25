@@ -28,7 +28,7 @@
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>1.0.3.1 (07-24-2021)
+  <description>1.0.3.2 (07-25-2021)
 
 [h1]Adds three new factions to RimWorld inspired by the works of HP Lovecraft.[/h1]
 
@@ -75,6 +75,10 @@ Michael Cailler, Jigsawjohn , Daniel Schott, Penelope Charli Whitman, Jerome Gon
 ========================
 Changelog
 ========================
+1.0.3.2 (07-25-2021)
+========================
+Added Royalty and Combat Extended support
+
 1.0.3.1 (07-24-2021)
 ========================
 Adjusted LoadFolders.xml to direct to the appropriate mod folders for version 1.3
