@@ -17,18 +17,13 @@
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
       <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
     </li>
-    <li>
-      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
-      <displayName>Enable Oversized Weapons</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
-    </li>
   </modDependencies>
   <loadAfter>
     <li>brrainz.harmony</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
     <li>CETeam.CombatExtended</li>
   </loadAfter>
-  <description>1.0.2059.1697 (08-04-2021)
+  <description>1.0.3.4 (08-04-2021)
 
 [h1]Adds three new factions to RimWorld inspired by the works of HP Lovecraft.[/h1]
 
@@ -75,6 +70,10 @@ Michael Cailler, Jigsawjohn , Daniel Schott, Penelope Charli Whitman, Jerome Gon
 ========================
 Changelog
 ========================
+1.0.3.4 (08-04-2021)
+========================
+Removed dependency for Carny Senpai's Enable Oversized Weapons mod
+
 1.0.2059.1697 (08-04-2021)
 ========================
 Adds ideologies support for factions with their own preferences for memes. Adds option to select how many of each faction appear.
