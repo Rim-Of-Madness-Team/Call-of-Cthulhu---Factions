@@ -12,6 +12,53 @@
     <listOrderPriority>31</listOrderPriority>
     <settlementGenerationWeight>0.25</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <!-- Ideologies, RW 1.3 -->
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Ideological</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology,rimofmadness.CallofCthulhuCults">ROM_CultOfTheOldOnes</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Corpses_DontCare</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxTwo</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxTwo</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxThree</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxThree</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxFour</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxFour</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_Unlimited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_Unlimited</li>
+    </disallowedPrecepts>
+    <!-- End Ideologies, RW 1.3 -->
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
@@ -35,9 +82,6 @@
       </li>
     </backstoryFilters>
     <geneticVariance>0.8</geneticVariance>
-    <allowedCultures>
-      <li>Rustican</li>
-    </allowedCultures>
     <caravanTraderKinds>
       <li>Caravan_Outlander_CombatSupplier</li>
       <li>Caravan_Outlander_Exotic</li>

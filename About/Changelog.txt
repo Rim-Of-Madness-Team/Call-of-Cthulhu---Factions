@@ -1,3 +1,7 @@
+1.0.2059.1697 (08-04-2021)
+========================
+Adds ideologies support for factions with their own preferences for memes. Adds option to select how many of each faction appear.
+
 1.0.3.2 (07-25-2021)
 ========================
 Added Royalty and Combat Extended support
