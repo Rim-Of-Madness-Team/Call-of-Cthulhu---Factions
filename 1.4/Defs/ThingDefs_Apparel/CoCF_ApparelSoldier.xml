@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Soldier -->
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>ROM_ApparelWWIHelmet</defName>
+    <label>infantry helmet (World War I)</label>
+    <description>To avoid coming home from the front lines in seperate bags, be sure to wear this simplistic protective headwear.</description>
+    <graphicData>
+      <texPath>Apparel/Display/ROMWWIUKHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>3100</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>2</Mass>
+      <StuffEffectMultiplierArmor>0.475</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.0375</MoveSpeed>
+      <PsychicSensitivity>-0.12</PsychicSensitivity>
+    </equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Hats/WWIUKHat/WWIUKHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CallOfCthulhu_Infantry</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CallOfCthulhu_Infantry</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ROM_ApparelWWIUniform</defName>
+    <description>This apparel made it easier to distinguish friendlies on the battlefield. However, it provided little in the way of actual body armor.</description>
+    <label>infantry uniform (World War I)</label>
+    <graphicData>
+      <texPath>Apparel/Display/ROMWWIUKCoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>160</MaxHitPoints>
+      <WorkToMake>12500</WorkToMake>
+      <Mass>2.75</Mass>
+      <StuffEffectMultiplierArmor>0.45</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.55</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.55</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.048</MoveSpeed>
+      <WorkSpeedGlobal>-0.048</WorkSpeedGlobal>
+    </equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Bodywear_Clothing/WWIInfantryUniform/WWIUKCoat</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>CallOfCthulhu_Infantry</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CallOfCthulhu_Infantry</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Farmer -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ROM_Apparel_NF_FSOveralls</defName>
+    <label>overalls</label>
+    <description>Who needs a belt when you can just wear pants so tall they go up to your shoulders? Not you! You've got overalls!</description>
+    <graphicData>
+      <texPath>Apparel/Display/NF_FSOveralls</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>60</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <Mass>0.25</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>16000</WorkToMake>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.16</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+      <MoveSpeed>0.25</MoveSpeed>
+    </equippedStatOffsets>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <bodyPartGroups>
+        <li>Legs</li>
+        <li>Torso</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Bodywear_Clothing/Overalls/NF_FSOveralls</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+      </layers>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+  </ThingDef>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>ROM_Apparel_ROM_StrawHat</defName>
+    <label>straw hat</label>
+    <description>A hat fashioned from straw to shield the user from the sun.</description>
+    <graphicData>
+      <texPath>Apparel/Display/ROMStrawHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.25</Mass>
+      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.60</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.6</EquipDelay>
+    </statBases>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Hats/StrawHat/ROMStrawHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CallOfCthulhu_Farmer</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CallOfCthulhu_Farmer</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

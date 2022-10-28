@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <SoundDef>
+    <defName>ROM_Shot_Revolver</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Revolver1</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.76471</min>
+          <max>30.76471</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ROM_ShotHarpoon</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Harpoon1</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.76471</min>
+          <max>30.76471</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ROM_ShotFlare</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Flare1</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.76471</min>
+          <max>30.76471</max>
+        </volumeRange>
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+  <SoundDef>
+    <defName>ROM_InteractRevolver</defName>
+    <context>MapOnly</context>
+    <eventNames />
+    <maxSimultaneous>1</maxSimultaneous>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Revolver2</clipPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>30.76471</min>
+          <max>30.76471</max>
+        </volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

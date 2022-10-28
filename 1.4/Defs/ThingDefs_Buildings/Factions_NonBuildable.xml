@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- =========== BASE GENERATION ========= -->
+  <ThingDef>
+    <defName>ROM_TemporaryRegionBarrier</defName>
+    <category>Ethereal</category>
+    <thingClass>Thing</thingClass>
+    <label>temporary region barrier</label>
+    <holdsRoof>true</holdsRoof>
+    <passability>Impassable</passability>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <ThingDef>
+    <defName>ROM_TemporaryDoorMarker</defName>
+    <category>Ethereal</category>
+    <thingClass>Thing</thingClass>
+    <label>temporary region barrier</label>
+    <holdsRoof>true</holdsRoof>
+    <passability>Impassable</passability>
+    <useHitPoints>false</useHitPoints>
+    <tradeability>None</tradeability>
+  </ThingDef>
+  <!-- ============ BASE OBJECTS ========== -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>ROM_AgencySymbolFloorPainting</defName>
+    <label>agency emblem floor painting</label>
+    <description>Shining symbol of the agency that stands to investigate and contain the threat of extra-dimensional entities.</description>
+    <graphicData>
+      <texPath>BaseObjects/TheAgency/AgencyFloorLogo</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(7,4)</drawSize>
+    </graphicData>
+    <selectable>false</selectable>
+    <altitudeLayer>FloorEmplacement</altitudeLayer>
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+    </statBases>
+    <useHitPoints>False</useHitPoints>
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <size>(7,4)</size>
+    <passability>Standable</passability>
+    <building>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+    </building>
+    <designationHotKey>Misc10</designationHotKey>
+  </ThingDef>
+  <ThingDef ParentName="TableBase">
+    <defName>ROM_AgencyReceptionistTable</defName>
+    <label>table (reception)</label>
+    <graphicData>
+      <texPath>BaseObjects/TheAgency/AgencyReceptionDesk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(5,2.5)</drawSize>
+      <damageData>
+        <rectN>(0,0.27,2,3.73)</rectN>
+        <rectS>(0,0.27,2,3.73)</rectS>
+        <rectE>(0.125,0.27,3.75,1.73)</rectE>
+        <rectW>(0.125,0.27,3.75,1.73)</rectW>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>3000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>12</Beauty>
+    </statBases>
+    <size>(5,2)</size>
+    <costStuffCount>95</costStuffCount>
+  </ThingDef>
+</Defs>

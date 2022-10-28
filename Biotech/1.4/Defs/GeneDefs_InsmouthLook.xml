@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Ears -->
+
+  <!-- Innsmouth look, holes for ears -->
+  <GeneDef ParentName="GeneEarsBase">
+    <defName>ROM_InnsmouthLook_Ears</defName>
+    <label>mutated earholes</label>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers of this gene have disfigured ears that appear like vacant holes lacking the nearby flesh like a fish.</description>
+    <iconPath>UI/Icons/Genes/Gene_EarInnsmouth</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/InnsmouthEars/InnsmouthEars</graphicPath>
+      <colorType>Skin</colorType>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>hole</symbol></li>
+        <li><symbol>gaping</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>ear</symbol></li>
+        <li><symbol>hole</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>ROM_Innsmouth_Head</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/None/None_Innsmouth_Narrow</graphicPath>
+    <randomChosen>false</randomChosen>
+    <requiredGenes>
+      <li>ROM_InnsmouthLook_Jaw</li>
+    </requiredGenes>
+  </HeadTypeDef>
+
+  <!-- Jaw -->
+  <GeneDef ParentName="GeneJawBase">
+    <defName>ROM_InnsmouthLook_Jaw</defName>
+    <label>face of the deep</label>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers of this gene have large jaws and strange frog/fish-like facial features.</description>
+    <iconPath>UI/Icons/Genes/Gene_JawInnsmouth</iconPath>
+    <forcedHeadTypes>
+      <li>ROM_Innsmouth_Head</li>
+    </forcedHeadTypes>
+    <displayOrderInCategory>95</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li><symbol>fishface</symbol></li>
+        <li><symbol>froglips</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>fishface</symbol></li>
+        <li><symbol>froglips</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Hands -->
+
+  <GeneDef ParentName="GeneHandsBase">
+    <defName>ROM_InnsmouthLook_Hands</defName>
+    <label>gnarled webbed claws</label>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers of this gene have hands that are gnarled and partially webbed like a water fowl. It is unclear if it provides any benefits.</description>
+    <iconPath>UI/Icons/Genes/Gene_HandsInnsmouth</iconPath>
+    <displayOrderInCategory>310</displayOrderInCategory>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>swimmer</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>swim</symbol></li>
+        <li><symbol>deep</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>swim</symbol></li>
+        <li><symbol>deep</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Eyes -->
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>ROM_InnsmouthLook_Eyes</defName>
+    <label>mutated dead fish-eyes</label>
+    <labelShortAdj>dead-eyed</labelShortAdj>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers of this gene have inhuman dead fish eyes.</description>
+    <iconPath>UI/Icons/Genes/Gene_InnsmouthEyes</iconPath>
+    <displayOrderInCategory>1</displayOrderInCategory>
+    <graphicData>
+      <drawScale>0.28</drawScale>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/InnsmouthEyes/Male/InnsmouthEyes_Male</graphicPath>
+      <graphicPathFemale>Things/Pawn/Humanlike/HeadAttachments/InnsmouthEyes/Female/InnsmouthEyes_Female</graphicPathFemale>
+    </graphicData>
+  </GeneDef>
+
+
+  <!-- Headbone -->
+
+  <GeneDef ParentName="GeneHeadboneBase">
+    <defName>ROM_InnsmouthLook_Headbone_Fin</defName>
+    <label>mutated headfin</label>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers of this gene grow a fanning fin over the top of their heads.</description>
+    <iconPath>UI/Icons/Genes/Gene_InnsmouthFin</iconPath>
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/InnsmouthFin/InnsmouthFin</graphicPath>
+      <color>(255, 255, 255)</color>
+      <layer>PostHair</layer>
+      <useSkinShader>true</useSkinShader>
+      <drawLoc>HeadTop</drawLoc>
+    </graphicData>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>deep</symbol>
+          <weight>2</weight>
+        </li>
+        <li><symbol>sail</symbol></li>
+        <li><symbol>headfin</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>sail</symbol></li>
+        <li><symbol>headfin</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <!-- Voice -->
+
+  <GeneDef ParentName="GeneVoiceBase">
+    <defName>ROM_InnsmouthLook_VoiceFishman</defName>
+    <label>shrieker voice</label>
+    <description>Part of a series of genetic maladies known as 'the innsmouth look', carriers have an unearthly shrieking voice.</description>
+    <iconPath>UI/Icons/Genes/Gene_VoiceDeepOne</iconPath>
+    <displayOrderInCategory>125</displayOrderInCategory>
+    <soundCall>Pawn_ROM_Innsmouth_Call</soundCall>
+    <soundDeath>Pawn_ROM_Innsmouth_Death</soundDeath>
+    <soundWounded>Pawn_ROM_Innsmouth_Wounded</soundWounded>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>shrieker</symbol></li>
+        <li><symbol>caller</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>shriek</symbol></li>
+        <li><symbol>call</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>shriek</symbol></li>
+        <li><symbol>call</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Angler -->
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>ROM_ApparelRaincoat</defName>
+    <description>Water resistant coat often used by fishermen.</description>
+    <label>rain coat</label>
+    <graphicData>
+      <texPath>Apparel/Display/ROMRainCoat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(26, 215, 51)</color>
+    </graphicData>
+    <costStuffCount>150</costStuffCount>
+    <thingSetMakerTags>
+      <li>NoRecolor</li>
+    </thingSetMakerTags>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <statBases>
+      <Mass>2.2</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <WorkToMake>20000</WorkToMake>
+      <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.5</EquipDelay>
+    </statBases>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Bodywear_Clothing/Raincoat/ROMRainCoat</wornGraphicPath>
+      <layers>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>ROM_RainCoat</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>ROM_RainCoat</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompColorable</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="HatMakeableBase">
+    <defName>ROM_Apparel_ROM_SlickerHat</defName>
+    <label>slicker hat</label>
+    <description>A yellow hat designed to repel water, a favorite of anglers and retired accountants who enjoy fishing.</description>
+    <graphicData>
+      <texPath>Apparel/Display/ROMSlickerHat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.17</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <generateCommonality>0.1</generateCommonality>
+    <apparel>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Apparel/Hats/SlickerHat/ROMSlickerHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>CallOfCthulhu_TownsfolkAngler</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>CallOfCthulhu_TownsfolkAngler</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+      </recipeUsers>
+      <researchPrerequisite>ROM_OccupationClothing</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

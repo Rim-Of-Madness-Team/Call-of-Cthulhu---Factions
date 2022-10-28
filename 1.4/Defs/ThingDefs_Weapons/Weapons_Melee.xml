@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ROM_PoleHook</defName>
+    <label>polehook</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A meat hook fixed to the end of a pole. A terrifying weapon to behold.</description>
+    <graphicData>
+      <texPath>WeaponMelee/CallOfCthulhu_PoleHook</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>17000</WorkToMake>
+      <Mass>2</Mass>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+      <li>
+        <label>hook</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Cut</li>
+        </capacities>
+        <power>20.5</power>
+        <cooldownTime>2.3</cooldownTime>
+      </li>
+    </tools>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponTags>
+      <li>CallOfCthulhu_Melee</li>
+      <li>CallOfCthulhu_CoastalMelee</li>
+      <li>CallOfCthulhu_Angler</li>
+    </weaponTags>
+  </ThingDef>
+  <!-- ============================================================== -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ROM_WoodAxe</defName>
+    <label>wood axe</label>
+    <techLevel>Neolithic</techLevel>
+    <description>An axe used by lumberjacks to quickly turn trees into valuable resources.</description>
+    <graphicData>
+      <texPath>WeaponMelee/CallOfCthulhu_WoodAxe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>12000</WorkToMake>
+      <Mass>1.5</Mass>
+    </statBases>
+    <!-- TODO PlantCutting Speed Bonus -->
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>CallOfCthulhu_Lumberjack</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>axe head</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>17</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ROM_Pitchfork</defName>
+    <label>pitchfork</label>
+    <techLevel>Neolithic</techLevel>
+    <description>Used by farmers to help manage hay.</description>
+    <graphicData>
+      <texPath>WeaponMelee/CallOfCthulhu_Pitchfork</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>8000</WorkToMake>
+      <Mass>1.8</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <PlantWorkSpeed>0.15</PlantWorkSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>teeth</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>13</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>CallOfCthulhu_Farmer</li>
+    </weaponTags>
+  </ThingDef>
+  <!-- ============================================================== -->
+  <DamageDef ParentName="Bite">
+    <defName>ROM_MeleeBurn</defName>
+    <label>burn</label>
+    <workerClass>DamageWorker_Bite</workerClass>
+    <externalViolence>true</externalViolence>
+    <deathMessage>{0} has been burned to death.</deathMessage>
+    <hediff>Burn</hediff>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <impactSoundType>Bullet</impactSoundType>
+    <armorCategory>ROM_Heat</armorCategory>
+    <biteDamageMultiplier>1.25</biteDamageMultiplier>
+  </DamageDef>
+  <DamageArmorCategoryDef>
+    <defName>ROM_Heat</defName>
+    <multStat>BluntDamageMultiplier</multStat>
+  </DamageArmorCategoryDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>ROM_BrandingIron</defName>
+    <label>hot branding iron</label>
+    <techLevel>Neolithic</techLevel>
+    <description>A burning hot tool commonly used to brand livestock with prescribed insignias.</description>
+    <graphicData>
+      <texPath>WeaponMelee/CallOfCthulhu_BrandingIron</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>50</costStuffCount>
+    <statBases>
+      <WorkToMake>50000</WorkToMake>
+      <Mass>1.2</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+      <li>
+        <label>tip</label>
+        <capacities>
+          <li>COC_BrandingStabT</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+      </li>
+    </tools>
+    <weaponTags>
+      <li>CallOfCthulhu_Melee</li>
+      <li>CallOfCthulhu_Rancher</li>
+    </weaponTags>
+  </ThingDef>
+</Defs>

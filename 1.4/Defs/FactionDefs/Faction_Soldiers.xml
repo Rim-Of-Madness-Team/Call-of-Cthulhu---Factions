@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase">
+    <defName>ROM_LostPlatoon</defName>
+    <label>Lost Platoon</label>
+    <description>This military unit has somehow appeared on the landscape due to mysterious circumstances. They have dug up new trenches in desperation, and through their fear, they only trade bullets instead of words. For whatever it is they have seen or where they have come from, it is clear that they do not belong here.</description>
+    <pawnsPlural>lost soldiers</pawnsPlural>
+    <settlementGenerationWeight>0.0001</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <displayInFactionSelection>false</displayInFactionSelection>
+    <allowedCultures>
+      <li>Rustican</li>
+    </allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology,rimofmadness.CallofCthulhuCults">ROM_CultOfTheOldOnes</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+    </disallowedMemes>
+    <disallowedPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Corpses_DontCare</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxTwo</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxTwo</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxThree</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxThree</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_MaxFour</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_MaxFour</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Male_Unlimited</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">SpouseCount_Female_Unlimited</li>
+    </disallowedPrecepts>
+    <structureMemeWeights>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+    </structureMemeWeights>
+    <canMakeRandomly>true</canMakeRandomly>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(40, 3)</li>
+        <li>(400, 1)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>captain</leaderTitle>
+    <factionIconPath>World/WorldObjects/Expanding/ROM_LostSoldiers</factionIconPath>
+    <colorSpectrum>
+      <li>(0.5, 0.5, 0.5)</li>
+      <li>(0.7, 0.7, 0.7)</li>
+      <li>(0.8, 0.8, 0.8)</li>
+    </colorSpectrum>
+    <factionNameMaker>ROM_NamerFactionLP</factionNameMaker>
+    <settlementNameMaker>ROM_NamerFactionBaseLP</settlementNameMaker>
+    <techLevel>Industrial</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Pirate</li>
+        </categories>
+        <commonality>0.90</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.10</commonality>
+      </li>
+    </backstoryFilters>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ROM_LostPlatoon_Captain>1</ROM_LostPlatoon_Captain>
+          <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+        </options>
+      </li>
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <ROM_LostPlatoon_Captain>1</ROM_LostPlatoon_Captain>
+          <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ROM_LostPlatoon_Captain>1</ROM_LostPlatoon_Captain>
+          <ROM_LostPlatoon_Soldier>100</ROM_LostPlatoon_Soldier>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/LostPlatoonBase</settlementTexturePath>
+  </FactionDef>
+</Defs>
