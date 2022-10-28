@@ -10,6 +10,32 @@
     <itemQuality>Normal</itemQuality>
     <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
     <maxGenerationAge>75</maxGenerationAge>
+    <modExtensions>
+      <li Class="JecsTools.PawnKindGeneExtension">
+        <genes>
+          <li>
+            <defName>ROM_InnsmouthLook_Ears</defName>
+            <chance>15</chance>
+          </li>
+          <li>
+            <defName>ROM_InnsmouthLook_Jaw</defName>
+            <chance>15</chance>
+          </li>
+          <li>
+            <defName>ROM_InnsmouthLook_Hands</defName>
+            <chance>15</chance>
+          </li>
+          <li>
+            <defName>ROM_InnsmouthLook_Eyes</defName>
+            <chance>15</chance>
+          </li>
+          <li>
+            <defName>ROM_InnsmouthLook_Headbone_Fin</defName>
+            <chance>15</chance>
+          </li>
+        </genes>
+      </li>
+    </modExtensions>
   </PawnKindDef>
   <PawnKindDef Name="TownsfolkVillager" ParentName="TownsfolkBase">
     <defName>ROM_TownsfolkVillager</defName>
