@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationRemove">
+    <xpath>/Defs/TraderKindDef[defName="ROM_Caravan_CFV_CombatSupplier" or defName="ROM_Caravan_CFV_Smuggler"]/stockGenerators/li[thingDef="Shell_HighExplosive"]</xpath>
+  </Operation>
+</Patch>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>ROM_OccupationClothing</defName>
+    <label>occupational clothing</label>
+    <description>Sew further complicated garments for common occupations such as detectives, police, nurses, and fishermen. [From Call of Cthulhu - Neutral Factions Mod]</description>
+    <baseCost>100</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>ROM_MERFOutfits</defName>
+    <label>riot combat gear</label>
+    <description>Allows the creation of advance threat disabling combat gear. [From Call of Cthulhu - Neutral Factions Mod]</description>
+    <baseCost>1500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <prerequisites>
+      <li>ROM_OccupationClothing</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

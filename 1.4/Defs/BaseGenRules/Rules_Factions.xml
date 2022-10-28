@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ============= AGENCY BASE ============= -->
+  <RuleDef>
+    <defName>ROM_AgencyFactionBase</defName>
+    <symbol>agencyFactionBase</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FactionBase_Agency">
+        <minRectSize>(12, 12)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionChokepoint</defName>
+    <symbol>agencyChokepoint</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyChokepoint">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionDoorsNS</defName>
+    <symbol>agencyDoorsNS</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyDoorsNS">
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionDoorsEW</defName>
+    <symbol>agencyDoorsEW</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyDoorsEW">
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionDoorsNSEW</defName>
+    <symbol>agencyDoorsNSEW</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyDoorsNSEW">
+      </li>
+    </resolvers>
+  </RuleDef>
+  <!-- ============= LOBBY AREA ============= -->
+  <RuleDef>
+    <defName>ROM_AgencyFactionLobby</defName>
+    <symbol>agencyLobby</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyLobby">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionFillLobby</defName>
+    <symbol>agencyFillLobby</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyFillLobby">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <!-- ============= CONTAINMENT WING ============= -->
+  <RuleDef>
+    <defName>ROM_AgencyFactionContainmentWing</defName>
+    <symbol>agencyContainmentWing</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyContainmentWing">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionCells</defName>
+    <symbol>agencyCells</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyCells">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionCellsH</defName>
+    <symbol>agencyCellsH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyCellsH">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFillCells</defName>
+    <symbol>fillCells</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FillCells" />
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionStorage</defName>
+    <symbol>agencyStorage</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyStorage">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionStorageH</defName>
+    <symbol>agencyStorageH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyStorageH">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionStorageArtifact</defName>
+    <symbol>agencyStorageArtifact</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyStorageArtifact">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionFillMERF</defName>
+    <symbol>agencyFillMERF</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyFillMERF">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <!-- ============= INVESTIGATION WING ============= -->
+  <RuleDef>
+    <defName>ROM_AgencyFactionInvestigationWing</defName>
+    <symbol>agencyInvestigationWing</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyInvestigationWing">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionOfficeSpace</defName>
+    <symbol>agencyOfficeSpace</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyOfficeSpace">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionOfficeSpaceH</defName>
+    <symbol>agencyOfficeSpaceH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyOfficeSpaceH">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionChiefOffice</defName>
+    <symbol>agencyChiefOffice</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyChiefOffice">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_FillWithTypewriters</defName>
+    <symbol>fillWithTypewriters</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FillWithTypewriters" />
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_FillWithResearchBenches</defName>
+    <symbol>fillWithResearchBenches</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FillWithResearchBenches" />
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionInterrogations</defName>
+    <symbol>agencyInterrogations</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyInterrogations" />
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionInterrogationsH</defName>
+    <symbol>agencyInterrogationsH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyInterrogationsH" />
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionFillWithTablesAndChairs</defName>
+    <symbol>agencyFillWithTablesAndChairs</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FillWithTablesAndChairs" />
+    </resolvers>
+  </RuleDef>
+  <!-- ============= LIVING QUARTERS WING ============= -->
+  <RuleDef>
+    <defName>ROM_AgencyFactionLivingQuartersWing</defName>
+    <symbol>agencyLivingQuartersWing</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyLivingQuartersWing">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionFillBedroom</defName>
+    <symbol>agencyFillBedroom</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_FillBedroom">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionBedrooms</defName>
+    <symbol>agencyBedrooms</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyBedrooms">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionBedroomsH</defName>
+    <symbol>agencyBedroomsH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyBedroomsH">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionMessHall</defName>
+    <symbol>agencyMessHall</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyMessHall">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+  <RuleDef>
+    <defName>ROM_AgencyFactionMessHallH</defName>
+    <symbol>agencyMessHallH</symbol>
+    <resolvers>
+      <li Class="CthulhuFactions.SymbolResolver_AgencyMessHallH">
+        <minRectSize>(2, 2)</minRectSize>
+      </li>
+    </resolvers>
+  </RuleDef>
+</Defs>

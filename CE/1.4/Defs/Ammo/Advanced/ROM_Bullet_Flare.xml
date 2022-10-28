@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>AmmoFlare</defName>
+    <label>Flare</label>
+    <parent>AmmoAdvanced</parent>
+    <iconPath>UI/Icons/ThingCategories/CaliberCharge</iconPath>
+  </ThingCategoryDef>
+  <CombatExtended.AmmoCategoryDef>
+    <defName>AmmoCategoryFlaregun</defName>
+    <label>Flare cartridge</label>
+  </CombatExtended.AmmoCategoryDef>
+  <!-- ==================== AmmoSet ========================== -->
+  <CombatExtended.AmmoSetDef>
+    <defName>AmmoSet_Flare</defName>
+    <label>Flare ammo</label>
+    <ammoTypes>
+      <Ammo_Flare>Bullet_Flare</Ammo_Flare>
+    </ammoTypes>
+  </CombatExtended.AmmoSetDef>
+  <!-- ==================== Ammo ========================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" Name="FlareBase" ParentName="AmmoBase" Abstract="True">
+    <description>Flare ammo</description>
+    <statBases>
+      <Mass>0.01</Mass>
+      <Bulk>0.02</Bulk>
+    </statBases>
+    <tradeTags>
+      <li>CE_AutoEnableTrade</li>
+      <li>CE_AutoEnableCrafting</li>
+    </tradeTags>
+    <thingCategories>
+      <li>AmmoFlare</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="FlareBase">
+    <defName>Ammo_Flare</defName>
+    <label>Flare cartridge</label>
+    <graphicData>
+      <texPath>Things/Ammo/FlareGun</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>0.95</MarketValue>
+    </statBases>
+    <ammoClass>AmmoCategoryFlaregun</ammoClass>
+    <cookOffProjectile>Bullet_Flare</cookOffProjectile>
+  </ThingDef>
+  <!-- ================== Projectiles ================== -->
+  <ThingDef Class="CombatExtended.AmmoDef" Name="BaseFlare" ParentName="BaseBullet" Abstract="true">
+    <thingClass>CombatExtended.BulletCE</thingClass>
+    <graphicData>
+      <texPath>Projectile/CallOfCthulhu_Flare</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageDef>Flame</damageDef>
+      <speed>40</speed>
+    </projectile>
+  </ThingDef>
+  <ThingDef Class="CombatExtended.AmmoDef" ParentName="BaseFlare">
+    <defName>Bullet_Flare</defName>
+    <label>Flare</label>
+    <projectile Class="CombatExtended.ProjectilePropertiesCE">
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationSharp>3</armorPenetrationSharp>
+      <armorPenetrationBlunt>8.26</armorPenetrationBlunt>
+    </projectile>
+  </ThingDef>
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_Flare</defName>
+    <label>make Flares x25</label>
+    <description>Craft 25 Flares.</description>
+    <jobString>Making Flares.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>9</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_Flare>25</Ammo_Flare>
+    </products>
+    <workAmount>2250</workAmount>
+  </RecipeDef>
+</Defs>
